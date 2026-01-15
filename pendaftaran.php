@@ -183,8 +183,8 @@ $sessionData = $_SESSION['last_registration'] ?? null;
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Pendaftaran Kompetisi — Summit Of Stars</title>
-  <meta name="description" content="Form pendaftaran multi-step untuk Summit Of Stars — Essay, Debate, Innovation Case, Puzzle">
+  <title>Pendaftaran Kompetisi — Entre Vibes UMSIDA</title>
+  <meta name="description" content="Form pendaftaran multi-step untuk Entre Vibes UMSIDA — Essay, Debate, Innovation Case, Puzzle">
   <link rel="preload" href="/fonts/HafferSQXH-Regular.woff" as="font" type="font/woff" crossorigin>
    <!-- Favicon -->
   <link rel="icon" href="images/images/summitstars.png" type="image/x-icon">
@@ -937,11 +937,11 @@ footer .socials a:hover {
        =========================== -->
   <header class="navbar" id="navbar" role="navigation" aria-label="Main Navigation">
     <div class="container nav-inner">
-      <a href="#home" class="logo" aria-label="YOUTH RANGER INDONESIA REGIONAL SUMATERA SELATAN">
+      <a href="#home" class="logo" aria-label=" Seluruh Indonesia">
         <img src="images/summitstars.png" 
-            alt="Logo YOUTH RANGER INDONESIA REGIONAL SUMATERA SELATAN" 
+            alt="Logo  Seluruh Indonesia" 
             style="height: 50px; width: auto; margin-right: 0.6rem; vertical-align: middle;">
-        Summit Of Stars
+        Entre Vibes UMSIDA
       </a>
 
 
@@ -977,7 +977,7 @@ footer .socials a:hover {
         <div class="brand">
           <img src="images/summitstars.png" alt="logo">
           <div>
-            <h1>Summit Of Stars — Pendaftaran</h1>
+            <h1>Entre Vibes UMSIDA — Pendaftaran</h1>
             <div class="subtitle">Pilih cabang lomba → isi data → konfirmasi. Mudah, cepat, & aman.</div>
           </div>
         </div>
@@ -1230,8 +1230,8 @@ footer .socials a:hover {
   <!-- Info & About -->
   <div class="foot-inner">
     <div class="foot-about">
-      <h3>Summit Of Stars</h3>
-      <p>Platform terdepan untuk mengembangkan potensi dan prestasi generasi muda Sumatera Selatan. Kami berkomitmen mendukung kreativitas, inovasi, dan semangat kompetitif para peserta melalui lomba-lomba yang inspiratif.</p>
+      <h3>Entre Vibes UMSIDA</h3>
+      <p>Platform terdepan untuk mengembangkan potensi dan prestasi generasi muda Seluruh Indonesia. Kami berkomitmen mendukung kreativitas, inovasi, dan semangat kompetitif para peserta melalui lomba-lomba yang inspiratif.</p>
       <p>
         <strong>Email:</strong> <a href="mailto:info@sumseyouthcomp.com">info@sumseyouthcomp.com</a><br>
         <strong>Telepon:</strong> <a href="tel:+62711123456">+62 711 123 456</a>
@@ -1268,12 +1268,12 @@ footer .socials a:hover {
   <div class="foot-logos">
     <img src="images/summitstars.png" alt="YRI Sumsel Logo">
     <img src="images/20250320_190104[1].png" alt="MH Teams Logo">
-    <img src="images/YOUTH RANGER INDONESIA REGIONAL SUMATERA SELATAN (1).png" alt="New Logo">
+    <img src="images/ Seluruh Indonesia (1).png" alt="New Logo">
   </div>
 
   <!-- Footer Bottom: Credit & CTA -->
   <div class="footer-bottom">
-    <p>&copy; 2025 Summit Of Stars. Semua hak cipta dilindungi.</p>
+    <p>&copy; 2025 Entre Vibes UMSIDA. Semua hak cipta dilindungi.</p>
     <p>
       Dibangun dengan <span>❤️</span> dan dedikasi oleh <a href="https://mhteams.my.id" target="_blank">MH Teams</a>. 
       MH Teams tidak hanya membuat website, tapi juga membantu Anda mewujudkan platform digital profesional, elegan, dan interaktif. 

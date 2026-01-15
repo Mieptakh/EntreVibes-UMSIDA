@@ -60,17 +60,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Summit Of Stars 2025 — Kompetisi Pelajar & Mahasiswa Sumatera Selatan</title>
-  <meta name="description" content="Ikuti Summit Of Stars 2025, kompetisi bergengsi untuk generasi muda Sumatera Selatan. Daftar sekarang dan tunjukkan kreativitas, inovasi, dan prestasi terbaikmu!">
-  <meta name="keywords" content="Summit Of Stars, lomba pelajar Sumatera Selatan, kompetisi mahasiswa, lomba kreativitas, inovasi pelajar, ajang prestasi Sumsel, kompetisi 2025, youth competition, pendaftaran kompetisi, Youthranger Indonesia, youthranger indonesia sumatera selatan">
-
-  <!-- Preload Local Fonts -->
-  <link rel="preload" href="/fonts/HafferSQXH-Regular.woff" as="font" type="font/woff" crossorigin>
-  <link rel="preload" href="/fonts/Telegraf-Light.woff" as="font" type="font/woff" crossorigin>
-  <link rel="preload" href="/fonts/Telegraf-Regular.woff" as="font" type="font/woff" crossorigin>
-
-  <!-- Google Fonts -->
-  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" as="style">
+  <title>Entre Vibes UMSIDA 2025 — Kompetisi Pelajar & Mahasiswa Seluruh Indonesia</title>
+  <meta name="description" content="Ikuti Entre Vibes UMSIDA 2025, kompetisi bergengsi untuk generasi muda Seluruh Indonesia. Daftar sekarang dan tunjukkan kreativitas, inovasi, dan prestasi terbaikmu!">
+  <meta name="keywords" content="Entre Vibes UMSIDA, lomba pelajar Seluruh Indonesia, kompetisi mahasiswa, lomba kreativitas, inovasi pelajar, ajang prestasi Sumsel, kompetisi 2025, youth competition, pendaftaran kompetisi, Youthranger Indonesia, youthranger indonesia Seluruh Indonesia">
 
   <!-- Font Awesome 6 -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
@@ -86,61 +78,98 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   <link rel="canonical" href="https://www.sumselyouthcomp.mhteams.my.id" />
 
   <!-- Open Graph / Social Sharing -->
-  <meta property="og:title" content="Summit Of Stars 2025 — Kompetisi Pelajar & Mahasiswa Sumatera Selatan">
-  <meta property="og:description" content="Daftar sekarang di Summit Of Stars 2025! Kompetisi bergengsi untuk generasi muda Sumatera Selatan, tingkatkan kreativitas, inovasi, dan prestasi.">
+  <meta property="og:title" content="Entre Vibes UMSIDA 2025 — Kompetisi Pelajar & Mahasiswa Seluruh Indonesia">
+  <meta property="og:description" content="Daftar sekarang di Entre Vibes UMSIDA 2025! Kompetisi bergengsi untuk generasi muda Seluruh Indonesia, tingkatkan kreativitas, inovasi, dan prestasi.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://www.sumselyouthcomp.mhteams.my.id>
-  <meta property="og:image" content="images/YOUTH RANGER INDONESIA REGIONAL SUMATERA SELATAN (1).png">
+  <meta property="og:image" content="images/ Seluruh Indonesia (1).png">
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Summit Of Stars 2025">
-  <meta name="twitter:description" content="Kompetisi bergengsi untuk generasi muda Sumatera Selatan. Daftar sekarang!">
-  <meta name="twitter:image" content="images/YOUTH RANGER INDONESIA REGIONAL SUMATERA SELATAN (1).png">
+  <meta name="twitter:title" content="Entre Vibes UMSIDA 2025">
+  <meta name="twitter:description" content="Kompetisi bergengsi untuk generasi muda Seluruh Indonesia. Daftar sekarang!">
+  <meta name="twitter:image" content="images/ Seluruh Indonesia (1).png">
 
   <style>
-    /* =========================================================================
-       Fonts - keep your custom fonts (Telegraf, HafferSQXH) and Inter fallback
-       ========================================================================= */
-    @font-face {
-      font-family: 'HafferSQXH';
-      src: url('/fonts/HafferSQXH-Regular.woff') format('woff');
-      font-weight: 400;
-      font-style: normal;
-      font-display: swap;
-    }
+/* =========================================================================
+   Fonts - Montserrat (CDN Only)
+   ========================================================================= */
 
-    @font-face {
-      font-family: 'Telegraf';
-      src: url('/fonts/Telegraf-Light.woff') format('woff');
-      font-weight: 300;
-      font-style: normal;
-      font-display: swap;
-    }
+/* Import Montserrat dari Google Fonts CDN */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
-    @font-face {
-      font-family: 'Telegraf';
-      src: url('/fonts/Telegraf-Regular.woff') format('woff');
-      font-weight: 400;
-      font-style: normal;
-      font-display: swap;
-    }
+/* Definisi font-family untuk seluruh website */
+:root {
+  --font-montserrat: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+}
+
+/* Terapkan Montserrat ke body */
+body {
+  font-family: var(--font-montserrat);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
 
     /* Load Inter as fallback from Google Fonts (if available) */
     /* If not available, system fonts are used */
-    :root {
-      --bg: #F9F7F4;
-      --text: #2D2A24;
-      --muted: #5A5568;
-      --accent1: #8A7CAC; /* purple */
-      --accent2: #FF9DAC; /* pink */
-      --glass: rgba(255,255,255,0.7);
-      --card: rgba(255,255,255,0.8);
-      --shadow: rgba(138,124,172,0.15);
-      --radius: 16px;
-      --max: 1400px;
-      --glass-border: rgba(181,165,209,0.18);
-    }
+:root {
+  /* Font Family - Montserrat */
+  font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+  
+  /* Color Palette Baru */
+  --primary: #62237e;      /* Ungu utama */
+  --primary-dark: #5c1f7f; /* Ungu lebih gelap */
+  --light: #fdfcfd;        /* Putih lembut */
+  --accent: #efa609;       /* Emas/Orange */
+  
+  /* Derived Colors untuk konsistensi */
+  --bg: var(--light);              /* Background utama */
+  --text: #2a1a35;                 /* Teks utama (lebih gelap untuk kontras) */
+  --muted: #6d5a7a;                /* Teks sekunder */
+  --accent1: var(--primary);       /* Warna aksen 1 = primary */
+  --accent2: var(--accent);        /* Warna aksen 2 = accent gold */
+  
+  /* Glass & Card Effects */
+  --glass: rgba(253, 252, 253, 0.85);    /* Efek glass dengan warna light */
+  --card: rgba(255, 255, 255, 0.92);     /* Card background */
+  --shadow: rgba(98, 35, 126, 0.15);     /* Shadow dengan warna primary */
+  --radius: 16px;                        /* Border radius */
+  --max: 1400px;                         /* Max width container */
+  --glass-border: rgba(98, 35, 126, 0.12); /* Border glass effect */
+  
+  /* Gradients untuk berbagai penggunaan */
+  --gradient-primary: linear-gradient(135deg, var(--primary), var(--primary-dark));
+  --gradient-accent: linear-gradient(135deg, var(--accent), #ffb347);
+  --gradient-mix: linear-gradient(135deg, var(--primary), var(--accent));
+  
+  /* States */
+  --hover-primary: #7a2b9c;        /* Hover state untuk primary */
+  --hover-accent: #ffb93e;         /* Hover state untuk accent */
+  
+  /* Golden Ratio Scale */
+  --gr-1: 1rem;
+  --gr-1-618: 1.618rem;
+  --gr-2-618: 2.618rem;
+  --gr-4-236: 4.236rem;
+  --gr-6-854: 6.854rem;
+}
+
+/* Dark Mode Colors - dengan palette yang sama tapi lebih gelap */
+[data-theme="dark"] {
+  --primary: #b580d6;               /* Ungu lebih terang untuk dark mode */
+  --primary-dark: #9a6bb8;          /* Ungu gelap untuk dark mode */
+  --light: #1a1420;                 /* Background gelap */
+  --accent: #ffc156;                /* Emas lebih terang */
+  
+  --bg: var(--light);
+  --text: #f5f0fa;                  /* Teks terang untuk dark mode */
+  --muted: #b8a9c7;                 /* Muted lebih terang */
+  
+  --glass: rgba(26, 20, 32, 0.85);
+  --card: rgba(35, 28, 42, 0.92);
+  --shadow: rgba(181, 128, 214, 0.2);
+  --glass-border: rgba(181, 128, 214, 0.15);
+}
 
     /* Dark mode colors */
     [data-theme="dark"] {
@@ -157,7 +186,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     * { box-sizing: border-box; margin: 0; padding: 0; }
     html,body { height: 100%; }
     body {
-      font-family: 'Telegraf', 'HafferSQXH', Inter, "Segoe UI", system-ui, -apple-system, "Helvetica Neue", Arial, sans-serif;
       background: var(--bg);
       color: var(--text);
       line-height: 1.6;
@@ -176,34 +204,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     }
 
 /* =========================================================================
-   CUSTOM FONTS
-   ========================================================================= */
-@font-face {
-  font-family: 'HafferSQXH';
-  src: url('/fonts/HafferSQXH-Regular.woff') format('woff');
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Telegraf';
-  src: url('/fonts/Telegraf-Light.woff') format('woff');
-  font-weight: 300;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Telegraf';
-  src: url('/fonts/Telegraf-Regular.woff') format('woff');
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-
- /* =========================================================================
-   LOADING SCREEN WRAPPER - FIXED & RESPONSIVE
+   LOADING SCREEN - MINIMALIST DESIGN
    ========================================================================= */
 .loader-wrap {
     position: fixed;
@@ -215,656 +216,630 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(135deg, #fdfaf6 0%, #f9f7f4 100%);
+    background: 
+        url('images/Background.png') center/cover no-repeat,
+        linear-gradient(135deg, rgba(98, 35, 126, 0.92), rgba(92, 31, 127, 0.95));
     z-index: 99999;
     opacity: 1;
     visibility: visible;
-    transition: opacity 0.8s cubic-bezier(0.23,1,0.32,1),
-                visibility 0.8s cubic-bezier(0.23,1,0.32,1),
-                transform 0.8s cubic-bezier(0.23,1,0.32,1);
-    overflow: hidden;
-    box-sizing: border-box;
+    transition: opacity 0.5s ease, visibility 0.5s ease;
 }
 
 .loader-wrap::before {
     content: '';
     position: absolute;
-    width: 200%;
-    height: 200%;
-    background: radial-gradient(circle, rgba(138,124,172,0.05) 0%, transparent 70%);
-    animation: bgFloat 20s linear infinite;
-    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(
+        to bottom,
+        rgba(98, 35, 126, 0.3) 0%,
+        rgba(92, 31, 127, 0.5) 50%,
+        rgba(98, 35, 126, 0.3) 100%
+    );
+    z-index: 1;
 }
 
 .loader-wrap.hidden {
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
-    transform: scale(0.95);
 }
 
 /* =========================================================================
-   MAIN LOADER CONTAINER - GOLDEN RATIO CENTERING
-   ========================================================================= */
-.loader {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    max-width: 600px; /* Golden ratio friendly */
-    padding: 0 1.618rem; /* Golden ratio padding */
-    box-sizing: border-box;
-    position: relative;
-}
-
-/* =========================================================================
-   SPINNER CONTAINER - PERFECT CENTERING
-   ========================================================================= */
-/* =========================================================================
-   SPINNER CONTAINER
-   ========================================================================= */
-.spinner-container {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 2rem;
-    width: 160px;
-    height: 160px;
-}
-
-/* =========================================================================
-   PERFECT CIRCLE SPINNER
-   ========================================================================= */
-/* Container selalu square */
-.spinner-container {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 160px;
-    height: 160px;
-    margin-bottom: 2rem;
-}
-
-/* Spinner bulat sempurna */
-.spinner {
-    width: 160px;               /* width fix */
-    height: 160px;              /* height fix */
-    border-radius: 50%;         /* bikin bulat */
-    border: 8px solid transparent;
-    border-top: 8px solid #8a7cac;   /* warna 1 */
-    border-right: 8px solid #ff9dac; /* warna 2 */
-    border-bottom: 8px solid #8a7cac;/* warna 1 */
-    border-left: 8px solid #ff9dac;  /* warna 2 */
-    animation: spin 1.5s linear infinite;
-    box-sizing: border-box;     /* pastikan border dihitung */
-    position: relative;
-}
-
-/* Inner circle */
-.spinner::after {
-    content: '';
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 60%;
-    height: 60%;
-    border-radius: 50%;
-    bacground: #fdfaf6;
-    transform: translate(-50%, -50%);
-    box-shadow: inset 0 4px 8px rgba(0,0,0,0.08),
-                0 0 12px rgba(255,255,255,0.9);
-}
-
-/* Animasi muter */
-@keyframes spin {
-    0%   { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
-}k
-
-
-/* =========================================================================
-   LOADER CONTENT - TYPOGRAPHY WITH GOLDEN RATIO
+   MAIN LOADER CONTENT
    ========================================================================= */
 .loader-content {
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     width: 100%;
-    max-width: 400px; /* Golden ratio constraint */
-    margin: 0 auto 2.618rem auto; /* Golden ratio margins */
-    box-sizing: border-box;
-}
-
-.loader h4 {
-    font-size: 2.618rem; /* Golden ratio font size */
-    margin: 1rem 0 0.618rem; /* Golden ratio spacing */
-    font-weight: 700;
-    color: #4a3f6b;
-    letter-spacing: -0.5px;
-    text-shadow: 0 2px 4px rgba(0,0,0,0.05);
-    animation: fadeUp 1s ease forwards;
-    line-height: 1.2;
-}
-
-.loader p {
-    font-size: 1.1618rem; /* Golden ratio derived size */
-    color: #6b6378;
-    margin-bottom: 2.618rem; /* Golden ratio spacing */
-    line-height: 1.618; /* Golden ratio line height */
-    animation: fadeUp 1.2s ease forwards;
+    max-width: 400px;
+    padding: 0 2rem;
+    position: relative;
+    z-index: 2;
 }
 
 /* =========================================================================
-   PROGRESS BAR - GOLDEN RATIO DIMENSIONS
+   BRAND AREA - MINIMALIST
    ========================================================================= */
-.progress-container {
-    width: 261.8px; /* Golden ratio width */
-    margin: 2.618rem auto; /* center + spacing */
-    position: relative;
+.brand-area {
+    text-align: center;
+    margin-bottom: 3rem;
 }
 
-.progress {
-    width: 100%;
-    height: 9.888px; /* Golden ratio height */
-    background: #e2dfd9;
-    border-radius: 4.944px; /* Half of height */
+.brand-logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.logo-circle {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid rgba(255, 255, 255, 0.15);
+    position: relative;
     overflow: hidden;
-    box-shadow: inset 0 1px 3px rgba(0,0,0,0.1);
-    position: relative;
 }
 
-/* Animated progressbar */
-#progressbar {
-    width: 0%;
-    height: 100%;
-    background: linear-gradient(90deg, #8a7cac, #ff9dac);
-    border-radius: 4.944px;
-    position: relative;
-    overflow: hidden;
-    animation: fillProgress 6s forwards ease-in-out; /* isi penuh */
-}
-
-/* Shimmer effect */
-#progressbar::after {
+.logo-circle::before {
     content: '';
     position: absolute;
-    top: 0; 
-    left: -100%;
-    width: 100%; 
+    inset: -1px;
+    background: linear-gradient(135deg, var(--accent), var(--primary));
+    border-radius: 50%;
+    opacity: 0.3;
+    z-index: -1;
+}
+
+.logo-circle img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.2));
+}
+
+.brand-name {
+    font-size: 2.8rem;
+    font-weight: 800;
+    color: white;
+    letter-spacing: 1px;
+    margin: 0.5rem 0;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.brand-subtitle {
+    font-size: 1rem;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.9);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+/* =========================================================================
+   LOADING ANIMATION - MINIMALIST
+   ========================================================================= */
+.loading-animation {
+    position: relative;
+    margin: 2.5rem 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.spinner-ring {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 2px solid rgba(255, 255, 255, 0.15);
+    border-top: 2px solid var(--accent);
+    animation: spin 1.5s linear infinite;
+    margin-bottom: 1.5rem;
+}
+
+.loading-dots {
+    display: flex;
+    justify-content: center;
+    gap: 6px;
+    margin-top: 0.5rem;
+}
+
+.loading-dots span {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.6);
+    animation: bounce 1.4s infinite ease-in-out both;
+}
+
+.loading-dots span:nth-child(1) { 
+    animation-delay: -0.32s; 
+    background: var(--accent);
+}
+.loading-dots span:nth-child(2) { 
+    animation-delay: -0.16s; 
+    background: rgba(255, 255, 255, 0.8);
+}
+.loading-dots span:nth-child(3) { 
+    animation-delay: 0s; 
+    background: rgba(255, 255, 255, 0.6);
+}
+
+/* =========================================================================
+   PROGRESS AREA - MINIMALIST
+   ========================================================================= */
+.progress-area {
+    width: 100%;
+    max-width: 320px;
+    margin-top: 1rem;
+}
+
+.progress-track {
+    width: 100%;
+    height: 3px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 1.5px;
+    overflow: hidden;
+    position: relative;
+}
+
+.progress-indicator {
+    width: 0%;
     height: 100%;
-    background: linear-gradient(
-        90deg, 
-        transparent, 
-        rgba(255,255,255,0.6), 
-        transparent
-    );
-    animation: shimmer 2s infinite linear;
+    background: linear-gradient(90deg, var(--primary), var(--accent));
+    border-radius: 1.5px;
+    position: relative;
+    transition: width 0.3s ease;
 }
 
-/* Animasi isi progress bar */
-@keyframes fillProgress {
-    0%   { width: 0%; }
-    20%  { width: 25%; }
-    40%  { width: 50%; }
-    60%  { width: 70%; }
-    80%  { width: 90%; }
-    100% { width: 100%; }
+.progress-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 0.8rem;
+    font-size: 0.85rem;
 }
 
-/* Animasi shimmer */
-@keyframes shimmer {
-    0%   { left: -100%; }
-    100% { left: 200%; }
+.progress-info .status {
+    color: rgba(255, 255, 255, 0.8);
+    font-weight: 500;
+}
+
+.progress-info .percent {
+    color: var(--accent);
+    font-weight: 700;
+    font-feature-settings: "tnum";
+    font-variant-numeric: tabular-nums;
 }
 
 /* =========================================================================
-   DEVELOPER CREDITS - GOLDEN RATIO STYLING
+   LOADER FOOTER
    ========================================================================= */
-/* =========================================================================
-   Fonts - Telegraf & HafferSQXH with Inter fallback
-   ========================================================================= */
-@font-face {
-  font-family: 'HafferSQXH';
-  src: url('/fonts/HafferSQXH-Regular.woff') format('woff');
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
+.loader-footer {
+    position: absolute;
+    bottom: 2rem;
+    left: 0;
+    right: 0;
+    text-align: center;
+    z-index: 2;
 }
 
-@font-face {
-  font-family: 'Telegraf';
-  src: url('/fonts/Telegraf-Light.woff') format('woff');
-  font-weight: 300;
-  font-style: normal;
-  font-display: swap;
+.loader-footer p {
+    font-size: 0.8rem;
+    color: rgba(255, 255, 255, 0.5);
+    margin: 0;
+    padding: 0 1rem;
+    letter-spacing: 0.5px;
 }
 
-@font-face {
-  font-family: 'Telegraf';
-  src: url('/fonts/Telegraf-Regular.woff') format('woff');
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
+.loader-footer p::before {
+    content: '•';
+    margin: 0 0.5rem;
+    color: var(--accent);
 }
 
-/* =========================================================================
-   LOADER CREDIT - SLIM FIXED BANNER
-   ========================================================================= */
-.loader-credit {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 1.2rem;
-
-  font-family: 'Telegraf', 'HafferSQXH', Inter, sans-serif;
-  font-size: 0.95rem;
-  font-weight: 400;
-  letter-spacing: 0.2px;
-  color: #52486b;
-
-  position: relative;
-  margin-top: 2.5rem; /* jarak atas */
-  padding: 0.55rem 1.8rem; /* slim */
-  min-height: 50px; /* gepeng, tidak tebal */
-  max-width: 640px; /* lebih memanjang */
-  border-radius: 14px;
-
-  background: rgba(255, 255, 255, 0.25);
-  backdrop-filter: blur(12px) saturate(180%);
-  -webkit-backdrop-filter: blur(12px) saturate(180%);
-  border: 1px solid rgba(255, 255, 255, 0.35);
-
-  box-shadow: 0 6px 20px rgba(138, 124, 172, 0.15);
-  opacity: 0;
-  transform: translateY(40px) scale(0.95);
-  animation: creditIn 1.2s forwards cubic-bezier(0.23,1,0.32,1);
-  animation-delay: 2s;
-  transition: all 0.35s ease;
-}
-
-/* Hover efek elegan */
-.loader-credit:hover {
-  transform: translateY(-3px) scale(1.02);
-  box-shadow: 0 10px 28px rgba(138,124,172,0.25);
+.loader-footer p::after {
+    content: '•';
+    margin: 0 0.5rem;
+    color: var(--accent);
 }
 
 /* =========================================================================
-   Logo dalam credit
-   ========================================================================= */
-.loader-credit img {
-  height: 30px; /* kecil, slim */
-  width: 30px;
-  object-fit: contain;
-  border-radius: 6px;
-  background: #fff;
-  padding: 3px;
-  box-shadow: 0 0 10px rgba(138,124,172,0.2);
-  animation: logoBounce 1.8s infinite alternate ease-in-out;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.loader-credit:hover img {
-  transform: scale(1.08);
-  box-shadow: 0 0 18px rgba(255,157,172,0.35);
-  animation-play-state: paused;
-}
-
-/* =========================================================================
-   Text highlight
-   ========================================================================= */
-.loader-credit strong {
-  font-family: 'HafferSQXH', 'Telegraf', Inter, sans-serif;
-  font-size: 1rem;
-  font-weight: 600;
-  background: linear-gradient(135deg, #8a7cac, #ff9dac);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-/* =========================================================================
-   Link dalam credit
-   ========================================================================= */
-.loader-credit a {
-  font-family: 'Telegraf', Inter, sans-serif;
-  color: #7d6ba9;
-  font-weight: 600;
-  text-decoration: none;
-  position: relative;
-  transition: all 0.3s ease;
-}
-
-.loader-credit a::after {
-  content: '';
-  position: absolute;
-  left: 0; 
-  bottom: -3px;
-  width: 100%; 
-  height: 2px;
-  background: linear-gradient(135deg, #8a7cac, #ff9dac);
-  transform: scaleX(0);
-  transform-origin: right;
-  transition: transform 0.3s ease;
-  border-radius: 2px;
-}
-
-.loader-credit a:hover::after,
-.loader-credit a:focus::after {
-  transform: scaleX(1);
-  transform-origin: left;
-}
-
-.loader-credit a:hover,
-.loader-credit a:focus {
-  color: #ff9dac;
-  text-shadow: 0 0 6px rgba(255,157,172,0.25);
-}
-
-/* =========================================================================
-   Animations
-   ========================================================================= */
-@keyframes creditIn {
-  0% { opacity: 0; transform: translateY(40px) scale(0.95); }
-  100% { opacity: 1; transform: translateY(0) scale(1); }
-}
-
-@keyframes logoBounce {
-  0% { transform: translateY(0); }
-  100% { transform: translateY(-6px); }
-}
-
-/* =========================================================================
-   ANIMATIONS - SMOOTH & ELEGANT
+   ANIMATIONS
    ========================================================================= */
 @keyframes spin { 
     0% { transform: rotate(0deg); } 
     100% { transform: rotate(360deg); } 
 }
 
-@keyframes pulse { 
-    0%, 100% { 
-        box-shadow: 0 0 28px rgba(138,124,172,0.3),
-                    0 0 48px rgba(255,157,172,0.2), 
-                    inset 0 0 20px rgba(255,255,255,0.5); 
-    } 
-    50% { 
-        box-shadow: 0 0 55px rgba(138,124,172,0.6),
-                    0 0 75px rgba(255,157,172,0.4), 
-                    inset 0 0 30px rgba(255,255,255,0.7); 
-    } 
+@keyframes bounce {
+    0%, 80%, 100% { 
+        transform: scale(0); 
+        opacity: 0.5;
+    }
+    40% { 
+        transform: scale(1); 
+        opacity: 1;
+    }
 }
 
-@keyframes glow { 
-    0%, 100% { filter: brightness(1); } 
-    50% { filter: brightness(1.1); } 
+@keyframes fadeIn {
+    from { 
+        opacity: 0; 
+        transform: translateY(10px); 
+    }
+    to { 
+        opacity: 1; 
+        transform: translateY(0); 
+    }
 }
 
-@keyframes innerPulse { 
-    0%, 100% { transform: scale(1); opacity: 1; } 
-    50% { transform: scale(1.05); opacity: 0.9; } 
+/* Fade in animation untuk semua elemen */
+.brand-area {
+    animation: fadeIn 0.6s ease-out 0.2s both;
 }
 
-@keyframes floatParticle { 
-    0%, 100% { transform: translate(0, 0) scale(0); opacity: 0; } 
-    25% { transform: translate(10px, -15px) scale(1); opacity: 0.7; } 
-    50% { transform: translate(20px, 0) scale(1.2); opacity: 1; } 
-    75% { transform: translate(10px, 15px) scale(1); opacity: 0.7; } 
+.loading-animation {
+    animation: fadeIn 0.6s ease-out 0.4s both;
 }
 
-@keyframes bgFloat { 
-    0% { transform: translate(-25%, -25%) rotate(0deg); } 
-    100% { transform: translate(-25%, -25%) rotate(360deg); } 
+.progress-area {
+    animation: fadeIn 0.6s ease-out 0.6s both;
 }
 
-@keyframes fadeUp { 
-    0% { opacity: 0; transform: translateY(20px); } 
-    100% { opacity: 1; transform: translateY(0); } 
-}
-
-@keyframes shimmer { 
-    0% { transform: translateX(-100%); } 
-    100% { transform: translateX(200%); } 
-}
-
-@keyframes creditIn { 
-    0% { opacity: 0; transform: translateY(30px) scale(0.8) rotate(-5deg); } 
-    60% { opacity: 1; transform: translateY(-5px) scale(1.05) rotate(2deg); } 
-    100% { opacity: 1; transform: translateY(0) scale(1) rotate(0); } 
-}
-
-@keyframes creditOut { 
-    0% { opacity: 1; transform: translateY(0) scale(1) rotate(0); } 
-    50% { opacity: 0.6; transform: translateY(-10px) scale(0.7) rotate(-10deg); } 
-    100% { opacity: 0; transform: translateY(0) scale(0) rotate(45deg); } 
-}
-
-@keyframes logoBounce { 
-    0% { transform: translateY(0); } 
-    100% { transform: translateY(-4px); } 
+.loader-footer {
+    animation: fadeIn 0.6s ease-out 0.8s both;
 }
 
 /* =========================================================================
-   RESPONSIVE DESIGN - MOBILE FIRST APPROACH
+   RESPONSIVE DESIGN
    ========================================================================= */
 
 /* Tablet Devices */
 @media (max-width: 1024px) {
-    .spinner-container {
-        width: 138.2px;
-        height: 138.2px;
-        margin-bottom: 2.236rem;
+    .loader-content {
+        max-width: 350px;
     }
     
-    .loader h4 { 
-        font-size: 2.236rem; 
-        margin: 0.854rem 0 0.528rem;
+    .logo-circle {
+        width: 90px;
+        height: 90px;
     }
     
-    .loader p { 
-        font-size: 1.1rem; 
-        margin-bottom: 2.236rem;
+    .logo-circle img {
+        width: 55px;
+        height: 55px;
     }
     
-    .progress-container { 
-        width: 223.6px; 
-        margin-bottom: 2.236rem;
+    .brand-name {
+        font-size: 2.4rem;
     }
     
-    .loader-credit { 
-        flex-direction: row; 
-        gap: 0.528rem; 
+    .brand-subtitle {
         font-size: 0.95rem;
-        max-width: 300px;
-        padding: 0.7rem 1.1rem;
     }
     
-    .loader-credit img {
-        height: 32.8px;
-        width: 32.8px;
+    .spinner-ring {
+        width: 70px;
+        height: 70px;
     }
 }
 
 /* Small Tablets & Large Phones */
 @media (max-width: 768px) {
-    .spinner-container {
-        width: 123.6px;
-        height: 123.6px;
-        margin-bottom: 2rem;
+    .loader-content {
+        padding: 0 1.5rem;
+        max-width: 320px;
     }
     
-    .loader h4 { 
-        font-size: 2rem; 
-        margin: 0.764rem 0 0.472rem;
+    .brand-area {
+        margin-bottom: 2.5rem;
     }
     
-    .loader p { 
-        font-size: 1.05rem; 
-        margin-bottom: 2rem;
+    .brand-logo {
+        gap: 1.2rem;
     }
     
-    .progress-container { 
-        width: 200px; 
-        margin-bottom: 2rem;
+    .logo-circle {
+        width: 80px;
+        height: 80px;
     }
     
-    .loader-credit { 
-        flex-direction: row; 
-        gap: 0.472rem; 
+    .logo-circle img {
+        width: 50px;
+        height: 50px;
+    }
+    
+    .brand-name {
+        font-size: 2.2rem;
+    }
+    
+    .brand-subtitle {
         font-size: 0.9rem;
-        max-width: 280px;
-        padding: 0.6rem 1rem;
+        letter-spacing: 1.5px;
     }
     
-    .loader-credit img {
-        height: 30px;
-        width: 30px;
+    .loading-animation {
+        margin: 2rem 0;
+    }
+    
+    .spinner-ring {
+        width: 65px;
+        height: 65px;
+        margin-bottom: 1.2rem;
+    }
+    
+    .loading-dots span {
+        width: 5px;
+        height: 5px;
+    }
+    
+    .progress-area {
+        max-width: 280px;
+    }
+    
+    .loader-footer {
+        bottom: 1.5rem;
+    }
+    
+    .loader-footer p {
+        font-size: 0.75rem;
     }
 }
 
 /* Mobile Phones */
 @media (max-width: 480px) {
-    .loader {
+    .loader-content {
         padding: 0 1rem;
+        max-width: 280px;
     }
     
-    .spinner-container {
-        width: 100px;
-        height: 100px;
-        margin-bottom: 1.618rem;
+    .brand-area {
+        margin-bottom: 2rem;
     }
     
-    .loader h4 { 
-        font-size: 1.618rem; 
-        margin: 0.618rem 0 0.382rem;
+    .logo-circle {
+        width: 70px;
+        height: 70px;
     }
     
-    .loader p { 
-        font-size: 0.95rem; 
-        margin-bottom: 1.618rem;
-        line-height: 1.5;
+    .logo-circle img {
+        width: 45px;
+        height: 45px;
     }
     
-    .progress-container { 
-        width: 161.8px; 
-        margin-bottom: 1.618rem;
+    .brand-name {
+        font-size: 1.9rem;
+        letter-spacing: 0.5px;
     }
     
-    .progress {
-        height: 8px;
-        border-radius: 4px;
-    }
-    
-    .loader-credit { 
-        flex-direction: column; 
-        gap: 0.382rem; 
-        text-align: center;
+    .brand-subtitle {
         font-size: 0.85rem;
-        max-width: 250px;
-        padding: 0.5rem 0.8rem;
+        letter-spacing: 1px;
     }
     
-    .loader-credit img {
-        height: 28px;
-        width: 28px;
+    .loading-animation {
+        margin: 1.8rem 0;
     }
     
-    .floating-particle {
-        width: 6px;
-        height: 6px;
-    }
-}
-
-/* Very Small Mobile Phones */
-@media (max-width: 320px) {
-    .spinner-container {
-        width: 80px;
-        height: 80px;
+    .spinner-ring {
+        width: 60px;
+        height: 60px;
+        margin-bottom: 1rem;
+        border-width: 1.5px;
     }
     
-    .loader h4 { 
-        font-size: 1.382rem; 
+    .loading-dots {
+        gap: 5px;
     }
     
-    .loader p { 
-        font-size: 0.85rem; 
+    .loading-dots span {
+        width: 4px;
+        height: 4px;
     }
     
-    .progress-container { 
-        width: 140px; 
+    .progress-area {
+        max-width: 240px;
+        margin-top: 0.8rem;
     }
     
-    .loader-credit { 
+    .progress-info {
         font-size: 0.8rem;
-        max-width: 220px;
+        margin-top: 0.6rem;
+    }
+    
+    .loader-footer {
+        bottom: 1.2rem;
+    }
+    
+    .loader-footer p {
+        font-size: 0.7rem;
+        padding: 0 0.8rem;
     }
 }
 
-/* Landscape Orientation Fix */
-@media (max-height: 500px) and (orientation: landscape) {
-    .loader-wrap {
-        padding: 1rem 0;
-    }
-    
-    .loader {
+/* Landscape Orientation */
+@media (max-height: 600px) and (orientation: landscape) {
+    .loader-content {
         flex-direction: row;
         justify-content: space-around;
         align-items: center;
         max-width: 90%;
+        gap: 2rem;
+        padding: 1rem;
     }
     
-    .spinner-container {
-        margin-bottom: 0;
-        margin-right: 2rem;
-        flex-shrink: 0;
-    }
-    
-    .loader-content {
+    .brand-area {
         margin-bottom: 0;
         text-align: left;
         flex: 1;
     }
     
-    .progress-container {
-        margin-bottom: 0;
+    .brand-logo {
+        align-items: flex-start;
+        gap: 0.8rem;
     }
     
-    .loader-credit {
-        position: absolute;
-        bottom: 1rem;
-        right: 1rem;
+    .logo-circle {
+        width: 60px;
+        height: 60px;
+    }
+    
+    .logo-circle img {
+        width: 40px;
+        height: 40px;
+    }
+    
+    .brand-name {
+        font-size: 1.8rem;
+        margin: 0.3rem 0;
+    }
+    
+    .brand-subtitle {
+        font-size: 0.8rem;
+        letter-spacing: 1px;
+    }
+    
+    .loading-animation {
+        margin: 0;
+        width: auto;
+    }
+    
+    .spinner-ring {
+        width: 50px;
+        height: 50px;
+        margin-bottom: 0.8rem;
+    }
+    
+    .progress-area {
+        max-width: 200px;
+        margin-top: 0;
+    }
+    
+    .loader-footer {
+        bottom: 0.8rem;
+    }
+    
+    .loader-footer p {
+        font-size: 0.65rem;
+    }
+}
+
+/* Extra Small Devices */
+@media (max-width: 320px) {
+    .brand-name {
+        font-size: 1.6rem;
+    }
+    
+    .brand-subtitle {
+        font-size: 0.75rem;
+    }
+    
+    .logo-circle {
+        width: 60px;
+        height: 60px;
+    }
+    
+    .logo-circle img {
+        width: 40px;
+        height: 40px;
+    }
+    
+    .progress-area {
+        max-width: 220px;
     }
 }
 
 /* High DPI Screens */
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-    .spinner {
-        box-shadow: 0 0 40px rgba(138,124,172,0.4),
-                    0 0 60px rgba(255,157,172,0.3),
-                    inset 0 0 25px rgba(255,255,255,0.6);
+    .logo-circle {
+        backdrop-filter: blur(15px);
     }
     
-    .loader-credit {
-        backdrop-filter: blur(15px);
+    .logo-circle img {
+        filter: drop-shadow(0 2px 12px rgba(0, 0, 0, 0.3));
     }
 }
 
 /* Reduced Motion Support */
 @media (prefers-reduced-motion: reduce) {
-    .spinner,
-    .floating-particle,
-    .loader-credit,
-    .loader h4,
-    .loader p,
-    #progressbar::after {
-        animation-duration: 0.01ms !important;
-        animation-iteration-count: 1 !important;
-        transition-duration: 0.01ms !important;
+    .spinner-ring {
+        animation: none;
+        border: 2px solid var(--accent);
     }
     
-    .spinner {
+    .loading-dots span {
         animation: none;
+        opacity: 0.7;
     }
-  }
+    
+    .brand-area,
+    .loading-animation,
+    .progress-area,
+    .loader-footer {
+        animation: none;
+        opacity: 1;
+    }
+}
+
+/* Dark mode optimizations */
+@media (prefers-color-scheme: dark) {
+    .logo-circle {
+        background: rgba(0, 0, 0, 0.2);
+        border-color: rgba(255, 255, 255, 0.1);
+    }
+    
+    .progress-track {
+        background: rgba(0, 0, 0, 0.2);
+    }
+}
+
+/* Untuk browser yang tidak support backdrop-filter */
+@supports not (backdrop-filter: blur(10px)) {
+    .logo-circle {
+        background: rgba(255, 255, 255, 0.05);
+    }
+}
+
+/* Progress bar shimmer effect (optional) */
+.progress-indicator::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        90deg,
+        transparent,
+        rgba(255, 255, 255, 0.3),
+        transparent
+    );
+    animation: shimmer 2s infinite;
+}
+
+@keyframes shimmer {
+    0% { transform: translateX(-100%); }
+    100% { transform: translateX(200%); }
+}
+
+/* Hanya aktif jika user tidak prefer reduced motion */
+@media (prefers-reduced-motion: no-preference) {
+    .progress-indicator::after {
+        display: block;
+    }
+}
 
 /* =========================================================================
    NAVBAR - FIXED + ADVANCED ANIMATION
@@ -1146,742 +1121,1494 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 }
 
 /* =========================================================================
-   HERO SECTION - ULTRA SMOOTH & ELEGANT
+   HERO SECTION – FIXED & REFINED (ELEGANT + SAFE)
    ========================================================================= */
+
 .hero-section {
-  min-height: 100vh;
+  position: relative;
+  min-height: calc(100vh - 96px); /* kompensasi navbar */
+  padding: 8rem 1.5rem 5rem;     /* aman dari navbar */
   display: flex;
   align-items: center;
   justify-content: center;
-  text-align: center;
-  position: relative;
-  padding: 8rem 1rem 4rem;
   overflow: hidden;
-  background: radial-gradient(ellipse at center, rgba(138,124,172,0.08) 0%, transparent 70%);
+  isolation: isolate;
+
+  background:
+    url("images/Background.png") center / cover no-repeat;
+
+  color: var(--light);
+  font-family: 'Montserrat', system-ui, sans-serif;
 }
 
-/* Floating gradient blobs with smooth oscillation */
-.hero-section::before,
+/* Frame diperkecil agar tidak menekan konten */
 .hero-section::after {
-  content: "";
+  content: '';
   position: absolute;
-  width: 600px;
-  height: 600px;
-  border-radius: 50%;
-  filter: blur(130px);
-  opacity: 0.3;
-  z-index: 0;
-  animation: floatBlobSmooth 22s ease-in-out infinite alternate;
-}
-.hero-section::before {
-  background: radial-gradient(circle at center, var(--accent1), transparent 70%);
-  top: -100px; left: -80px;
-}
-.hero-section::after {
-  background: radial-gradient(circle at center, var(--accent2), transparent 70%);
-  bottom: -120px; right: -100px;
-  animation-delay: 7s;
+  inset: 2.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 20px;
+  pointer-events: none;
+  z-index: 1;
 }
 
-@keyframes floatBlobSmooth {
-  0% { transform: translate(0, 0) scale(1); }
-  50% { transform: translate(25px, -20px) scale(1.1); }
-  100% { transform: translate(-15px, 15px) scale(1.05); }
-}
+/* ================= CONTENT ================= */
 
-/* Hero container */
 .hero-container {
   position: relative;
   z-index: 2;
-  max-width: 1120px;
+  max-width: 1100px;
   width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 2.2rem;
+}
+
+/* ================= BADGE ================= */
+
+.hero-badge {
+  margin-inline: auto;
+  padding: 10px 26px;
+  border-radius: 999px;
+  background: rgba(255,255,255,0.08);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255,255,255,0.15);
+  font-size: 0.75rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+/* ================= TITLE ================= */
+
+.hero-title {
+  font-size: clamp(3rem, 6vw, 4.8rem);
+  font-weight: 800;
+  line-height: 1.1;
+  margin: 0;
+}
+
+.accent-text {
+  background: linear-gradient(
+    90deg,
+    #f2c46d,
+    #e6a93a
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* ================= SUBTITLE ================= */
+
+.hero-subtitle {
+  font-size: clamp(1.2rem, 2.5vw, 1.7rem);
+  font-weight: 500;
+  color: rgba(255,255,255,0.85);
+}
+
+/* ================= DESCRIPTION ================= */
+
+.hero-desc {
+  max-width: 720px;
+  margin-inline: auto;
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: rgba(255,255,255,0.75);
+}
+
+/* ================= CTA BUTTONS ================= */
+
+.hero-ctas {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+/* Base Button */
+.btn {
+  padding: 15px 34px;
+  border-radius: 999px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: all 0.25s ease;
+}
+
+/* Primary – dibuat lebih kalem */
+.btn-primary {
+  background: linear-gradient(
+    135deg,
+    #cfa24a,
+    #e0b864
+  );
+  color: #2b1b3f;
+  box-shadow: 0 8px 20px rgba(207,162,74,0.35);
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 26px rgba(207,162,74,0.45);
+}
+
+/* Ghost */
+.btn-ghost {
+  background: rgba(255,255,255,0.08);
+  border: 1px solid rgba(255,255,255,0.2);
+  color: var(--light);
+}
+
+.btn-ghost:hover {
+  background: rgba(255,255,255,0.14);
+}
+
+/* ================= VOLUME BADGE ================= */
+
+.volume-badge {
+  margin-top: 3rem;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 1rem;
+  gap: 14px;
 }
 
-/* Badge */
-.hero-badge {
+.volume-circle {
+  width: 88px;
+  height: 88px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.1);
+  border: 1px solid rgba(255,255,255,0.25);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.volume-number {
+  font-size: 2.8rem;
+  font-weight: 800;
+}
+
+.volume-label {
+  font-size: 0.75rem;
+  letter-spacing: 2px;
+  opacity: 0.75;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 768px) {
+  .hero-section {
+    padding: 6.5rem 1.25rem 4rem;
+  }
+
+  .hero-ctas {
+    flex-direction: column;
+  }
+
+  .btn {
+    width: 100%;
+    max-width: 320px;
+  }
+}
+
+
+/* =========================================================================
+   TIMELINE SECTION - ELEGANT PURPLE THEME (FIXED VERSION)
+   ========================================================================= */
+
+/* Timeline Section Container */
+#timeline.section {
+  position: relative;
+  min-height: 100vh;
+  padding: 6rem 2rem;
+  background: #481465;
+  overflow: hidden;
+}
+
+/* Section Header Styling */
+#timeline .section-header {
+  text-align: center;
+  margin-bottom: 4rem;
+  position: relative;
+  z-index: 2;
+}
+
+#timeline .section-badge {
   display: inline-flex;
   align-items: center;
-  padding: 0.45rem 1.2rem;
-  background: linear-gradient(135deg, rgba(181,165,209,0.18), rgba(255,184,195,0.14));
-  border-radius: 999px;
-  border: 1px solid rgba(181,165,209,0.2);
-  color: var(--muted);
+  gap: 0.5rem;
+  background: rgba(255, 255, 255, 0.1);
+  color: #e6d5ff;
+  padding: 0.5rem 1.25rem;
+  border-radius: 50px;
+  font-size: 0.875rem;
   font-weight: 600;
-  font-size: .9rem;
-  margin-bottom: 1.6rem;
-  box-shadow: 0 6px 18px rgba(0,0,0,0.05);
-  animation: fadeInUp 0.8s ease forwards;
+  letter-spacing: 0.5px;
+  margin-bottom: 1.5rem;
+  border: 1px solid rgba(230, 213, 255, 0.3);
+  backdrop-filter: blur(10px);
 }
 
-/* Hero title */
-.hero-title {
-  font-size: clamp(2.8rem, 6vw, 4.8rem);
-  font-weight: 900;
-  margin-bottom: 0.8rem;
-  line-height: 1.1;
-  letter-spacing: -1px;
-  background: linear-gradient(135deg, var(--accent1), var(--accent2));
+#timeline .badge-icon {
+  animation: pulse 2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+}
+
+#timeline .title {
+  font-size: 2.8rem;
+  font-weight: 800;
+  background: linear-gradient(135deg, #ffffff 0%, #e6d5ff 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  animation: gradientPulseSmooth 6s ease-in-out infinite, fadeInUp 1s ease forwards;
+  background-clip: text;
+  margin-bottom: 1rem;
+  letter-spacing: -0.5px;
 }
 
-/* Subtitle */
-.hero-subtitle {
-  font-size: clamp(1.05rem, 2.6vw, 1.6rem);
-  font-weight: 400;
-  color: var(--muted);
-  margin-bottom: 1.2rem;
-  animation: fadeInUp 1.3s ease forwards;
+#timeline .subtitle {
+  font-size: 1.1rem;
+  color: rgba(255, 255, 255, 0.85);
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.6;
 }
 
-/* Description */
-.hero-desc {
-  max-width: 760px;
-  margin: 0 auto 2rem;
-  color: var(--muted);
-  font-weight: 300;
-  line-height: 1.65;
-  font-size: 1.05rem;
-  animation: fadeInUp 1.6s ease forwards;
+/* ====================
+   ERROR HANDLING STYLES
+   ==================== */
+
+/* Empty State Container */
+.timeline-empty-state {
+  text-align: center;
+  padding: 5rem 2rem;
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 24px;
+  border: 2px solid rgba(163, 92, 208, 0.2);
+  margin: 2rem 0;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+  animation: fadeIn 0.8s ease-out;
 }
 
-/* CTA buttons */
-.hero-ctas {
+.empty-state-icon {
+  margin-bottom: 2rem;
+}
+
+.empty-state-icon svg {
+  width: 80px;
+  height: 80px;
+  color: #a35cd0;
+  opacity: 0.8;
+}
+
+.empty-state-title {
+  font-size: 2rem;
+  color: #3a1052;
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+.empty-state-message {
+  color: #5a3a6e;
+  max-width: 500px;
+  margin: 0 auto 2.5rem;
+  line-height: 1.7;
+  font-size: 1.1rem;
+}
+
+.empty-state-actions {
   display: flex;
   gap: 1rem;
   justify-content: center;
   flex-wrap: wrap;
-  margin-top: 1.4rem;
-  z-index: 2;
-  animation: fadeInUp 1.9s ease forwards;
 }
 
-.btn {
-  padding: 1rem 1.8rem;
-  border-radius: 999px;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: .6px;
-  cursor: pointer;
-  border: none;
-  display: inline-flex;
-  align-items: center;
-  gap: .6rem;
-  text-decoration: none;
-  position: relative;
-  overflow: hidden;
-  transition: all 0.35s ease;
-  font-size: .95rem;
-}
-.btn::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  border-radius: inherit;
-  background: rgba(255,255,255,0.25);
-  transform: scale(0);
-  transition: transform 0.45s ease, opacity .45s ease;
-  opacity: 0;
-}
-.btn:active::after {
-  transform: scale(1.8);
-  opacity: 1;
-  transition: 0s;
-}
-
-/* Primary CTA */
-.btn-primary {
-  background: linear-gradient(135deg, var(--accent1), var(--accent2));
-  color: white;
-  box-shadow: 0 14px 38px rgba(138,124,172,0.3);
-}
-.btn-primary:hover {
-  transform: translateY(-3px) scale(1.07);
-  box-shadow: 0 18px 48px rgba(138,124,172,0.45);
-}
-
-/* Ghost CTA */
-.btn-ghost {
-  background: rgba(255,255,255,0.07);
-  color: var(--text);
-  border: 1px solid var(--glass-border);
-  backdrop-filter: blur(12px);
-}
-.btn-ghost:hover {
-  transform: translateY(-3px) scale(1.07);
-  background: rgba(255,255,255,0.15);
-}
-
-/* Countdown */
-.hero-countdown .countdown {
-  display: inline-flex;
-  gap: 1rem;
-  margin-top: 2rem;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  animation: fadeInUp 2.2s ease forwards;
-}
-.count-item {
-  background: var(--card);
-  border: 1px solid var(--glass-border);
-  padding: 1rem 1.1rem;
-  border-radius: 16px;
-  min-width: 84px;
+/* Database Error Container */
+.timeline-error {
   text-align: center;
-  box-shadow: 0 10px 32px var(--shadow);
-  perspective: 1000px;
-  transition: all 0.35s ease;
-}
-.count-item:hover {
-  transform: translateY(-4px) scale(1.02);
-}
-.count-item:hover .count-number {
-  animation: flipNumSmooth 0.6s ease;
-}
-.count-number {
-  font-weight: 900;
-  font-size: 1.5rem;
-  display: block;
-  background: linear-gradient(135deg, var(--accent1), var(--accent2));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-.count-label {
-  font-size: .8rem;
-  color: var(--muted);
-  font-weight: 400;
-  margin-top: .25rem;
-}
-
-/* Animations */
-@keyframes gradientPulseSmooth {
-  0%,100% { filter: drop-shadow(0 0 14px rgba(138,124,172,0.25)); }
-  50%     { filter: drop-shadow(0 0 32px rgba(181,165,209,0.4)); }
-}
-@keyframes flipNumSmooth {
-  0%   { transform: rotateX(0); }
-  50%  { transform: rotateX(90deg); opacity: 0.4; }
-  100% { transform: rotateX(0); opacity: 1; }
-}
-@keyframes fadeInUp {
-  from { opacity: 0; transform: translateY(25px); }
-  to   { opacity: 1; transform: translateY(0); }
-}
-
-/* Responsive */
-@media (max-width: 768px) {
-  .hero-section { padding: 6rem 1rem 3rem; }
-  .hero-title { font-size: 2.4rem; }
-  .hero-subtitle { font-size: 1rem; }
-  .hero-desc { font-size: .95rem; }
-  .btn { padding: .8rem 1.3rem; font-size: .88rem; }
-  .count-item { min-width: 70px; padding: .6rem .8rem; }
-  .count-number { font-size: 1.2rem; }
-}
-
-    /* =========================================================================
-   TIMELINE SECTION - ULTRA-ELEGANT & INTERACTIVE
-   ========================================================================= */
-.timeline-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  gap: 3rem 2.5rem;
-  position: relative;
   padding: 4rem 2rem;
-  perspective: 1500px;
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 24px;
+  border: 2px solid rgba(244, 67, 54, 0.2);
+  margin: 2rem 0;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+  animation: fadeIn 0.8s ease-out;
+}
+
+.error-icon {
+  margin-bottom: 1.5rem;
+}
+
+.error-icon svg {
+  width: 64px;
+  height: 64px;
+  color: #f44336;
+  opacity: 0.9;
+}
+
+.error-title {
+  font-size: 1.8rem;
+  color: #d32f2f;
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+.error-message {
+  color: #5a3a6e;
+  max-width: 500px;
+  margin: 0 auto 2.5rem;
+  line-height: 1.7;
+  font-size: 1.1rem;
+}
+
+/* Button Styles (Unified) */
+.btn-primary, .btn-outline, .btn-error {
+  padding: 0.875rem 1.75rem;
+  border-radius: 12px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  text-decoration: none;
+  border: none;
+  outline: none;
+  position: relative;
   overflow: hidden;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, #8a4ac7, #6c3ca3);
+  color: white;
+  box-shadow: 0 8px 24px rgba(138, 74, 199, 0.3);
+}
+
+.btn-primary:hover {
+  background: linear-gradient(135deg, #6c3ca3, #5a2d8c);
+  transform: translateY(-3px);
+  box-shadow: 0 12px 32px rgba(138, 74, 199, 0.4);
+}
+
+.btn-primary:active {
+  transform: translateY(-1px);
+}
+
+.btn-outline {
+  background: transparent;
+  color: #8a4ac7;
+  border: 2px solid #8a4ac7;
+  box-shadow: 0 4px 12px rgba(138, 74, 199, 0.1);
+}
+
+.btn-outline:hover {
+  background: rgba(138, 74, 199, 0.08);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(138, 74, 199, 0.2);
+}
+
+.btn-error {
+  background: linear-gradient(135deg, #f44336, #d32f2f);
+  color: white;
+  box-shadow: 0 8px 24px rgba(244, 67, 54, 0.3);
+}
+
+.btn-error:hover {
+  background: linear-gradient(135deg, #d32f2f, #b71c1c);
+  transform: translateY(-3px);
+  box-shadow: 0 12px 32px rgba(244, 67, 54, 0.4);
+}
+
+/* Button Icon Animation */
+.btn-primary svg, .btn-outline svg, .btn-error svg {
+  transition: transform 0.3s ease;
+}
+
+.btn-primary:hover svg, .btn-outline:hover svg, .btn-error:hover svg {
+  transform: translateX(4px);
+}
+
+/* ====================
+   TIMELINE STYLES (WHEN DATA EXISTS)
+   ==================== */
+
+/* Timeline Container */
+#timeline .timeline-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 3.5rem 2.5rem;
+  position: relative;
+  padding: 3rem 0;
+  z-index: 2;
+}
+
+/* Remove vertical center line (conflicts with new design) */
+#timeline .timeline-container::before {
+  display: none;
 }
 
 /* Timeline Item */
-.timeline-item {
+#timeline .timeline-item {
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
   opacity: 0;
-  transform: translateY(30px) scale(0.95);
-  transition: all 0.8s cubic-bezier(0.25,1,0.5,1);
-  z-index: 1;
+  transform: translateY(40px);
+  transition: all 0.8s cubic-bezier(0.25, 1, 0.5, 1);
+  z-index: 2;
 }
-.timeline-item.animate-on-scroll {
+
+#timeline .timeline-item.animate-on-scroll {
   opacity: 1;
-  transform: translateY(0) scale(1);
+  transform: translateY(0);
 }
 
 /* Timeline Marker */
-.timeline-marker {
+#timeline .timeline-marker {
   position: relative;
-  width: 36px;
-  height: 36px;
+  width: 80px;
+  height: 80px;
   border-radius: 50%;
-  background: linear-gradient(135deg, var(--accent1), var(--accent2));
-  border: 3px solid #fff;
-  margin-bottom: 1rem;
-  box-shadow: 0 0 0 3px rgba(138,124,172,0.15);
-  transition: transform 0.4s ease, box-shadow 0.4s ease, filter 0.4s ease;
-}
-.timeline-marker:hover {
-  transform: scale(1.5) rotate(10deg);
-  box-shadow: 0 0 0 8px rgba(138,124,172,0.25);
-  filter: drop-shadow(0 4px 16px rgba(138,124,172,0.3));
-  cursor: pointer;
+  background: linear-gradient(135deg, #d4b2e6, #a35cd0);
+  margin-bottom: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 
+    0 12px 36px rgba(163, 92, 208, 0.4),
+    0 0 0 10px rgba(255, 255, 255, 0.1),
+    inset 0 2px 8px rgba(255, 255, 255, 0.3);
+  transition: all 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
+  z-index: 2;
 }
 
-/* Connector line animated */
-.timeline-marker::after {
+#timeline .timeline-marker:hover {
+  transform: scale(1.12) rotate(5deg);
+  box-shadow: 
+    0 20px 50px rgba(163, 92, 208, 0.5),
+    0 0 0 12px rgba(255, 255, 255, 0.15),
+    inset 0 4px 12px rgba(255, 255, 255, 0.4);
+  background: linear-gradient(135deg, #e8d3f4, #b97de6);
+}
+
+#timeline .timeline-dot {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.98);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #a35cd0;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+#timeline .timeline-marker:hover .timeline-dot {
+  color: #8a4ac7;
+  transform: scale(1.1) rotate(-5deg);
+}
+
+/* Connector line */
+#timeline .timeline-line {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 3px;
+  height: 50px;
+  background: linear-gradient(to bottom, 
+    rgba(212, 178, 230, 0.9), 
+    rgba(163, 92, 208, 0.5));
+  transition: height 0.5s ease;
+  border-radius: 2px;
+}
+
+#timeline .timeline-item:hover .timeline-line {
+  height: 70px;
+}
+
+/* Timeline Content */
+#timeline .timeline-content {
+  background: rgba(255, 255, 255, 0.98);
+  border: 1px solid rgba(212, 178, 230, 0.25);
+  border-radius: 24px;
+  padding: 2rem;
+  width: 100%;
+  max-width: 340px;
+  box-shadow: 
+    0 20px 60px rgba(0, 0, 0, 0.15),
+    0 8px 24px rgba(0, 0, 0, 0.08);
+  transition: all 0.5s cubic-bezier(0.25, 1, 0.5, 1);
+  position: relative;
+  overflow: hidden;
+}
+
+#timeline .timeline-content::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 6px;
+  background: linear-gradient(90deg, #d4b2e6, #a35cd0);
+  background-size: 200% 100%;
+  animation: shimmer 3s linear infinite;
+}
+
+@keyframes shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+#timeline .timeline-content:hover {
+  transform: translateY(-12px) scale(1.02);
+  box-shadow: 
+    0 32px 80px rgba(0, 0, 0, 0.2),
+    0 16px 40px rgba(0, 0, 0, 0.12);
+  border-color: rgba(163, 92, 208, 0.4);
+}
+
+/* Date Styling */
+#timeline .timeline-date {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: #8a4ac7;
+  margin-bottom: 1.25rem;
+  padding: 0.5rem 1.25rem;
+  border-radius: 50px;
+  background: rgba(163, 92, 208, 0.08);
+  border: 1px solid rgba(163, 92, 208, 0.15);
+  transition: all 0.3s ease;
+  backdrop-filter: blur(4px);
+}
+
+#timeline .timeline-date:hover {
+  background: rgba(163, 92, 208, 0.12);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(163, 92, 208, 0.15);
+}
+
+#timeline .date-icon {
+  flex-shrink: 0;
+  color: #a35cd0;
+}
+
+/* Title Styling */
+#timeline .timeline-content h3 {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: #2d0c40;
+  margin-bottom: 1.25rem;
+  line-height: 1.4;
+  transition: color 0.3s ease;
+}
+
+#timeline .timeline-content:hover h3 {
+  color: #8a4ac7;
+}
+
+#timeline .title-icon {
+  flex-shrink: 0;
+  color: #a35cd0;
+}
+
+/* Description Styling */
+#timeline .timeline-content p {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  font-size: 1rem;
+  color: #4a2a65;
+  line-height: 1.7;
+  margin-bottom: 1.75rem;
+  text-align: left;
+}
+
+#timeline .desc-icon {
+  flex-shrink: 0;
+  margin-top: 0.25rem;
+  color: #a35cd0;
+  opacity: 0.8;
+}
+
+/* Link Styling */
+#timeline .timeline-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  color: #8a4ac7;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.95rem;
+  padding: 0.75rem 1.5rem;
+  border-radius: 50px;
+  background: rgba(163, 92, 208, 0.08);
+  border: 1px solid rgba(163, 92, 208, 0.15);
+  transition: all 0.3s ease;
+}
+
+#timeline .timeline-link:hover {
+  background: rgba(163, 92, 208, 0.15);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(163, 92, 208, 0.15);
+  color: #7239b0;
+}
+
+#timeline .timeline-link svg {
+  transition: transform 0.3s ease;
+}
+
+#timeline .timeline-link:hover svg {
+  transform: translateX(5px);
+}
+
+/* Timeline Legend */
+#timeline .timeline-legend {
+  display: flex;
+  justify-content: center;
+  gap: 2.5rem;
+  margin-top: 5rem;
+  padding: 2rem;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 24px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(12px);
+  max-width: 550px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#timeline .legend-item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  color: rgba(255, 255, 255, 0.95);
+  font-size: 0.95rem;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.05);
+  transition: all 0.3s ease;
+}
+
+#timeline .legend-item:hover {
+  background: rgba(255, 255, 255, 0.1);
+  transform: translateY(-2px);
+}
+
+#timeline .legend-item svg {
+  flex-shrink: 0;
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.2));
+}
+
+/* ====================
+   ANIMATIONS
+   ==================== */
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-on-scroll {
+  animation: fadeIn 0.8s ease forwards;
+}
+
+/* Button ripple effect */
+.btn-primary::after, .btn-outline::after, .btn-error::after {
   content: '';
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 2px;
-  height: 1.5rem;
-  background: linear-gradient(135deg, var(--accent1), var(--accent2));
-  border-radius: 1px;
-  transform: translate(-50%, 0);
-}
-
-/* Timeline Content */
-.timeline-content {
-  background: var(--card);
-  border: 1px solid var(--glass-border);
-  border-radius: 16px;
-  padding: 1rem 1.5rem;
-  max-width: 260px;
-  box-shadow: 0 12px 32px rgba(0,0,0,0.08);
-  transition: transform 0.5s cubic-bezier(0.25,1,0.5,1),
-              box-shadow 0.5s ease,
-              background 0.5s ease;
-}
-.timeline-content:hover {
-  transform: translateY(-8px) scale(1.05);
-  box-shadow: 0 22px 60px rgba(0,0,0,0.12);
-  background: linear-gradient(145deg, rgba(255,255,255,0.02), rgba(181,140,217,0.05));
-}
-
-/* Date */
-.timeline-date {
-  font-weight: 600;
-  font-size: 0.85rem;
-  color: var(--accent2);
-  margin-bottom: 0.5rem;
-  letter-spacing: 0.5px;
-  text-transform: uppercase;
-  transition: color 0.3s ease;
-}
-.timeline-date:hover {
-  color: var(--accent1);
-}
-
-/* Heading & Text */
-.timeline-content h3 {
-  font-size: 1rem;
-  font-weight: 700;
-  margin-bottom: 0.5rem;
-  color: var(--text);
-  transition: color 0.3s ease;
-}
-.timeline-content h3:hover {
-  color: var(--accent1);
-}
-.timeline-content p {
-  font-size: 0.875rem;
-  color: var(--muted);
-  line-height: 1.6;
-}
-
-/* Zig-zag positioning */
-.timeline-item:nth-child(odd) {
-  transform: translateY(-20px) scale(0.97);
-}
-.timeline-item:nth-child(even) {
-  transform: translateY(20px) scale(0.97);
-}
-
-/* Fade-in and scale animation on scroll */
-@keyframes fadeInScale {
-  from { opacity: 0; transform: translateY(30px) scale(0.95); }
-  to   { opacity: 1; transform: translateY(0) scale(1); }
-}
-
-/* Responsive */
-@media (max-width: 1024px) {
-  .timeline-item:nth-child(odd),
-  .timeline-item:nth-child(even) {
-    transform: translateY(0) scale(0.97);
-  }
-}
-
-@media (max-width: 768px) {
-  .timeline-container {
-    display: flex;
-    flex-direction: column;
-    padding: 2rem 1rem;
-  }
-  .timeline-container::before {
-    display: none;
-  }
-}
-
-/* =========================================================================
-   SECTION / GRID / FLIP CARDS - FULL INTERACTIVE & ELEGANT
-   ========================================================================= */
-.section {
-  padding: 6rem 1.5rem;
-  font-family: 'Telegraf', 'HafferSQXH', Inter, sans-serif;
-  color: #2d263f;
-  perspective: 2000px;
-}
-
-/* Title */
-.section .title {
-  text-align: center;
-  font-family: 'HafferSQXH', 'Telegraf', Inter, sans-serif;
-  font-size: clamp(2rem, 4vw, 3rem);
-  font-weight: 800;
-  margin-bottom: 1rem;
-  background: linear-gradient(135deg, #8a7cac, #ff9dac);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-size: 200% 200%;
-  animation: gradientShift 6s ease infinite;
-  letter-spacing: -0.5px;
-}
-
-@keyframes gradientShift {
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
-}
-
-/* Subtitle */
-.section .subtitle {
-  text-align: center;
-  font-family: 'Telegraf', Inter, sans-serif;
-  color: #6b6378;
-  max-width: 800px;
-  margin: 0 auto 3rem;
-  font-weight: 300;
-  line-height: 1.7;
-  font-size: 1.05rem;
-}
-
-/* Grid */
-.grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px,1fr));
-  gap: 2rem;
-}
-
-/* Card container */
-.card {
-  width: 100%;
-  height: 380px;
-  cursor: pointer;
-  perspective: 1500px;
-}
-
-.card-inner {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  transform-style: preserve-3d;
-  transition: transform 0.8s cubic-bezier(0.23,1,0.32,1);
-}
-
-.card:hover .card-inner,
-.card.flipped .card-inner {
-  transform: rotateY(180deg);
-}
-
-/* Front & Back */
-.card-front,
-.card-back {
-  position: absolute;
-  inset: 0;
-  border-radius: 20px;
-  backface-visibility: hidden;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 2rem;
-  box-sizing: border-box;
-  transition: all 0.5s ease, box-shadow 0.35s ease;
-}
-
-/* Front */
-.card-front {
-  background: #fff;
-  border: 1px solid rgba(138,124,172,0.15);
-  overflow: hidden;
-  font-family: 'Telegraf', Inter, sans-serif;
-  box-shadow: 0 8px 20px rgba(138,124,172,0.15);
-}
-.card-front:hover {
-  transform: translateY(-6px) scale(1.02);
-  box-shadow: 0 16px 36px rgba(138,124,172,0.25);
-}
-
-.card-front .icon {
-  width: 72px;
-  height: 72px;
-  display: grid;
-  place-items: center;
-  margin-bottom: 1.2rem;
-  border-radius: 16px;
-  background: linear-gradient(135deg, rgba(138,124,172,0.1), rgba(255,157,172,0.1));
-  border: 1px solid rgba(181,165,209,0.15);
-  animation: floaty 5s ease-in-out infinite;
-  flex-shrink: 0;
-  position: relative;
-  transition: transform 0.35s ease, box-shadow 0.35s ease;
-}
-.card-front .icon::after {
-  content:"";
-  position:absolute;
-  inset:0;
-  border-radius:inherit;
-  background: radial-gradient(circle, rgba(255,255,255,0.15), transparent 70%);
-  animation: glowPulse 3s infinite;
-}
-.card-front:hover .icon {
-  transform: scale(1.1);
-  box-shadow: 0 0 16px rgba(181,165,209,0.35);
-}
-
-.card-front h3 {
-  font-family: 'HafferSQXH', 'Telegraf', Inter, sans-serif;
-  font-size: 1.3rem;
-  font-weight: 800;
-  margin-bottom: 0.5rem;
-  text-align: center;
-  color: #2d263f;
-  letter-spacing: -0.3px;
-}
-
-.card-front p {
-  font-family: 'Telegraf', Inter, sans-serif;
-  text-align: center;
-  color: #6b6378;
-  font-weight: 300;
-  line-height: 1.6;
-  font-size: 1rem;
-}
-
-/* Back */
-.card-back {
-  background: linear-gradient(135deg, #b58cd9, #ff9dac, #ffd6a5);
-  color: #fff;
-  transform: rotateY(180deg);
-  justify-content: center;
-  text-align: center;
-  gap: 1rem;
-  border-radius: 20px;
-  position: relative;
-  box-shadow: inset 0 0 40px rgba(255,255,255,0.1), 0 12px 30px rgba(0,0,0,0.15);
-  overflow: hidden;
-  font-family: 'Telegraf', Inter, sans-serif;
-  transition: transform 0.35s ease, box-shadow 0.35s ease;
-}
-.card-back::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: url('https://www.transparenttextures.com/patterns/diamond-upholstery.png');
-  opacity: 0.08;
-  pointer-events: none;
-}
-
-.card-back h3 {
-  font-family: 'HafferSQXH', 'Telegraf', Inter, sans-serif;
-  font-size: 1.35rem;
-  font-weight: 800;
-  margin-bottom: 1rem;
-  text-shadow: 0 2px 6px rgba(0,0,0,0.25);
-  background: linear-gradient(135deg, #fff, rgba(255,255,255,0.6));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-/* Buttons */
-.card-back a {
-  display: inline-block;
-  padding: 0.7rem 1.4rem;
-  background: rgba(255,255,255,0.15);
-  backdrop-filter: blur(6px);
-  border-radius: 14px;
-  font-weight: 600;
-  text-decoration: none;
-  font-family: 'Telegraf', Inter, sans-serif;
-  color: #fff;
-  transition: all 0.35s ease, transform 0.35s ease;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-  position: relative;
-  overflow: hidden;
-}
-
-.card-back a::after {
-  content: "";
-  position: absolute;
-  top: -50%;
-  left: -50%;
-  width: 200%;
-  height: 200%;
-  background: linear-gradient(120deg, transparent 40%, rgba(255,255,255,0.25) 50%, transparent 60%);
-  transform: rotate(25deg) translateX(-100%);
-  transition: transform 0.6s ease;
-  pointer-events: none;
-}
-
-.card-back a:hover::after {
-  transform: rotate(25deg) translateX(100%);
-}
-
-.card-back a:hover {
-  background: rgba(255,255,255,0.35);
-  transform: translateY(-3px) scale(1.05);
-}
-
-/* Animations */
-@keyframes floaty {
-  0%,100% { transform: translateY(0); }
-  50% { transform: translateY(-6px); }
-}
-@keyframes glowPulse {
-  0%,100% { opacity: 0.3; }
-  50% { opacity: 0.7; }
-}
-
-/* Responsive */
-@media (max-width: 768px) {
-  .card { height: 360px; }
-  .card-front h3, .card-back h3 { font-size: 1.15rem; }
-  .card-front p { font-size: 0.95rem; }
-  .card-back a { padding: 0.5rem 1rem; font-size: 0.9rem; }
-}
-
-
-  /* =========================================================================
-   STATS - ULTRA ELEGANT & INTERACTIVE
-   ========================================================================= */
-.stats-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 1.8rem;
-  margin-top: 3rem;
-  justify-items: center;
-  align-items: stretch;
-  perspective: 1500px;
-}
-
-.stat {
-  text-align: center;
-  padding: 2rem 1.6rem;
-  border-radius: 18px;
-  background: var(--card);
-  border: 1px solid var(--glass-border);
-  box-shadow: 0 12px 36px rgba(0,0,0,0.06);
-  position: relative;
-  overflow: hidden;
-  transform: translateY(40px) scale(0.95);
+  width: 5px;
+  height: 5px;
+  background: rgba(255, 255, 255, 0.4);
   opacity: 0;
-  transition: all 0.7s cubic-bezier(0.25,1,0.5,1);
-  width: 100%;
-  max-width: 260px;
-  cursor: default;
-  will-change: transform, opacity, box-shadow;
+  border-radius: 100%;
+  transform: scale(1, 1) translate(-50%);
+  transform-origin: 50% 50%;
 }
 
-.stat.visible {
-  opacity: 1;
-  transform: translateY(0) scale(1);
+.btn-primary:focus:not(:active)::after,
+.btn-outline:focus:not(:active)::after,
+.btn-error:focus:not(:active)::after {
+  animation: ripple 1s ease-out;
 }
 
-/* Animated shine overlay */
-.stat::after {
-  content: "";
-  position: absolute;
-  top: -50%;
-  left: -50%;
-  width: 200%;
-  height: 200%;
-  background: linear-gradient(120deg, transparent 40%, rgba(255,255,255,0.2) 50%, transparent 60%);
-  transform: rotate(25deg) translateX(-120%);
-  transition: transform 1s ease;
-  pointer-events: none;
+@keyframes ripple {
+  0% {
+    transform: scale(0, 0);
+    opacity: 0.5;
+  }
+  100% {
+    transform: scale(20, 20);
+    opacity: 0;
+  }
 }
 
-.stat:hover::after {
-  transform: rotate(25deg) translateX(120%);
-}
+/* ====================
+   RESPONSIVE DESIGN
+   ==================== */
 
-/* Hover effect */
-.stat:hover {
-  transform: translateY(-10px) scale(1.05);
-  box-shadow: 0 28px 80px rgba(138,124,172,0.18);
-  background: linear-gradient(180deg, rgba(255,255,255,0.98), rgba(255,255,255,0.92));
-}
-
-/* Number & Label */
-.stat .num {
-  font-weight: 900;
-  font-size: clamp(1.8rem, 4vw, 2.8rem);
-  display: block;
-  margin-bottom: 0.6rem;
-  background: linear-gradient(135deg, var(--accent1), var(--accent2));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  animation: pulseGlow 3.5s ease-in-out infinite;
-}
-
-.stat .label {
-  color: var(--muted);
-  font-weight: 400;
-  font-size: clamp(0.8rem, 2vw, 1rem);
-  letter-spacing: 0.3px;
-  transition: color 0.4s ease;
-}
-
-.stat:hover .label { 
-  color: var(--text); 
-}
-
-/* Pulse glow animation */
-@keyframes pulseGlow {
-  0%,100% { text-shadow: 0 0 8px rgba(138,124,172,0.25); }
-  50% { text-shadow: 0 0 28px rgba(138,124,172,0.45); }
-}
-
-/* Fade-up animation */
-@keyframes fadeInUp {
-  from { opacity: 0; transform: translateY(40px) scale(0.95); }
-  to { opacity: 1; transform: translateY(0) scale(1); }
-}
-
-/* =========================================================================
-   Responsive Adjustments
-   ========================================================================= */
 @media (max-width: 1200px) {
-  .stat { max-width: 240px; padding: 1.8rem 1.4rem; }
+  #timeline .timeline-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem 2rem;
+  }
+  
+  #timeline .title {
+    font-size: 2.5rem;
+  }
 }
 
 @media (max-width: 768px) {
-  .section { padding: 4rem 1rem; }
-  .stats-grid { gap: 1.5rem; }
-  .stat { max-width: 220px; padding: 1.6rem 1.2rem; }
+  #timeline.section {
+    padding: 4rem 1rem;
+  }
+  
+  #timeline .title {
+    font-size: 2.2rem;
+  }
+  
+  #timeline .subtitle {
+    font-size: 1rem;
+    padding: 0 1rem;
+  }
+  
+  #timeline .timeline-container {
+    grid-template-columns: 1fr;
+    gap: 3.5rem;
+    padding: 2rem 0;
+  }
+  
+  #timeline .timeline-item {
+    flex-direction: row;
+    text-align: left;
+    align-items: flex-start;
+    gap: 2rem;
+    max-width: 100%;
+  }
+  
+  #timeline .timeline-marker {
+    width: 70px;
+    height: 70px;
+    margin-bottom: 0;
+    flex-shrink: 0;
+  }
+  
+  #timeline .timeline-dot {
+    width: 38px;
+    height: 38px;
+  }
+  
+  #timeline .timeline-line {
+    position: absolute;
+    top: 70px;
+    left: 35px;
+    width: 50px;
+    height: 3px;
+    background: linear-gradient(to right, 
+      rgba(212, 178, 230, 0.9), 
+      rgba(163, 92, 208, 0.5));
+  }
+  
+  #timeline .timeline-item:hover .timeline-line {
+    height: 3px;
+    width: 60px;
+  }
+  
+  #timeline .timeline-content {
+    max-width: 100%;
+    flex: 1;
+    padding: 1.75rem;
+  }
+  
+  #timeline .timeline-content h3,
+  #timeline .timeline-content p {
+    justify-content: flex-start;
+  }
+  
+  #timeline .timeline-legend {
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    padding: 1.5rem;
+    max-width: 300px;
+  }
+  
+  .empty-state-title,
+  .error-title {
+    font-size: 1.8rem;
+  }
+  
+  .timeline-empty-state,
+  .timeline-error {
+    padding: 3rem 1.5rem;
+    margin: 1.5rem 0;
+  }
+  
+  .empty-state-icon svg,
+  .error-icon svg {
+    width: 64px;
+    height: 64px;
+  }
 }
 
 @media (max-width: 480px) {
-  .stat { max-width: 180px; padding: 1.2rem 1rem; }
+  #timeline .title {
+    font-size: 1.9rem;
+  }
+  
+  #timeline .timeline-item {
+    flex-direction: column;
+    text-align: center;
+    gap: 1.5rem;
+  }
+  
+  #timeline .timeline-marker {
+    width: 65px;
+    height: 65px;
+  }
+  
+  #timeline .timeline-dot {
+    width: 35px;
+    height: 35px;
+  }
+  
+  #timeline .timeline-line {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    width: 3px;
+    height: 40px;
+    background: linear-gradient(to bottom, 
+      rgba(212, 178, 230, 0.9), 
+      rgba(163, 92, 208, 0.5));
+  }
+  
+  #timeline .timeline-item:hover .timeline-line {
+    width: 3px;
+    height: 50px;
+  }
+  
+  #timeline .timeline-content h3,
+  #timeline .timeline-content p {
+    justify-content: center;
+    text-align: center;
+  }
+  
+  #timeline .timeline-content h3 {
+    font-size: 1.2rem;
+  }
+  
+  #timeline .timeline-content p {
+    font-size: 0.95rem;
+  }
+  
+  .btn-primary, .btn-outline, .btn-error {
+    padding: 0.75rem 1.5rem;
+    font-size: 0.9rem;
+  }
+  
+  .empty-state-actions {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .empty-state-actions .btn-primary,
+  .empty-state-actions .btn-outline {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+  #timeline .timeline-content {
+    border: 2px solid #8a4ac7;
+  }
+  
+  #timeline .timeline-date,
+  #timeline .timeline-link {
+    border: 2px solid #8a4ac7;
+  }
+  
+  .timeline-empty-state,
+  .timeline-error {
+    border: 3px solid #a35cd0;
+  }
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+  #timeline .timeline-content::before,
+  #timeline .badge-icon,
+  #timeline .timeline-marker,
+  #timeline .timeline-content,
+  .btn-primary, .btn-outline, .btn-error {
+    animation: none;
+    transition: none;
+  }
+  
+  .animate-on-scroll {
+    animation: none;
+    opacity: 1;
+    transform: none;
+  }
+}
+/* =========================================================================
+   SECTION KOMPETISI - ENTREVIBES UMSIDA
+   ========================================================================= */
+
+/* Section Container */
+.competitions-section {
+  position: relative;
+  min-height: 100vh;
+  padding: 5rem 2rem;
+  overflow: hidden;
+}
+
+/* Background dengan texture EntreVibes */
+.competitions-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #481465;
+  z-index: 0;
+}
+
+/* Container untuk konten */
+.competitions-container {
+  position: relative;
+  z-index: 1;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Section Header - Light Mode */
+.section-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+/* Badge Light Mode */
+.section-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1.5rem;
+
+  background: linear-gradient(135deg,
+    rgba(239, 166, 9, 0.08),
+    rgba(98, 35, 126, 0.06)
+  );
+
+  border-radius: 50px;
+  border: 1px solid rgba(98, 35, 126, 0.15);
+
+  color: #481465;
+  margin-bottom: 1.5rem;
+
+  backdrop-filter: blur(6px);
+}
+
+.badge-icon {
+  font-size: 1.2rem;
+  animation: pulse 2s infinite;
+}
+
+.badge-text {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #ffffff;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.7; }
+}
+
+.section-title {
+  font-size: clamp(2.5rem, 5vw, 3.5rem);
+  font-weight: 900;
+  color: #2a1a35;
+  margin-bottom: 1rem;
+  line-height: 1.2;
+}
+
+.section-title .accent-text {
+  background: linear-gradient(135deg, #62237e, #efa609);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.section-subtitle {
+  font-size: 1.1rem;
+  color: #6d5a7a;
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+/* Filter Kategori */
+.categories-filter {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 3rem;
+  flex-wrap: wrap;
+}
+
+.filter-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.5rem;
+
+  background: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(98, 35, 126, 0.15);
+  border-radius: 50px;
+
+  font-size: 0.95rem;
+  font-weight: 600;
+  font-family: 'Montserrat', sans-serif;
+
+  color: #62237e;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(10px);
+}
+
+.filter-btn:hover {
+  background: rgba(98, 35, 126, 0.05);
+  transform: translateY(-2px);
+  box-shadow: 0 5px 20px rgba(98, 35, 126, 0.1);
+}
+
+.filter-btn.active {
+  background: linear-gradient(135deg, #62237e, #5c1f7f);
+  color: white;
+  border-color: transparent;
+  box-shadow: 0 5px 20px rgba(98, 35, 126, 0.2);
+}
+
+.filter-icon {
+  font-size: 1.1rem;
+}
+
+/* Grid Kompetisi */
+.competitions-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-bottom: 4rem;
+}
+
+/* Competition Card */
+.competition-card {
+  position: relative;
+  height: 480px;
+  perspective: 1500px;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.competition-card:hover .card-front {
+  transform: rotateY(180deg);
+}
+
+.competition-card:hover .card-back {
+  transform: rotateY(0deg);
+}
+
+/* Card Front - Light Mode */
+.card-front {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 2rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+
+  transform: rotateY(0deg);
+  transition: transform 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+  border: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.card-badge {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  padding: 0.4rem 1rem;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.business-badge {
+  background: linear-gradient(135deg,
+      rgba(98, 35, 126, 0.1),
+      rgba(98, 35, 126, 0.05));
+  color: #62237e;
+  border: 1px solid rgba(98, 35, 126, 0.2);
+}
+
+.creative-badge {
+  background: linear-gradient(135deg,
+      rgba(239, 166, 9, 0.1),
+      rgba(239, 166, 9, 0.05));
+  color: #b8860b;
+  border: 1px solid rgba(239, 166, 9, 0.2);
+}
+
+.tech-badge {
+  background: linear-gradient(135deg,
+      rgba(52, 152, 219, 0.1),
+      rgba(52, 152, 219, 0.05));
+  color: #2980b9;
+  border: 1px solid rgba(52, 152, 219, 0.2);
+}
+
+.social-badge {
+  background: linear-gradient(135deg,
+      rgba(46, 204, 113, 0.1),
+      rgba(46, 204, 113, 0.05));
+  color: #27ae60;
+  border: 1px solid rgba(46, 204, 113, 0.2);
+}
+
+.card-icon {
+  width: 80px;
+  height: 80px;
+  background: linear-gradient(135deg,
+      rgba(98, 35, 126, 0.1),
+      rgba(239, 166, 9, 0.1));
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+  font-size: 2.5rem;
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+.card-title {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: #2a1a35;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.card-description {
+  color: #6d5a7a;
+  text-align: center;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+
+.card-details {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.detail-item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  color: #6d5a7a;
+  font-size: 0.9rem;
+}
+
+.detail-icon {
+  font-size: 1.1rem;
+  color: #efa609;
+}
+
+/* Card Back */
+.card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, #62237e, #5c1f7f);
+  border-radius: 20px;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  backface-visibility: hidden;
+  transform: rotateY(180deg);
+  transition: transform 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  color: white;
+}
+
+.card-back h3 {
+  font-size: 1.5rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.back-description {
+  text-align: center;
+  line-height: 1.6;
+  opacity: 0.9;
+  margin-bottom: 1.5rem;
+}
+
+.requirements {
+  margin-bottom: 2rem;
+  width: 100%;
+}
+
+.requirements h4 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+  opacity: 0.9;
+}
+
+.requirements ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.requirements li {
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+  padding-left: 1.5rem;
+  position: relative;
+  opacity: 0.8;
+}
+
+.requirements li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color: #efa609;
+  font-weight: bold;
+}
+
+.card-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  width: 100%;
+}
+
+.action-btn {
+  padding: 0.75rem 1.5rem;
+  border-radius: 12px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.action-btn.primary {
+  background: linear-gradient(135deg, #efa609, #ffb347);
+  color: white;
+  border: none;
+}
+
+.action-btn.primary:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 20px rgba(239, 166, 9, 0.3);
+}
+
+.action-btn.secondary {
+  background: rgba(255, 255, 255, 0.15);
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(10px);
+}
+
+.action-btn.secondary:hover {
+  background: rgba(255, 255, 255, 0.25);
+  transform: translateY(-3px);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .competitions-section {
+    padding: 3rem 1rem;
+  }
+
+  .competitions-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .competition-card {
+    height: 450px;
+  }
+
+  .categories-filter {
+    gap: 0.5rem;
+  }
+
+  .filter-btn {
+    padding: 0.6rem 1.2rem;
+    font-size: 0.85rem;
+  }
+
+  .card-front,
+  .card-back {
+    padding: 1.5rem;
+  }
+
+  .card-title {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .section-subtitle {
+    font-size: 1rem;
+  }
+
+  .competition-card {
+    height: 420px;
+  }
+
+  .card-icon {
+    width: 70px;
+    height: 70px;
+    font-size: 2rem;
+  }
+}
+
+/* Animation untuk card masuk */
+.competition-card {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeInUp 0.6s ease forwards;
+}
+
+.competition-card:nth-child(1) { animation-delay: 0.1s; }
+.competition-card:nth-child(2) { animation-delay: 0.2s; }
+.competition-card:nth-child(3) { animation-delay: 0.3s; }
+.competition-card:nth-child(4) { animation-delay: 0.4s; }
+.competition-card:nth-child(5) { animation-delay: 0.5s; }
+.competition-card:nth-child(6) { animation-delay: 0.6s; }
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Dark Mode Support */
+@media (prefers-color-scheme: dark) {
+  .competitions-section {
+    background: linear-gradient(135deg,
+        rgba(26, 20, 32, 0.95) 0%,
+        rgba(35, 28, 42, 0.85) 100%);
+  }
+
+  .section-badge {
+    background: linear-gradient(135deg,
+        rgba(239, 166, 9, 0.2),
+        rgba(98, 35, 126, 0.15));
+    border-color: rgba(239, 166, 9, 0.3);
+  }
+
+  .section-title {
+    color: #f5f0fa;
+  }
+
+  .section-subtitle {
+    color: #b8a9c7;
+  }
+
+  .filter-btn {
+    background: rgba(35, 28, 42, 0.8);
+    border-color: rgba(181, 128, 214, 0.2);
+    color: #b580d6;
+  }
+
+  .filter-btn.active {
+    background: linear-gradient(135deg, #b580d6, #9a6bb8);
+    color: white;
+  }
+
+  .card-front {
+    background: #ffffff;
+    border-color: rgba(0, 0, 0, 0.08);
+    color: #2b2b2b;
+  }
+
+
+.card-title {
+  color: #481465;
+}
+
+.card-description,
+.detail-item {
+  color: rgba(72, 20, 101, 0.75);
+}
+
+  .card-back {
+    background: linear-gradient(135deg, #b580d6, #9a6bb8);
+  }
 }
 
   /* =========================================================================
@@ -2519,189 +3246,718 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
 
 /* =========================================================================
-   FOOTER - Premium & Interactive
+   FOOTER - PREMIUM DESIGN (Fixed Colors & Layout)
    ========================================================================= */
 footer {
   position: relative;
   padding: 6rem 1.5rem 3rem;
-  background: linear-gradient(135deg, #1e1b29, #292038);
-  color: rgba(255,255,255,0.85);
+
+  background-image: url("images/Background.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  color: #481465;
   overflow: hidden;
-  font-family: 'Inter', sans-serif;
+  font-family: 'Montserrat', sans-serif;
+  isolation: isolate;
+  border-top: 1px solid #481465;
+
 }
 
-/* Wave top separator - animated & smooth */
-footer::before {
+
+/* =========================================================================
+   SPONSOR SECTION - Premium Glass Effect
+   ========================================================================= */
+.sponsor-section {
+  position: relative;
+  z-index: 10;
+  background: linear-gradient(145deg,
+    rgba(255, 255, 255, 0.05) 0%,
+    rgba(255, 255, 255, 0.02) 100%
+  );
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 24px;
+  padding: 3rem 2rem;
+  margin: 0 auto 5rem;
+  max-width: 1100px;
+  box-shadow: 
+    0 20px 40px rgba(0, 0, 0, 0.3),
+    0 1px 0 rgba(255, 255, 255, 0.05) inset,
+    0 8px 32px rgba(98, 35, 126, 0.2);
+  animation: slideUpFade 0.8s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+  transform: translateY(30px);
+  opacity: 0;
+}
+
+.sponsor-content {
+  text-align: center;
+  position: relative;
+}
+
+.sponsor-content h4 {
+  font-size: 0.95rem;
+  color: rgba(255, 255, 255, 0.6);
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  margin-bottom: 2rem;
+  font-weight: 600;
+  position: relative;
+  display: inline-block;
+}
+
+.sponsor-content h4::after {
   content: "";
   position: absolute;
-  top: -1px; left: 0; right: 0;
-  height: 80px;
-  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 150"><path fill="%23ffffff" fill-opacity="0.03" d="M0,80 C480,160 960,0 1440,80 L1440,0 L0,0 Z"></path></svg>') no-repeat center top;
-  background-size: cover;
-  z-index: 1;
-  animation: waveFloat 6s ease-in-out infinite alternate;
-}
-@keyframes waveFloat {
-  0% { transform: translateY(0); }
-  50% { transform: translateY(6px); }
-  100% { transform: translateY(0); }
-}
-
-/* Footer Inner Grid */
-footer .foot-inner {
-  position: relative;
-  z-index: 2;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px,1fr));
-  gap: 3rem;
-  max-width: 1200px;
-  margin: 0 auto;
-  animation: fadeUp 1s ease forwards;
+  bottom: -8px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 40px;
+  height: 2px;
+  background: linear-gradient(90deg, 
+    transparent 0%, 
+    var(--accent) 50%, 
+    transparent 100%
+  );
 }
 
-/* Titles - gradient & subtle shadow */
-footer h3, footer h4 {
-  font-family: 'Telegraf', sans-serif;
-  font-weight: 700;
-  margin-bottom: 1rem;
-  font-size: 1.3rem;
-  background: linear-gradient(135deg,#ffb8c3,#b5a5d1);
+.sponsor-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2.5rem;
+  margin: 2.5rem 0;
+  flex-wrap: wrap;
+}
+
+.main-sponsor-logo {
+  height: 70px;
+  width: auto;
+  filter: 
+    drop-shadow(0 8px 25px rgba(98, 35, 126, 0.4))
+    brightness(1.1);
+  transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  padding: 10px;
+  background: linear-gradient(145deg,
+    rgba(255, 255, 255, 0.05),
+    rgba(255, 255, 255, 0.02)
+  );
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.main-sponsor-logo:hover {
+  transform: 
+    scale(1.08) 
+    rotate(1deg)
+    translateY(-3px);
+  filter: 
+    drop-shadow(0 12px 35px rgba(98, 35, 126, 0.6))
+    brightness(1.15);
+}
+
+.sponsor-logo h3 {
+  font-size: 1.8rem;
+  background: linear-gradient(135deg,
+    #ffffff 0%,
+    rgba(255, 255, 255, 0.8) 100%
+  );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  text-shadow: 0 2px 6px rgba(0,0,0,0.25);
+  margin: 0;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  text-shadow: 0 2px 15px rgba(98, 35, 126, 0.3);
 }
 
-/* Text */
-footer p, footer .small {
-  font-size: 1rem;
-  line-height: 1.75;
-  color: rgba(255,255,255,0.85);
-}
-
-/* Links */
-footer a {
-  color: rgba(255,255,255,0.8);
-  text-decoration: none;
+.sponsor-description {
+  max-width: 700px;
+  margin: 2rem auto 0;
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 1.05rem;
+  line-height: 1.7;
   position: relative;
-  transition: color .3s ease, transform .3s ease;
+  padding: 2rem;
+  background: linear-gradient(145deg,
+    rgba(255, 255, 255, 0.03),
+    rgba(255, 255, 255, 0.01)
+  );
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.04);
+  font-style: italic;
 }
-footer a::after {
-  content: "";
+
+.sponsor-description::before {
+  content: '"';
   position: absolute;
-  left: 0; bottom: -2px;
-  width: 0%; height: 2px;
-  background: linear-gradient(90deg,#ff9dac,#b5a5d1);
-  transition: width .35s ease;
-  border-radius: 2px;
-}
-footer a:hover {
-  color: #fff;
-  transform: translateY(-2px);
-}
-footer a:hover::after {
-  width: 100%;
+  top: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 4rem;
+  color: var(--accent);
+  font-family: Georgia, serif;
+  opacity: 0.3;
 }
 
-/* Quick links list */
-footer ul {
-  list-style: none;
-  margin: 0; padding: 0;
-}
-footer ul li { margin-bottom: .6rem; }
-
-/* Social icons - animated gradient & hover */
-footer .socials {
-  display: flex;
-  gap: 0.8rem;
-  margin-top: 1.2rem;
-}
-footer .socials a {
-  width: 48px; height: 48px;
-  display: flex; align-items: center; justify-content: center;
-  border-radius: 50%;
-  border: 1px solid rgba(255,255,255,0.15);
-  font-size: 1.2rem;
-  transition: all .35s ease;
-  color: rgba(255,255,255,0.85);
-  background: linear-gradient(135deg, rgba(255,255,255,0.02), rgba(0,0,0,0.05));
-}
-footer .socials a:hover {
-  background: linear-gradient(135deg,#ff9dac,#b5a5d1);
-  color: #fff;
-  transform: translateY(-4px) scale(1.12) rotate(-2deg);
-  box-shadow: 0 12px 36px rgba(181,165,209,0.45);
-}
-
-/* Logos Section (YRI + MH Teams) - animated */
-.foot-logos {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+/* =========================================================================
+   FOOTER INNER GRID - Modern Layout
+   ========================================================================= */
+footer .foot-inner {
+  position: relative;
+  z-index: 10;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 4rem;
-  margin: 2.5rem 0 1.5rem;
-  opacity: 0;
+  max-width: 1200px;
+  margin: 0 auto;
+  animation: slideUpFade 1s cubic-bezier(0.4, 0, 0.2, 1) forwards 0.2s;
   transform: translateY(30px);
-  animation: logosFadeIn 1.2s forwards ease-out 0.6s;
-}
-.foot-logos img {
-  height: 70px;
-  object-fit: contain;
-  transition: transform 0.35s ease, filter 0.35s ease, box-shadow 0.35s ease;
-  cursor: pointer;
-}
-.foot-logos img:hover {
-  transform: scale(1.18) rotate(-2deg);
-  filter: brightness(1.25);
-  box-shadow: 0 8px 28px rgba(0,0,0,0.18);
+  opacity: 0;
 }
 
-@keyframes logosFadeIn {
+@keyframes slideUpFade {
   to {
     opacity: 1;
     transform: translateY(0);
   }
 }
 
-/* Footer bottom copyright */
-.footer-bottom {
-  text-align: center;
-  font-size: .9rem;
-  color: rgba(255,255,255,0.65);
-  line-height: 1.6;
-  border-top: 1px solid rgba(255,255,255,0.08);
-  padding-top: 1.6rem;
-}
-.footer-bottom a {
-  font-weight: 600;
-  background: linear-gradient(135deg,#ff9dac,#b5a5d1);
+/* Section Titles */
+footer h3 {
+  font-size: 1.4rem;
+  background: linear-gradient(135deg,
+    rgba(255, 255, 255, 0.95) 0%,
+    rgba(255, 255, 255, 0.7) 100%
+  );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  transition: opacity .3s ease;
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+  position: relative;
+  padding-bottom: 0.8rem;
 }
-.footer-bottom a:hover {
+
+footer h3::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 40px;
+  height: 2px;
+  background: linear-gradient(90deg, var(--accent), transparent);
+  border-radius: 2px;
+}
+
+footer h4 {
+  font-size: 1.1rem;
+  color: rgba(255, 255, 255, 0.9);
+  margin-bottom: 1.2rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+/* Text Content */
+footer p {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.75);
+  margin-bottom: 1rem;
+}
+
+.foot-about p:first-of-type {
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+/* Links - Elegant Style */
+footer a {
+  color: rgba(255, 255, 255, 0.85);
+  text-decoration: none;
+  transition: all 0.3s ease;
+  position: relative;
+  font-weight: 500;
+}
+
+footer a:hover {
+  color: white;
+  text-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+}
+
+/* Quick Links with Icon */
+footer ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+footer ul li {
+  margin-bottom: 0.7rem;
+  padding-left: 0;
+}
+
+footer ul li a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 0.3rem 0;
+  transition: all 0.3s ease;
+}
+
+footer ul li a::before {
+  content: "→";
+  font-size: 0.8rem;
+  color: var(--accent);
+  opacity: 0;
+  transform: translateX(-10px);
+  transition: all 0.3s ease;
+}
+
+footer ul li a:hover {
+  transform: translateX(5px);
+}
+
+footer ul li a:hover::before {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Contact Info Box */
+.contact-info {
+  background: linear-gradient(145deg,
+    rgba(255, 255, 255, 0.04),
+    rgba(255, 255, 255, 0.01)
+  );
+  padding: 1.5rem;
+  border-radius: 16px;
+  margin: 1rem 0;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.contact-info p {
+  margin: 0.7rem 0;
+  font-size: 0.95rem;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.contact-info strong {
+  color: rgba(255, 255, 255, 0.95);
+  font-weight: 600;
+}
+
+/* Social Icons - Modern Glass Style */
+footer .socials {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+footer .socials a {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 14px;
+  background: linear-gradient(145deg,
+    rgba(255, 255, 255, 0.05),
+    rgba(255, 255, 255, 0.02)
+  );
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  font-size: 1.1rem;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  color: rgba(255, 255, 255, 0.8);
+  position: relative;
+  overflow: hidden;
+}
+
+footer .socials a::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg,
+    transparent,
+    rgba(255, 255, 255, 0.1),
+    transparent
+  );
+  transition: left 0.6s ease;
+}
+
+footer .socials a:hover {
+  transform: translateY(-4px) scale(1.1);
+  background: linear-gradient(145deg,
+    rgba(98, 35, 126, 0.3),
+    rgba(98, 35, 126, 0.15)
+  );
+  border-color: rgba(98, 35, 126, 0.4);
+  box-shadow: 
+    0 8px 25px rgba(98, 35, 126, 0.3),
+    0 0 0 1px rgba(255, 255, 255, 0.05) inset;
+  color: white;
+}
+
+footer .socials a:hover::before {
+  left: 100%;
+}
+
+/* Sponsor Badge */
+.sponsor-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: linear-gradient(145deg,
+    rgba(98, 35, 126, 0.3),
+    rgba(98, 35, 126, 0.15)
+  );
+  color: white;
+  padding: 0.6rem 1.5rem;
+  border-radius: 50px;
+  font-size: 0.85rem;
+  margin-top: 1.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 
+    0 4px 15px rgba(98, 35, 126, 0.25),
+    0 1px 0 rgba(255, 255, 255, 0.05) inset;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+.sponsor-badge::before {
+  content: "✓";
+  color: var(--accent);
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.sponsor-badge:hover {
+  transform: translateY(-2px);
+  box-shadow: 
+    0 6px 25px rgba(98, 35, 126, 0.4),
+    0 1px 0 rgba(255, 255, 255, 0.1) inset;
+  background: linear-gradient(145deg,
+    rgba(98, 35, 126, 0.4),
+    rgba(98, 35, 126, 0.25)
+  );
+}
+
+.sponsor-badge small {
+  color: white;
+  font-weight: 500;
+}
+
+/* =========================================================================
+   SUPPORTING PARTNERS SECTION
+   ========================================================================= */
+.supporting-partners {
+  position: relative;
+  z-index: 10;
+  text-align: center;
+  padding: 3rem 2rem;
+  background: linear-gradient(145deg,
+    rgba(255, 255, 255, 0.04),
+    rgba(255, 255, 255, 0.01)
+  );
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-radius: 24px;
+  margin: 4rem auto;
+  max-width: 1100px;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  box-shadow: 
+    0 20px 40px rgba(0, 0, 0, 0.3),
+    0 8px 32px rgba(98, 35, 126, 0.15);
+  animation: slideUpFade 1.2s cubic-bezier(0.4, 0, 0.2, 1) forwards 0.4s;
+  transform: translateY(30px);
+  opacity: 0;
+}
+
+.supporting-partners h4 {
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 2.5rem;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 600;
+  position: relative;
+  display: inline-block;
+}
+
+.supporting-partners h4::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 30px;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.partner-logos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  flex-wrap: wrap;
+}
+
+.partner-logos img {
+  height: 55px;
+  width: auto;
+  object-fit: contain;
+  filter: 
+    grayscale(40%) 
+    brightness(1.2);
   opacity: 0.9;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
+  padding: 12px;
+  background: linear-gradient(145deg,
+    rgba(255, 255, 255, 0.05),
+    rgba(255, 255, 255, 0.02)
+  );
+  border-radius: 14px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
 }
 
-/* Animations */
-@keyframes fadeUp {
-  0% { opacity: 0; transform: translateY(30px);}
-  100% { opacity: 1; transform: translateY(0);}
+.partner-logos img:hover {
+  transform: scale(1.12) rotate(2deg) translateY(-3px);
+  filter: 
+    grayscale(0%) 
+    brightness(1.4);
+  opacity: 1;
+  box-shadow: 
+    0 10px 30px rgba(98, 35, 126, 0.35),
+    0 0 0 1px rgba(255, 255, 255, 0.05) inset;
+  background: linear-gradient(145deg,
+    rgba(255, 255, 255, 0.08),
+    rgba(255, 255, 255, 0.03)
+  );
 }
 
-/* Responsive */
+/* =========================================================================
+   FOOTER BOTTOM - Clean & Professional
+   ========================================================================= */
+.footer-bottom {
+  position: relative;
+  z-index: 10;
+  text-align: center;
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.6);
+  line-height: 1.7;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  padding-top: 2.5rem;
+  margin-top: 3rem;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.copyright {
+  margin-bottom: 1.5rem;
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.legal-disclaimer {
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.6);
+  max-width: 700px;
+  margin: 1.5rem auto;
+  padding: 1.5rem;
+  background: linear-gradient(145deg,
+    rgba(255, 255, 255, 0.03),
+    rgba(255, 255, 255, 0.01)
+  );
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.04);
+  line-height: 1.6;
+}
+
+.technical-credit {
+  background: linear-gradient(145deg,
+    rgba(255, 255, 255, 0.04),
+    rgba(255, 255, 255, 0.01)
+  );
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  padding: 2rem;
+  border-radius: 20px;
+  margin: 2rem 0;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.community-cta {
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  padding-top: 2rem;
+  margin-top: 2rem;
+  font-style: italic;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.footer-bottom a {
+  font-weight: 600;
+  color: white;
+  position: relative;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.footer-bottom a::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background: var(--accent);
+  transition: width 0.3s ease;
+}
+
+.footer-bottom a:hover {
+  color: white;
+  text-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+}
+
+.footer-bottom a:hover::after {
+  width: 100%;
+}
+
+/* =========================================================================
+   RESPONSIVE DESIGN - Perfect on All Devices
+   ========================================================================= */
+@media (max-width: 1024px) {
+  footer {
+    padding: 5rem 1.5rem 2.5rem;
+  }
+  
+  footer .foot-inner {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 3rem;
+  }
+  
+  .sponsor-section,
+  .supporting-partners {
+    max-width: 90%;
+  }
+}
+
 @media (max-width: 768px) {
+  footer {
+    padding: 4rem 1rem 2rem;
+  }
+  
   footer .foot-inner {
     grid-template-columns: 1fr;
-    gap: 2rem;
+    gap: 3rem;
     text-align: center;
   }
-  .foot-logos {
-    flex-direction: column;
-    gap: 1.5rem;
+  
+  footer h3::after {
+    left: 50%;
+    transform: translateX(-50%);
   }
+  
+  .sponsor-section {
+    padding: 2rem 1.5rem;
+    margin-bottom: 4rem;
+  }
+  
+  .sponsor-logo {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  
+  .sponsor-logo h3 {
+    font-size: 1.6rem;
+  }
+  
+  .main-sponsor-logo {
+    height: 60px;
+  }
+  
+  .partner-logos {
+    flex-direction: column;
+    gap: 2.5rem;
+  }
+  
+  .partner-logos img {
+    height: 50px;
+    padding: 15px;
+  }
+  
   footer .socials {
     justify-content: center;
   }
+  
+  footer ul li a::before {
+    display: none;
+  }
+  
+  .footer-bottom {
+    padding: 2rem 1rem 1rem;
+  }
+  
+  .sponsor-badge {
+    display: flex;
+    justify-content: center;
+    padding: 0.7rem 1.2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  footer {
+    padding: 3rem 1rem 1.5rem;
+  }
+  
+  .sponsor-section {
+    padding: 1.5rem 1rem;
+    margin-bottom: 3rem;
+    border-radius: 20px;
+  }
+  
+  .sponsor-description {
+    padding: 1.5rem 1rem;
+    font-size: 1rem;
+  }
+  
+  .supporting-partners {
+    padding: 2rem 1rem;
+    border-radius: 20px;
+  }
+  
+  .foot-inner {
+    gap: 2.5rem;
+  }
+  
+  .footer-bottom {
+    padding: 1.5rem 0.5rem 1rem;
+  }
+  
+  .technical-credit {
+    padding: 1.5rem;
+  }
+}
+
+/* =========================================================================
+   PERFORMANCE & SMOOTHNESS
+   ========================================================================= */
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
     /* =========================================================================
@@ -2717,12 +3973,11 @@ footer .socials a:hover {
     @media (max-width: 980px) {
       .nav-links { display: none; }
       .hamburger { display: flex; }
-      .hero { padding-top: 6rem; }
       .container { padding: 0 1.2rem; }
     }
 
     @media (max-width: 520px) {
-      .hero h1 { font-size: 2rem; }
+
       .thumb { height: 120px; }
       .count-item { min-width: 56px; padding: .45rem .6rem; }
       .card { padding: 1.2rem; }
@@ -2732,670 +3987,1499 @@ footer .socials a:hover {
     /* long file spacing: many comments below for readability and reference */
     /* ------------------------------------------------------------------------- */
 
-   /* =========================================================================
-   SECTION - Tentang Kami & FAQ - 100% Perfect Elegant
-   ========================================================================= */
-#tentang {
-  padding: 6rem 1.5rem;
-  font-family: 'HafferSQXH', 'Telegraf', sans-serif;
-  background: linear-gradient(180deg, #fafafe, #f9f9fb);
+/* ====================
+   ABOUT US SECTION STYLES - ELEGAN & DINAMIS
+   ==================== */
+
+/* Section Container – Solid Background */
+#about.section {
   position: relative;
+  padding: 8rem 0;
+  background-color: #481465;
   overflow: hidden;
-  z-index: 1;
+  isolation: isolate;
 }
 
-/* Background ornaments */
-#tentang::before {
-  content: "";
+/* Pastikan tidak ada gradient */
+#about.section::before {
+  content: '';
   position: absolute;
   inset: 0;
-  background: radial-gradient(circle at 20% 30%, rgba(181,140,217,0.08), transparent 60%),
-              radial-gradient(circle at 80% 70%, rgba(255,157,172,0.08), transparent 70%);
+  background: none;
+  animation: none;
   z-index: -1;
 }
 
-#tentang::after {
-  content: "";
-  position: absolute;
-  width: 320px;
-  height: 320px;
-  border-radius: 50%;
-  background: radial-gradient(circle, rgba(255,157,172,0.08), transparent 70%);
-  bottom: -120px;
-  right: -120px;
-  filter: blur(40px);
-  z-index: -2;
-}
-
-/* Title & Subtitle */
-#tentang .title {
-  text-align: center;
-  font-size: clamp(2.2rem, 4vw, 3.2rem);
-  font-weight: 800;
-  margin-bottom: 1rem;
-  background: linear-gradient(135deg, #b58cd9, #ff9dac);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  letter-spacing: 0.7px;
-  animation: gradientShift 6s ease infinite;
-  font-family: 'Telegraf', sans-serif;
-}
-
-#tentang .subtitle {
-  text-align: center;
-  max-width: 780px;
-  margin: 0 auto 3.8rem;
-  font-weight: 400;
-  line-height: 1.75;
-  color: #6b6378;
-  font-size: 1.05rem;
-}
-
-/* Grid Cards */
-#tentang .grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px,1fr));
-  gap: 2.2rem;
-  margin-top: 2.5rem;
-}
-
-#tentang .grid .card {
-  background: rgba(255,255,255,0.9);
-  border: 1px solid rgba(181,165,209,0.18);
-  border-radius: 22px;
-  padding: 2.4rem;
-  text-align: center;
-  box-shadow: 0 15px 40px rgba(0,0,0,0.06);
-  transition: all 0.5s ease;
-  backdrop-filter: blur(14px);
-  position: relative;
-  overflow: hidden;
-}
-
-#tentang .grid .card::before {
-  content: "";
+/* Subtle Floating Particles */
+#about.section::after {
+  content: '';
   position: absolute;
   inset: 0;
-  border-radius: inherit;
-  background: linear-gradient(135deg, rgba(181,140,217,0.15), rgba(255,157,172,0.12));
-  opacity: 0;
-  transition: opacity 0.45s ease;
+  pointer-events: none;
+
+  background-image:
+    radial-gradient(1px 1px at 30px 40px, rgba(255,255,255,0.12), transparent),
+    radial-gradient(1px 1px at 110px 160px, rgba(255,255,255,0.08), transparent),
+    radial-gradient(1px 1px at 190px 90px, rgba(255,255,255,0.10), transparent),
+    radial-gradient(1px 1px at 260px 220px, rgba(255,255,255,0.06), transparent);
+
+  background-repeat: repeat;
+  background-size: 300px 300px;
+
+  animation: floatParticles 30s linear infinite;
   z-index: 0;
 }
 
-#tentang .grid .card:hover::before {
-  opacity: 1;
-}
-
-#tentang .grid .card:hover {
-  transform: translateY(-10px) scale(1.04);
-  box-shadow: 0 28px 80px rgba(138,124,172,0.22);
-}
-
-#tentang .grid .card h3 {
-  font-size: 1.45rem;
-  font-weight: 700;
-  margin-bottom: 1rem;
-  color: #8a7cac;
-  font-family: 'Telegraf', sans-serif;
-  position: relative;
-  z-index: 1;
-}
-
-#tentang .grid .card p {
-  font-size: 1rem;
-  line-height: 1.7;
-  color: #6b6378;
-  position: relative;
-  z-index: 1;
-}
-
-/* =========================================================================
-   FAQ - Premium Accordion
-   ========================================================================= */
-#tentang .faq {
-  max-width: 880px;
-  margin: 5rem auto 0;
-  display: flex;
-  flex-direction: column;
-  gap: 1.4rem;
-}
-
-#tentang details {
-  background: rgba(255,255,255,0.9);
-  border: 1px solid rgba(181,165,209,0.15);
-  border-radius: 18px;
-  padding: 1.4rem 1.6rem;
-  box-shadow: 0 18px 45px rgba(0,0,0,0.05);
-  transition: all 0.5s ease;
-  cursor: pointer;
-  overflow: hidden;
-  position: relative;
-  backdrop-filter: blur(10px);
-}
-
-#tentang details:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 28px 80px rgba(138,124,172,0.15);
-}
-
-#tentang details summary {
-  font-weight: 600;
-  font-size: 1.08rem;
-  list-style: none;
-  position: relative;
-  padding-right: 50px;
-  transition: color 0.35s ease;
-  font-family: 'Telegraf', sans-serif;
-}
-
-#tentang details summary:hover {
-  color: #b58cd9;
-}
-
-#tentang details summary::marker { content: ''; }
-
-/* Icon Circle */
-#tentang details summary::after {
-  content: '';
-  position: absolute;
-  right: 0;
-  top: 50%;
-  width: 22px;
-  height: 22px;
-  border-radius: 50%;
-  background: linear-gradient(135deg, #b58cd9, #ff9dac);
-  transform: translateY(-50%) rotate(0deg);
-  transition: transform 0.5s ease, background 0.3s ease;
-  display: grid;
-  place-items: center;
-}
-
-#tentang details summary::before {
-  content: '+';
-  position: absolute;
-  right: 6px;
-  top: 50%;
-  transform: translateY(-50%);
-  font-size: 1.05rem;
-  font-weight: 700;
-  color: #fff;
-  z-index: 1;
-  transition: transform 0.5s ease;
-}
-
-#tentang details[open] summary::after {
-  transform: translateY(-50%) rotate(180deg);
-  background: linear-gradient(135deg, #ff9dac, #b58cd9);
-}
-
-#tentang details[open] summary::before {
-  content: '×';
-  transform: translateY(-50%) rotate(180deg);
-}
-
-/* FAQ Content */
-#tentang details p {
-  margin-top: 0.8rem;
-  font-size: 0.98rem;
-  line-height: 1.65;
-  color: #6b6378;
-  opacity: 0;
-  max-height: 0;
-  transform: translateY(-14px) scale(0.96);
-  transform-origin: top;
-  transition: all 0.5s cubic-bezier(0.4,0,0.2,1);
-}
-
-#tentang details[open] p {
-  opacity: 1;
-  max-height: 900px;
-  transform: translateY(0) scale(1);
-}
-
-#tentang details[open] {
-  transform: scale(1.02);
-  border-color: #b58cd9;
-  background: linear-gradient(145deg, rgba(255,255,255,0.96), rgba(181,140,217,0.07));
-  box-shadow: 0 28px 90px rgba(0,0,0,0.1);
-}
-
-/* =========================================================================
-   Responsive
-   ========================================================================= */
-@media (max-width: 768px) {
-  #tentang {
-    padding: 4.5rem 1rem;
+/* Smooth diagonal movement */
+@keyframes floatParticles {
+  from {
+    transform: translate3d(0, 0, 0);
   }
-  #tentang .grid {
-    grid-template-columns: 1fr;
-    gap: 1.6rem;
-  }
-  #tentang .grid .card {
-    padding: 1.9rem;
-  }
-  #tentang details summary {
-    font-size: 0.98rem;
-  }
-  #tentang details p {
-    font-size: 0.92rem;
+  to {
+    transform: translate3d(-200px, -200px, 0);
   }
 }
 
-/* =========================================================================
-   PARTNERSHIP SECTION - Premium Interactive & Elegant (Extended Responsive)
-   ========================================================================= */
-#partnership {
-  padding: 6rem 1.5rem 5rem;
-  background: linear-gradient(180deg, #f9f7f4 0%, #f5f2fa 100%);
-  font-family: 'Inter', sans-serif;
-  color: #1e1b29;
-  position: relative;
-  overflow: hidden;
-}
-
-#partnership::before {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background: 
-    radial-gradient(circle at 20% 20%, rgba(255, 184, 195, 0.08) 0%, transparent 50%),
-    radial-gradient(circle at 80% 80%, rgba(181, 165, 209, 0.08) 0%, transparent 50%);
-  z-index: 1;
-}
-
-#partnership .container {
-  position: relative;
-  z-index: 2;
-  max-width: 1400px;
+#about .container {
+  max-width: 1200px;
   margin: 0 auto;
-  padding: 0 1rem;
-}
-
-#partnership .title {
-  font-family: 'Telegraf', sans-serif;
-  font-size: 2.8rem;
-  font-weight: 700;
-  text-align: center;
-  margin-bottom: 1rem;
-  background: linear-gradient(135deg, #ff6b8a, #8a7cac, #b5a5d1);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-size: 200% 200%;
-  animation: gradientShift 6s ease infinite;
-  line-height: 1.2;
-}
-
-@keyframes gradientShift {
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
-}
-
-/* Subtitle / Description */
-#partnership .subtitle, 
-#partnership p {
-  font-family: 'Inter', sans-serif;
-  font-size: 1.1rem;
-  font-weight: 400;
-  line-height: 1.6;
-  text-align: center;
-  color: rgba(30, 27, 41, 0.85);
-  max-width: 650px;
-  margin: 0 auto 2rem;
-  padding: 0 1rem;
-}
-
-/* =========================================================================
-   PARTNERS SLIDER BASE
-   ========================================================================= */
-.partners-container {
+  padding: 0 2rem;
   position: relative;
-  margin: 3rem auto;
-  max-width: 100%;
+  z-index: 1;
 }
 
-.partners-slider-wrapper {
+/* Section Header dengan Glassmorphism */
+#about .section-header {
+  text-align: center;
+  margin-bottom: 5rem;
   position: relative;
-  overflow: hidden;
-  margin: 2rem 0;
 }
 
-.partners-slider {
-  display: flex;
-  width: max-content;
-  animation: autoScroll 40s linear infinite;
-  gap: 3rem;
-  padding: 2rem 0;
-  transition: transform 0.5s ease;
-}
-
-.partners-slider.reverse {
-  animation: autoScrollReverse 35s linear infinite;
-  margin-top: 1rem;
-}
-
-@keyframes autoScroll {
-  0% { transform: translateX(0); }
-  100% { transform: translateX(calc(-50% - 1.5rem)); }
-}
-
-@keyframes autoScrollReverse {
-  0% { transform: translateX(calc(-50% - 1.5rem)); }
-  100% { transform: translateX(0); }
-}
-
-.partners-track {
-  display: flex;
-  gap: 3rem;
+#about .section-badge {
+  display: inline-flex;
   align-items: center;
-}
-
-/* =========================================================================
-   PARTNER ITEM STYLING
-   ========================================================================= */
-.partner-item {
-  flex: 0 0 auto;
-  background: linear-gradient(135deg, rgba(255, 255, 255, 0.97), rgba(250, 248, 255, 0.98));
-  border-radius: 26px;
-  padding: 2.5rem 2rem;
-  width: 280px;
-  text-align: center;
-  box-shadow: 
-    0 16px 50px rgba(138, 124, 172, 0.18),
-    0 2px 8px rgba(255, 255, 255, 0.8) inset;
-  backdrop-filter: blur(22px);
-  border: 1px solid rgba(255, 255, 255, 0.65);
-  transition: all 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-  cursor: pointer;
-  position: relative;
-  overflow: hidden;
-  opacity: 0;
-  transform: translateY(40px);
-  animation: fadeInUp 0.9s forwards;
-}
-
-.partner-item:nth-child(1) { animation-delay: 0.1s; }
-.partner-item:nth-child(2) { animation-delay: 0.2s; }
-.partner-item:nth-child(3) { animation-delay: 0.3s; }
-.partner-item:nth-child(4) { animation-delay: 0.4s; }
-.partner-item:nth-child(5) { animation-delay: 0.5s; }
-.partner-item:nth-child(6) { animation-delay: 0.6s; }
-
-@keyframes fadeInUp {
-  from { opacity: 0; transform: translateY(40px); }
-  to { opacity: 1; transform: translateY(0); }
-}
-
-/* Hover Effects */
-.partner-item::before {
-  content: '';
-  position: absolute;
-  top: 0; left: -100%;
-  width: 100%; height: 100%;
-  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.65), transparent);
-  transition: left 0.7s ease;
-}
-
-.partner-item:hover::before { left: 100%; }
-
-.partner-item:hover {
-  transform: translateY(-14px) scale(1.07);
-  box-shadow: 0 28px 70px rgba(138,124,172,0.28),
-              0 6px 18px rgba(255,184,195,0.22),
-              0 2px 8px rgba(255,255,255,0.85) inset;
-  border-color: rgba(255,184,195,0.45);
-}
-
-/* =========================================================================
-   PARTNER LOGO STYLING
-   ========================================================================= */
-.partner-logo {
-  width: 100%;
-  height: 120px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 1.4rem;
-  transition: transform 0.5s ease;
-}
-
-.partner-logo svg, 
-.partner-logo img {
-  max-width: 90%;
-  max-height: 90%;
-  filter: drop-shadow(0 5px 15px rgba(0,0,0,0.12));
-  transition: all 0.5s ease;
-}
-
-.partner-item:hover .partner-logo {
-  transform: translateY(-6px);
-}
-
-.partner-item:hover .partner-logo svg,
-.partner-item:hover .partner-logo img {
-  transform: scale(1.18);
-  filter: drop-shadow(0 10px 25px rgba(138,124,172,0.38));
-}
-
-/* =========================================================================
-   PARTNER NAME STYLING
-   ========================================================================= */
-.partner-name {
-  font-size: 1rem;
-  font-weight: 700;
-  color: #1e1b29;
-  transition: all 0.4s ease;
-}
-
-.partner-item:hover .partner-name {
-  color: #8a7cac;
-  transform: translateY(2px);
-}
-
-/* =========================================================================
-   DOTS NAVIGATION
-   ========================================================================= */
-.partners-dots {
-  text-align: center;
-  margin-top: 3rem;
-}
-
-.partners-dots .dot {
-  width: 18px;
-  height: 18px;
-  border-radius: 50%;
-  background: rgba(207,205,209,0.5);
-  margin: 0 8px;
-  border: none;
-  cursor: pointer;
-  transition: all 0.4s ease;
-  position: relative;
-  overflow: hidden;
-}
-
-.partners-dots .dot::before {
-  content: '';
-  position: absolute;
-  top: 0; left: -100%;
-  width: 100%; height: 100%;
-  background: linear-gradient(135deg,#ff6b8a,#8a7cac);
-  border-radius: 50%;
-  transition: left 0.4s ease;
-}
-
-.partners-dots .dot.active::before,
-.partners-dots .dot:hover::before { left: 0; }
-
-.partners-dots .dot.active,
-.partners-dots .dot:hover { transform: scale(1.45); box-shadow: 0 6px 22px rgba(138,124,172,0.42); }
-
-/* =========================================================================
-   CTA LINK BUTTON
-   ========================================================================= */
-.partnership-cta {
-  text-align: center;
-  margin-top: 4rem;
-}
-
-.partner-link {
-  font-weight: 700;
-  background: linear-gradient(135deg,#ff6b8a,#8a7cac); /* teks */
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  text-decoration: none;
-  padding: 0.9rem 2.2rem;
+  gap: 0.75rem;
+  padding: 0.75rem 1.5rem;
+  background: linear-gradient(135deg, 
+    rgba(212, 178, 230, 0.95), 
+    rgba(163, 92, 208, 0.95));
+  backdrop-filter: blur(10px);
+  color: white;
+  font-size: 0.9rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
   border-radius: 50px;
-  border: 2px solid transparent;
+  margin-bottom: 2rem;
+  box-shadow: 
+    0 8px 32px rgba(0, 0, 0, 0.1),
+    0 0 0 1px rgba(255, 255, 255, 0.1);
+  animation: badgeFloat 6s ease-in-out infinite;
   position: relative;
-  transition: all 0.45s ease;
+  overflow: hidden;
+  z-index: 1;
+}
+
+#about .section-badge::before {
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  background: linear-gradient(45deg, 
+    #ff0080, #ff8c00, #40e0d0, #8a2be2, #ff0080);
+  background-size: 400% 400%;
+  border-radius: 50px;
+  z-index: -1;
+  animation: shimmerBorder 3s linear infinite;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+#about .section-badge:hover::before {
+  opacity: 1;
+}
+
+@keyframes badgeFloat {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+@keyframes shimmerBorder {
+  0% { background-position: 0% 50%; }
+  100% { background-position: 400% 50%; }
+}
+
+#about .badge-icon {
+  animation: spin 8s linear infinite;
+}
+
+#about .title {
+  font-size: 3.5rem;
+  font-weight: 800;
+  color: white;
+  margin-bottom: 1.5rem;
+  line-height: 1.2;
+  text-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  position: relative;
   display: inline-block;
 }
 
-.partner-link::before {
+#about .title::after {
   content: '';
   position: absolute;
-  top: -2px; 
-  left: -2px; 
-  right: -2px; 
-  bottom: -2px;
-  background: linear-gradient(135deg, #6a82fb, #fc5c7d);
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 4px;
+  background: linear-gradient(90deg, 
+    transparent, 
+    #d4b2e6, 
+    #a35cd0, 
+    #d4b2e6, 
+    transparent);
+  border-radius: 2px;
+  animation: titleUnderline 3s ease-in-out infinite;
+}
+
+@keyframes titleUnderline {
+  0%, 100% { width: 100px; opacity: 0.7; }
+  50% { width: 150px; opacity: 1; }
+}
+
+#about .subtitle {
+  font-size: 1.2rem;
+  color: rgba(255, 255, 255, 0.9);
+  line-height: 1.8;
+  max-width: 800px;
+  margin: 0 auto;
+  font-weight: 300;
+  letter-spacing: 0.5px;
+  background: rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(10px);
+  padding: 2rem;
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  animation: fadeInUp 1s ease-out 0.3s both;
+}
+
+/* About Overview dengan Glassmorphism */
+#about .about-overview {
+  display: grid;
+  gap: 3rem;
+  margin-bottom: 5rem;
+}
+
+#about .overview-content {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  padding: 4rem;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(20px);
+  border-radius: 32px;
+  box-shadow: 
+    0 20px 60px rgba(0, 0, 0, 0.2),
+    inset 0 1px 0 rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  position: relative;
+  overflow: hidden;
+  transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+  transform: perspective(1000px) rotateX(0) rotateY(0);
+}
+
+#about .overview-content:hover {
+  transform: perspective(1000px) rotateX(2deg) rotateY(2deg);
+  box-shadow: 
+    0 30px 80px rgba(0, 0, 0, 0.3),
+    inset 0 1px 0 rgba(255, 255, 255, 0.2);
+}
+
+#about .overview-content::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, 
+    transparent, 
+    rgba(212, 178, 230, 0.5), 
+    transparent);
+}
+
+#about .overview-icon {
+  flex-shrink: 0;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, 
+    rgba(245, 237, 255, 0.2), 
+    rgba(232, 211, 244, 0.1));
+  border-radius: 25px;
+  color: white;
+  box-shadow: 
+    0 8px 32px rgba(0, 0, 0, 0.2),
+    inset 0 1px 0 rgba(255, 255, 255, 0.1);
+  font-size: 2.5rem;
+  animation: iconFloat 4s ease-in-out infinite;
+}
+
+@keyframes iconFloat {
+  0%, 100% { transform: translateY(0) rotate(0); }
+  33% { transform: translateY(-10px) rotate(5deg); }
+  66% { transform: translateY(5px) rotate(-5deg); }
+}
+
+#about .overview-text h3 {
+  font-size: 2rem;
+  color: white;
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+  background: linear-gradient(135deg, #d4b2e6, #ffffff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#about .overview-text p {
+  color: rgba(255, 255, 255, 0.85);
+  line-height: 1.9;
+  font-size: 1.1rem;
+  font-weight: 300;
+  letter-spacing: 0.3px;
+}
+
+/* First Edition Highlight dengan Parallax Effect */
+#about .first-edition-highlight {
+  position: relative;
+  padding: 4rem;
+  background: linear-gradient(135deg, 
+    rgba(163, 92, 208, 0.2), 
+    rgba(212, 178, 230, 0.1));
+  backdrop-filter: blur(15px);
+  border-radius: 32px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  overflow: hidden;
+  transition: transform 0.6s ease;
+}
+
+#about .first-edition-highlight:hover {
+  transform: translateY(-10px);
+}
+
+#about .first-edition-highlight::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 6px;
+  background: linear-gradient(90deg, 
+    #d4b2e6, 
+    #a35cd0, 
+    #8a4ac7, 
+    #a35cd0, 
+    #d4b2e6);
+  background-size: 200% 100%;
+  animation: shimmer 3s linear infinite;
+}
+
+#about .first-edition-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 1rem 2rem;
+  background: rgba(255, 255, 255, 0.15);
+  color: white;
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 1px;
   border-radius: 50px;
+  margin-bottom: 2rem;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(10px);
+  animation: pulseGlow 2s ease-in-out infinite;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+@keyframes pulseGlow {
+  0%, 100% { 
+    box-shadow: 0 0 20px rgba(163, 92, 208, 0.3); 
+  }
+  50% { 
+    box-shadow: 0 0 40px rgba(163, 92, 208, 0.5); 
+  }
+}
+
+#about .highlight-text h3 {
+  font-size: 2rem;
+  color: white;
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+  background: linear-gradient(135deg, #ffffff, #e8d3f4);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+#about .highlight-text p {
+  color: rgba(255, 255, 255, 0.85);
+  line-height: 1.9;
+  font-size: 1.1rem;
+  font-weight: 300;
+}
+
+/* Values Grid dengan 3D Flip Cards */
+#about .values-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2.5rem;
+  margin-bottom: 5rem;
+  perspective: 1000px;
+}
+
+#about .value-card {
+  position: relative;
+  padding: 3rem 2rem;
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(15px);
+  border-radius: 24px;
+  box-shadow: 
+    0 20px 60px rgba(0, 0, 0, 0.2),
+    inset 0 1px 0 rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+  text-align: center;
+  opacity: 0;
+  transform: translateY(50px) rotateX(10deg);
+  transform-style: preserve-3d;
+}
+
+#about .value-card.animate-on-scroll.animated {
+  opacity: 1;
+  transform: translateY(0) rotateX(0);
+}
+
+#about .value-card:hover {
+  transform: translateY(-20px) rotateX(5deg) scale(1.05);
+  box-shadow: 
+    0 40px 80px rgba(0, 0, 0, 0.3),
+    0 0 40px rgba(163, 92, 208, 0.3),
+    inset 0 1px 0 rgba(255, 255, 255, 0.2);
+}
+
+#about .value-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, 
+    rgba(163, 92, 208, 0.1), 
+    transparent 30%,
+    rgba(212, 178, 230, 0.1) 70%);
+  border-radius: 24px;
   z-index: -1;
   opacity: 0;
-  transition: opacity 0.45s ease, transform 0.45s ease;
+  transition: opacity 0.6s ease;
 }
 
-.partner-link:hover::before {
+#about .value-card:hover::before {
   opacity: 1;
-  transform: scale(1.05);
 }
 
-.partner-link:hover { 
-  color: #fff; 
-  -webkit-text-fill-color: white;
-  transform: translateY(-3px); 
-  box-shadow: 0 12px 35px rgba(138,124,172,0.35); 
+#about .value-icon {
+  width: 90px;
+  height: 90px;
+  margin: 0 auto 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, 
+    rgba(245, 237, 255, 0.2), 
+    rgba(232, 211, 244, 0.1));
+  border-radius: 22px;
+  color: white;
+  box-shadow: 
+    0 12px 40px rgba(0, 0, 0, 0.2),
+    inset 0 1px 0 rgba(255, 255, 255, 0.1);
+  font-size: 2.5rem;
+  transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  overflow: hidden;
 }
 
-/* =========================================================================
-   INTERACTIVITY
-   ========================================================================= */
-.partners-slider-wrapper:hover .partners-slider,
-.partners-slider-wrapper:hover .partners-slider.reverse { 
-  animation-play-state: paused; 
+#about .value-card:hover .value-icon {
+  transform: scale(1.15) rotateY(180deg);
+  background: linear-gradient(135deg, 
+    rgba(232, 211, 244, 0.3), 
+    rgba(212, 178, 230, 0.2));
+  box-shadow: 
+    0 20px 60px rgba(163, 92, 208, 0.4),
+    inset 0 1px 0 rgba(255, 255, 255, 0.2);
 }
 
-/* =========================================================================
-   RESPONSIVE BREAKPOINTS
-   ========================================================================= */
-@media (max-width: 1400px) {
-  .partner-item { width: 260px; padding: 2rem 1.5rem; }
+#about .value-icon::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.3), transparent);
+  transform: translate(-50%, -50%);
+  transition: width 0.6s ease, height 0.6s ease;
 }
 
+#about .value-card:hover .value-icon::before {
+  width: 200%;
+  height: 200%;
+}
+
+#about .value-card h3 {
+  font-size: 1.6rem;
+  color: white;
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+  background: linear-gradient(135deg, #ffffff, #d4b2e6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#about .value-card p {
+  color: rgba(255, 255, 255, 0.8);
+  line-height: 1.8;
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+/* Vision & Mission dengan Split Layout */
+#about .vision-mission {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 3rem;
+  margin-bottom: 5rem;
+}
+
+#about .vm-card {
+  padding: 3.5rem;
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(20px);
+  border-radius: 28px;
+  box-shadow: 
+    0 20px 60px rgba(0, 0, 0, 0.2),
+    inset 0 1px 0 rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  opacity: 0;
+  transform: translateY(50px) scale(0.95);
+  transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+#about .vm-card.animate-on-scroll.animated {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}
+
+#about .vm-card:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 
+    0 30px 80px rgba(0, 0, 0, 0.3),
+    0 0 30px rgba(163, 92, 208, 0.2),
+    inset 0 1px 0 rgba(255, 255, 255, 0.2);
+}
+
+#about .vm-header {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  margin-bottom: 2.5rem;
+}
+
+#about .vm-header svg {
+  color: white;
+  background: linear-gradient(135deg, 
+    rgba(245, 237, 255, 0.2), 
+    rgba(232, 211, 244, 0.1));
+  padding: 1rem;
+  border-radius: 18px;
+  box-shadow: 
+    0 12px 40px rgba(0, 0, 0, 0.2),
+    inset 0 1px 0 rgba(255, 255, 255, 0.1);
+  font-size: 1.5rem;
+  animation: iconPulse 2s ease-in-out infinite;
+}
+
+@keyframes iconPulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+}
+
+#about .vm-header h3 {
+  font-size: 2rem;
+  color: white;
+  font-weight: 700;
+  background: linear-gradient(135deg, #ffffff, #e8d3f4);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+#about .vm-card p {
+  color: rgba(255, 255, 255, 0.85);
+  line-height: 1.9;
+  font-size: 1.1rem;
+  font-weight: 300;
+}
+
+/* Mission List */
+#about .mission-list {
+  list-style: none;
+  padding: 0;
+  counter-reset: mission-counter;
+}
+
+#about .mission-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+  padding: 1.5rem;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 16px;
+  border-left: 4px solid rgba(163, 92, 208, 0.5);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  overflow: hidden;
+}
+
+#about .mission-list li:hover {
+  background: rgba(255, 255, 255, 0.1);
+  transform: translateX(10px);
+  border-left-color: #a35cd0;
+}
+
+#about .mission-list li::before {
+  content: counter(mission-counter);
+  counter-increment: mission-counter;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 40px;
+  height: 40px;
+  background: rgba(163, 92, 208, 0.2);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 0.9rem;
+  border-radius: 0 0 10px 0;
+}
+
+#about .mission-list li svg {
+  flex-shrink: 0;
+  margin-top: 0.25rem;
+  color: rgba(255, 255, 255, 0.9);
+  margin-left: 2rem;
+}
+
+#about .mission-list li span {
+  color: rgba(255, 255, 255, 0.85);
+  line-height: 1.8;
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+/* FAQ Section */
+#about .faq-section {
+  margin-top: 6rem;
+}
+
+#about .faq-container {
+  max-width: 900px;
+  margin: 0 auto 4rem;
+}
+
+#about .faq-item {
+  margin-bottom: 1.5rem;
+  border-radius: 20px;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(15px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+#about .faq-item.animate-on-scroll.animated {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+#about .faq-item:hover {
+  box-shadow: 0 12px 48px rgba(0, 0, 0, 0.2);
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+#about .faq-question {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 2rem;
+  background: none;
+  border: none;
+  text-align: left;
+  cursor: pointer;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: white;
+  transition: all 0.4s ease;
+  position: relative;
+}
+
+#about .faq-question:hover {
+  background: rgba(255, 255, 255, 0.05);
+}
+
+#about .faq-question[aria-expanded="true"] {
+  background: rgba(255, 255, 255, 0.08);
+}
+
+#about .faq-question[aria-expanded="true"] .faq-icon {
+  transform: rotate(180deg);
+}
+
+#about .faq-number {
+  font-size: 1rem;
+  font-weight: 700;
+  color: white;
+  background: rgba(163, 92, 208, 0.3);
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+#about .faq-question:hover .faq-number {
+  transform: scale(1.1);
+  background: rgba(163, 92, 208, 0.4);
+}
+
+#about .faq-text {
+  flex: 1;
+  color: white;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+#about .faq-icon {
+  flex-shrink: 0;
+  color: rgba(255, 255, 255, 0.9);
+  transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+#about .faq-answer {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.03);
+}
+
+#about .answer-content {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5rem;
+  padding: 2.5rem;
+}
+
+#about .answer-icon {
+  flex-shrink: 0;
+  margin-top: 0.25rem;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+#about .answer-text {
+  color: rgba(255, 255, 255, 0.85);
+  line-height: 1.9;
+  font-size: 1.1rem;
+  font-weight: 300;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+/* FAQ Empty State */
+#about .faq-empty {
+  text-align: center;
+  padding: 5rem 2rem;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(15px);
+  border-radius: 28px;
+  border: 2px dashed rgba(255, 255, 255, 0.2);
+}
+
+#about .faq-empty svg {
+  color: rgba(255, 255, 255, 0.3);
+  margin-bottom: 2rem;
+  font-size: 4rem;
+  animation: float 4s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-20px); }
+}
+
+#about .faq-empty h3 {
+  font-size: 2rem;
+  color: white;
+  margin-bottom: 1rem;
+  font-weight: 700;
+  background: linear-gradient(135deg, #ffffff, #d4b2e6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+#about .faq-empty p {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 1.1rem;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+/* FAQ Support */
+#about .faq-support {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 3rem;
+  padding: 4rem;
+  background: linear-gradient(135deg, 
+    rgba(163, 92, 208, 0.15), 
+    rgba(212, 178, 230, 0.08));
+  backdrop-filter: blur(20px);
+  border-radius: 32px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+#about .faq-support.animate-on-scroll.animated {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+#about .faq-support:hover {
+  transform: translateY(-10px);
+  box-shadow: 
+    0 40px 80px rgba(0, 0, 0, 0.3),
+    0 0 30px rgba(163, 92, 208, 0.2);
+}
+
+#about .support-content h3 {
+  font-size: 1.8rem;
+  color: white;
+  margin-bottom: 1rem;
+  font-weight: 700;
+  background: linear-gradient(135deg, #ffffff, #e8d3f4);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+#about .support-content p {
+  color: rgba(255, 255, 255, 0.85);
+  line-height: 1.8;
+  font-size: 1.1rem;
+  font-weight: 300;
+}
+
+#about .support-actions {
+  display: flex;
+  gap: 1.5rem;
+  flex-shrink: 0;
+}
+
+/* Enhanced Button Styles */
+#about .btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 50px;
+  transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  border: none;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  letter-spacing: 0.5px;
+}
+
+#about .btn::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, 
+    transparent, 
+    rgba(255, 255, 255, 0.2), 
+    transparent);
+  transition: left 0.7s ease;
+}
+
+#about .btn:hover::before {
+  left: 100%;
+}
+
+#about .btn-primary {
+  background: linear-gradient(135deg, 
+    #a35cd0 0%, 
+    #8a4ac7 50%, 
+    #7239b0 100%);
+  color: white;
+  box-shadow: 
+    0 8px 32px rgba(163, 92, 208, 0.4),
+    0 0 0 1px rgba(255, 255, 255, 0.1);
+}
+
+#about .btn-primary:hover {
+  transform: translateY(-5px) scale(1.05);
+  box-shadow: 
+    0 20px 60px rgba(163, 92, 208, 0.6),
+    0 0 0 1px rgba(255, 255, 255, 0.2);
+  background: linear-gradient(135deg, 
+    #b97de6 0%, 
+    #a35cd0 50%, 
+    #8a4ac7 100%);
+}
+
+#about .btn-outline {
+  background: transparent;
+  color: white;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(10px);
+}
+
+#about .btn-outline:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.5);
+  transform: translateY(-5px) scale(1.05);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+}
+
+/* Animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+#about .animate-on-scroll.animated {
+  animation: fadeInUp 0.8s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+
+/* Responsive Design */
 @media (max-width: 1200px) {
-  .partner-item { width: 240px; padding: 2rem 1.5rem; }
-  .partners-slider { gap: 2.5rem; }
+  #about .title {
+    font-size: 3rem;
+  }
+  
+  #about .vm-header h3 {
+    font-size: 1.8rem;
+  }
 }
 
 @media (max-width: 992px) {
-  #partnership .title { font-size: 2.4rem; }
-  #partnership .subtitle { font-size: 1.05rem; }
-  .partner-item { width: 220px; padding: 1.8rem 1.2rem; }
-  .partners-slider { gap: 2rem; animation-duration: 35s; }
+  #about.section {
+    padding: 6rem 0;
+  }
+  
+  #about .title {
+    font-size: 2.5rem;
+  }
+  
+  #about .overview-content,
+  #about .first-edition-highlight,
+  #about .vm-card {
+    padding: 3rem;
+  }
+  
+  #about .vision-mission {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  
+  #about .faq-support {
+    flex-direction: column;
+    text-align: center;
+    gap: 2rem;
+  }
+  
+  #about .support-actions {
+    width: 100%;
+    justify-content: center;
+  }
 }
 
 @media (max-width: 768px) {
-  #partnership { padding: 4rem 1rem 3rem; }
-  #partnership .title { font-size: 2.2rem; }
-  .partner-item { width: 200px; padding: 1.5rem 1rem; }
-  .partners-slider { gap: 1.6rem; animation-duration: 30s; }
-  .partners-slider.reverse { animation-duration: 25s; }
-}
-
-@media (max-width: 576px) {
-  #partnership .title { font-size: 2rem; }
-  .partner-item { width: 180px; padding: 1.4rem 0.9rem; }
-  .partner-logo { height: 100px; margin-bottom: 1rem; }
-  .partner-name { font-size: 0.95rem; }
+  #about.section {
+    padding: 4rem 0;
+  }
+  
+  #about .container {
+    padding: 0 1.5rem;
+  }
+  
+  #about .title {
+    font-size: 2.2rem;
+  }
+  
+  #about .subtitle {
+    font-size: 1.1rem;
+    padding: 1.5rem;
+  }
+  
+  #about .overview-content {
+    flex-direction: column;
+    padding: 2.5rem;
+    gap: 2rem;
+  }
+  
+  #about .overview-icon {
+    width: 80px;
+    height: 80px;
+    font-size: 2rem;
+  }
+  
+  #about .overview-text h3,
+  #about .highlight-text h3 {
+    font-size: 1.6rem;
+  }
+  
+  #about .values-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  
+  #about .value-card {
+    padding: 2.5rem 2rem;
+  }
+  
+  #about .faq-question {
+    padding: 1.5rem;
+    font-size: 1.1rem;
+  }
+  
+  #about .answer-content {
+    padding: 2rem;
+  }
+  
+  #about .support-actions {
+    flex-direction: column;
+    width: 100%;
+    gap: 1rem;
+  }
+  
+  #about .btn {
+    width: 100%;
+    justify-content: center;
+  }
 }
 
 @media (max-width: 480px) {
-  #partnership .title { font-size: 1.8rem; }
-  #partnership .subtitle { font-size: 1rem; margin-bottom: 2rem; }
-  .partner-item { width: 160px; padding: 1.2rem 0.8rem; }
-  .partner-logo { height: 90px; margin-bottom: 0.8rem; }
-  .partner-name { font-size: 0.9rem; }
+  #about .title {
+    font-size: 1.9rem;
+  }
+  
+  #about .section-badge,
+  #about .first-edition-badge {
+    padding: 0.75rem 1.25rem;
+    font-size: 0.85rem;
+  }
+  
+  #about .vm-header {
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+  }
+  
+  #about .vm-header h3 {
+    font-size: 1.6rem;
+  }
+  
+  #about .faq-number {
+    width: 36px;
+    height: 36px;
+    font-size: 0.9rem;
+  }
+  
+  #about .faq-question {
+    gap: 1rem;
+    font-size: 1rem;
+  }
+  
+  #about .answer-content {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  #about .answer-icon {
+    align-self: center;
+  }
 }
 
-/* =========================================================================
-   EXTRA SMALL (Phones <360px)
-   ========================================================================= */
-@media (max-width: 360px) {
-  #partnership { padding: 3rem 0.5rem 2rem; }
-  #partnership .title { font-size: 1.5rem; }
-  .partner-item { width: 140px; padding: 1rem 0.6rem; }
-  .partner-logo { height: 80px; }
-  .partner-name { font-size: 0.8rem; }
-}
-
-/* =========================================================================
-   ACCESSIBILITY & PREFERENCES
-   ========================================================================= */
+/* Accessibility & Performance */
 @media (prefers-reduced-motion: reduce) {
-  .partners-slider, .partners-slider.reverse {
-    animation: none;
-    transform: none !important;
+  #about * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
   }
-  .partner-item, .partner-logo img, .partner-link {
-    transition: none !important;
+  
+  #about .section::after,
+  #about .title::after {
+    display: none;
+  }
+}
+
+@media (prefers-contrast: high) {
+  #about .value-card,
+  #about .vm-card,
+  #about .faq-item,
+  #about .overview-content,
+  #about .first-edition-highlight {
+    border: 2px solid white;
+    background: rgba(0, 0, 0, 0.9);
+  }
+  
+  #about .btn-outline {
+    border: 2px solid white;
+  }
+  
+  #about .title,
+  #about .overview-text h3,
+  #about .highlight-text h3,
+  #about .value-card h3,
+  #about .vm-header h3,
+  #about .faq-empty h3,
+  #about .support-content h3 {
+    -webkit-text-fill-color: white;
+    background: none;
+  }
+}
+
+/* Print Styles */
+@media print {
+  #about .btn,
+  #about .faq-question .faq-icon,
+  #about .section-badge,
+  #about .first-edition-badge {
+    display: none !important;
+  }
+  
+  #about .faq-answer {
+    display: block !important;
+    border-top: 1px solid #ccc;
+  }
+  
+  #about.section {
+    background: white !important;
+    color: black !important;
+  }
+  
+  #about .title,
+  #about .overview-text h3,
+  #about .highlight-text h3,
+  #about .value-card h3,
+  #about .vm-header h3,
+  #about .faq-empty h3,
+  #about .support-content h3,
+  #about .faq-text,
+  #about .faq-number {
+    color: black !important;
+    -webkit-text-fill-color: black !important;
+    text-shadow: none !important;
+  }
+  
+  #about .overview-text p,
+  #about .highlight-text p,
+  #about .value-card p,
+  #about .vm-card p,
+  #about .answer-text,
+  #about .support-content p,
+  #about .faq-empty p,
+  #about .mission-list li span {
+    color: #333 !important;
+  }
+}
+
+/* ====================
+   PARTNERSHIP SECTION STYLES - FIXED & OPTIMIZED
+   ==================== */
+
+/* Section Container */
+#partnership.section {
+  position: relative;
+  padding: 8rem 0;
+  background-color: #481465; /* warna dominan */
+  overflow: hidden;
+  isolation: isolate;
+}
+
+/* Container */
+#partnership .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  position: relative;
+}
+
+/* Title Styling */
+#partnership .title {
+  font-size: 2.8rem;
+  font-weight: 800;
+  text-align: center;
+  color: white;
+  margin-bottom: 1rem;
+  background: linear-gradient(135deg, #ffffff, #d4b2e6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Subtitle */
+#partnership .subtitle {
+  font-size: 1.1rem;
+  color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto 3rem;
+  line-height: 1.6;
+}
+
+/* Partners Container */
+#partnership .partners-container {
+  position: relative;
+  padding: 2rem 0;
+  overflow: hidden;
+}
+
+/* Slider Wrapper */
+#partnership .partners-slider {
+  position: relative;
+  overflow: visible; /* Changed from hidden */
+  padding: 1rem 0;
+}
+
+/* Track dengan Infinite Animation */
+#partnership .partners-track {
+  display: flex;
+  gap: 3rem;
+  animation: slideInfinite 30s linear infinite;
+  padding: 1rem 0;
+  width: max-content;
+  will-change: transform;
+}
+
+/* Untuk pause saat hover */
+#partnership .partners-track:hover {
+  animation-play-state: paused;
+}
+
+/* Infinite Animation */
+@keyframes slideInfinite {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-280px * 6 - 3rem * 5));
+  }
+}
+
+/* Partner Item */
+#partnership .partner-item {
+  flex: 0 0 280px;
+  height: 160px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  padding: 1.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  transition: all 0.4s ease;
+  cursor: pointer;
+}
+
+#partnership .partner-item:hover {
+  transform: translateY(-10px);
+  background: rgba(255, 255, 255, 0.15);
+  border-color: rgba(163, 92, 208, 0.5);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+
+/* Logo Container */
+#partnership .partner-logo {
+  width: 140px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+}
+
+/* Logo Image */
+#partnership .partner-logo img {
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  filter: brightness(1.1);
+  transition: all 0.3s ease;
+}
+
+#partnership .partner-item:hover .partner-logo img {
+  transform: scale(1.1);
+  filter: brightness(1.3);
+}
+
+/* Partner Name */
+#partnership .partner-name {
+  font-size: 0.95rem;
+  color: rgba(255, 255, 255, 0.9);
+  font-weight: 500;
+  text-align: center;
+}
+
+/* Empty State */
+#partnership .partners-track > p {
+  color: rgba(255, 255, 255, 0.7);
+  text-align: center;
+  width: 100%;
+  padding: 2rem;
+  font-style: italic;
+}
+
+/* Navigation Buttons */
+#partnership .partners-navigation {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+#partnership .nav-btn {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#partnership .nav-btn:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: scale(1.1);
+}
+
+#partnership .nav-btn svg {
+  width: 24px;
+  height: 24px;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  #partnership .title {
+    font-size: 2.4rem;
+  }
+  
+  #partnership .partner-item {
+    flex: 0 0 240px;
+    height: 140px;
+  }
+  
+  @keyframes slideInfinite {
+    100% {
+      transform: translateX(calc(-240px * 6 - 3rem * 5));
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  #partnership.section {
+    padding: 4rem 0;
+  }
+  
+  #partnership .container {
+    padding: 0 1.5rem;
+  }
+  
+  #partnership .title {
+    font-size: 2rem;
+  }
+  
+  #partnership .subtitle {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+  }
+  
+  #partnership .partner-item {
+    flex: 0 0 200px;
+    height: 120px;
+    padding: 1rem;
+    gap: 2rem;
+  }
+  
+  #partnership .partner-logo {
+    width: 120px;
+    height: 60px;
+    margin-bottom: 0.75rem;
+  }
+  
+  @keyframes slideInfinite {
+    100% {
+      transform: translateX(calc(-200px * 6 - 3rem * 5));
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  #partnership .title {
+    font-size: 1.8rem;
+  }
+  
+  #partnership .partner-item {
+    flex: 0 0 180px;
+    height: 110px;
+    padding: 1rem;
+  }
+  
+  #partnership .partner-logo {
+    width: 100px;
+    height: 50px;
+  }
+  
+  #partnership .partner-name {
+    font-size: 0.85rem;
+  }
+  
+  @keyframes slideInfinite {
+    100% {
+      transform: translateX(calc(-180px * 6 - 2rem * 5));
+    }
+  }
+}
+
+/* Reduced Motion Support */
+@media (prefers-reduced-motion: reduce) {
+  #partnership .partners-track {
     animation: none !important;
+    overflow-x: auto;
+    justify-content: center;
+    padding: 1rem;
+    gap: 2rem;
   }
+  
+  #partnership .partner-item {
+    flex-shrink: 0;
+  }
+}
+
+/* High Contrast Mode */
+@media (prefers-contrast: high) {
+  #partnership .partner-item {
+    border: 2px solid white;
+    background: rgba(0, 0, 0, 0.8);
+  }
+}
+
+/* Fix untuk JavaScript duplicate items */
+#partnership .partners-track .partner-item.clone {
+  opacity: 0.8;
 }
   </style>
 </head>
 <body>
 
   <!-- ===========================
-     LOADING / PRELOADER
+     LOADING / PRELOADER - MINIMALIST
 =========================== -->
 <div class="loader-wrap" id="loader">
-  <div class="loader" role="status" aria-live="polite" aria-label="Memuat halaman...">
-    <div class="spinner" aria-hidden="true"></div>
-    <h4>Summit Of Stars</h4>
-    <p>Menyiapkan halaman untuk pengalaman terbaikmu…</p>
-
-    <div class="progress" aria-hidden="true">
-      <span id="progressbar" style="width: 0%"></span>
+  
+  <div class="loader-content">
+    
+    <!-- Brand Area -->
+    <div class="brand-area">
+      <div class="brand-logo">
+        <div class="logo-circle">
+          <img src="images/ENTV Lgo.png" alt="EntreVibes">
+        </div>
+        <h1 class="brand-name">EntreVibes</h1>
+        <p class="brand-subtitle">UMSIDA Entrepreneurship Festival</p>
+      </div>
     </div>
-
-    <!-- Credit dengan 3 logo -->
-    <div class="loader-credit">
-      <img src="images/20250320_190104[1].png" alt="MH Teams" />
-      <img src="images/summitstars.png" alt="YRI Sumsel" />
-      <img src="images/YOUTH RANGER INDONESIA REGIONAL SUMATERA SELATAN (1).png" alt="YRI SUMSEL" />
-      <small>
-        Developed with ❤️ by 
-        <a href="https://mhteams.my.id" target="_blank" rel="noopener noreferrer">
-          MH Teams
-        </a> — specially for <strong>Summit Of Stars</strong>
-      </small>
+    
+    <!-- Loading Animation -->
+    <div class="loading-animation">
+      <div class="spinner-ring"></div>
+      <div class="loading-dots">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
     </div>
+    
+    
   </div>
+  
+  <div class="loader-footer">
+    <p>© 2026 EntreVibes UMSIDA • All Rights Reserved</p>
+  </div>
+  
 </div>
 
-
-  
   <!-- ===========================
        NAVBAR
        =========================== -->
   <header class="navbar" id="navbar" role="navigation" aria-label="Main Navigation">
     <div class="container nav-inner">
-      <a href="#home" class="logo" aria-label="YOUTH RANGER INDONESIA REGIONAL SUMATERA SELATAN">
-        <img src="images/summitstars.png" 
-            alt="Logo YOUTH RANGER INDONESIA REGIONAL SUMATERA SELATAN" 
+      <a href="#home" class="logo" aria-label=" Seluruh Indonesia">
+        <img src="images/logo_default.png" 
+            alt="Logo  Seluruh Indonesia" 
             style="height: 50px; width: auto; margin-right: 0.6rem; vertical-align: middle;">
-        Summit Of Stars
+        Entre Vibes UMSIDA
       </a>
 
 
@@ -3426,94 +5510,286 @@ footer .socials a:hover {
   </div>
 
 <!-- ===========================
-     HERO / LANDING (Fixed)
+     HERO / LANDING - ENTREVIBES UMSIDA VOL.1
 =========================== -->
-<main id="home" class="hero-section" role="main">
+<main id="home" class="hero-section" role="main" aria-label="Hero Section">
   <div class="hero-container">
-    <div class="hero-badge" aria-hidden="true">Kompetisi Bergengsi 2025</div>
-
-    <h1 class="hero-title">Summit Of Stars</h1>
-
-    <div class="hero-subtitle">
-      Wujudkan Potensi Terbaikmu — Berkreasi, Berinovasi, Berprestasi
+    
+    <!-- Background Texture -->
+    <div class="hero-bg-texture" aria-hidden="true">
+      <div class="texture-overlay"></div>
+      <div class="gradient-overlay"></div>
+    </div>
+    
+    <!-- Badge -->
+    <div class="hero-badge" aria-label="Event Badge">
+      <span class="badge-icon">🚀</span>
+      <span class="badge-text">Volume 1 • UMSIDA Entrepreneurship</span>
     </div>
 
+    <!-- Main Title -->
+    <h1 class="hero-title">
+      <span class="title-line">EntreVibes</span>
+      <span class="title-line">The Beginning</span>
+      <span class="title-line accent-text">of Innovation</span>
+    </h1>
+
+    <!-- Subtitle -->
+    <div class="hero-subtitle">
+      <span class="subtitle-text">Where Ideas Take Flight —</span>
+      <span class="subtitle-text">Launch Your Startup Journey</span>
+    </div>
+
+    <!-- Description -->
     <p class="hero-desc">
-      Platform kompetisi terdepan untuk generasi muda Sumatera Selatan.
-      Tunjukkan bakat, raih prestasi, dan jadilah yang terdepan dalam berbagai bidang kompetisi.
+      Volume pertama festival kewirausahaan UMSIDA yang menandai dimulainya 
+      ekosistem startup kampus. Wadah bagi mahasiswa untuk mengubah ide menjadi 
+      bisnis nyata dengan bimbingan mentor dan peluang pendanaan.
     </p>
 
-    <!-- CTA + Countdown -->
+    <!-- CTA Buttons -->
     <div class="hero-ctas">
-      <!-- 🔽 Tombol Download Guidebook -->
+      <!-- Download Guidebook Button -->
       <a
-        href="assets/guidebook.pdf"
+        href="assets/guidebook-entrepreneurship-vol1.pdf"
         class="btn btn-primary"
         id="btnGuidebook"
-        download="Guidebook.pdf"
+        download="EntreVibes_Vol1_Guidebook.pdf"
         type="application/pdf"
+        aria-label="Download Guidebook PDF"
       >
-        Download Guidebook
+        <span class="btn-icon">📘</span>
+        <span class="btn-text">Download Guidebook</span>
       </a>
 
-
-      <!-- 🔽 Tombol Lihat Kompetisi -->
-      <a href="#kompetisi" class="btn btn-ghost" id="btnKompetisi">
-        Lihat Kompetisi
+      <!-- Explore Competitions Button -->
+      <a 
+        href="#competitions" 
+        class="btn btn-ghost" 
+        id="btnCompetitions"
+        aria-label="Explore Competitions"
+      >
+        <span class="btn-icon">🌟</span>
+        <span class="btn-text">Explore Programs</span>
       </a>
     </div>
-
-    <!-- Countdown -->
-    <div class="hero-countdown">
-      <div class="countdown" role="timer" aria-live="polite">
-        <div class="count-item">
-          <span class="count-number" id="days">0</span>
-          <span class="count-label">Hari</span>
-        </div>
-        <div class="count-item">
-          <span class="count-number" id="hours">0</span>
-          <span class="count-label">Jam</span>
-        </div>
-        <div class="count-item">
-          <span class="count-number" id="minutes">0</span>
-          <span class="count-label">Menit</span>
-        </div>
-        <div class="count-item">
-          <span class="count-number" id="seconds">0</span>
-          <span class="count-label">Detik</span>
-        </div>
+    
+    <!-- Volume 1 Badge -->
+    <div class="volume-badge">
+      <div class="volume-circle">
+        <span class="volume-number">1</span>
+        <span class="volume-st">st</span>
       </div>
+      <div class="volume-label">Pioneering Edition</div>
     </div>
+    
+    <!-- Scroll Indicator -->
+    <div class="scroll-indicator" aria-hidden="true">
+      <div class="scroll-line"></div>
+      <div class="scroll-arrow">↓</div>
+    </div>
+
   </div>
 </main>
+<!-- END HERO SECTION -->
 
-<section id="kompetisi" class="section">
-  <div class="container">
-    <h2 class="title">Kategori Kompetisi</h2>
-    <p class="subtitle">
-      Berbagai bidang kompetisi yang menantang untuk mengasah kemampuan dan bakatmu — esai, debat, inovasi, dan puzzle.
-    </p>
+<section id="kompetisi" class="competitions-section">
+  <div class="competitions-container">
 
-    <div class="grid">
-      <?php foreach ($kompetisis as $k): ?>
-      <div class="card">
-        <div class="card-inner">
-          <!-- Front -->
-          <div class="card-front">
-            <div class="icon">
-              <?= $k['icon_svg']; ?>
-            </div>
-            <h3><?= htmlspecialchars($k['judul']); ?></h3>
-            <p><?= htmlspecialchars($k['deskripsi']); ?></p>
+    <!-- ===== SECTION HEADER ===== -->
+    <div class="section-header">
+      <div class="section-badge">
+        <svg class="badge-icon" width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/>
+        </svg>
+        <span class="badge-text">EntreVibes UMSIDA</span>
+      </div>
+
+      <h2 class="section-title">
+        Kategori <span class="accent-text">Kompetisi</span> & Non-Kompetisi
+      </h2>
+
+      <p class="section-subtitle">
+        Beragam lomba inovatif dan kegiatan pengembangan diri — kompetisi,
+        seminar, tenant UMKM, hingga konsultasi usaha.
+      </p>
+    </div>
+
+    <!-- ===== FILTER ===== -->
+    <div class="categories-filter">
+      <button class="filter-btn active" data-filter="all">
+        <svg class="filter-icon" width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+        </svg>
+        Semua
+      </button>
+      <button class="filter-btn" data-filter="lomba">
+        <svg class="filter-icon" width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M17 4c-1.1 0-2 .9-2 2 0 .75.41 1.4 1.04 1.76l-1.03 2.05c-.02.05-.05.1-.08.16l3.58 2.08c.28-.22.61-.37.98-.41L19 9h2V7l-2.46-.04c-.13-.67-.7-1.19-1.41-1.19L17 4zm-6.5 3c0-.28.22-.5.5-.5s.5.22.5.5-.22.5-.5.5-.5-.22-.5-.5zM5 9l2.46.04c.13.67.7 1.19 1.41 1.19L9 12c1.1 0 2-.9 2-2 0-.75-.41-1.4-1.04-1.76l1.03-2.05c.02-.05.05-.1.08-.16L7.49 4.31c-.28.22-.61.37-.98.41L5 5H3v2l2.46.04z"/>
+          <path d="M12 15l-6.09 3.26L7 23l5-3.74L17 23l1.09-4.74L12 15zm0-12c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/>
+        </svg>
+        Lomba
+      </button>
+      <button class="filter-btn" data-filter="non-lomba">
+        <svg class="filter-icon" width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+        </svg>
+        Non-Lomba
+      </button>
+    </div>
+
+    <!-- ===== GRID ===== -->
+    <div class="competitions-grid">
+      <?php
+      $lomba_kategori = [
+        'Essay Competition',
+        'Debate Competition',
+        'Innovation Case Competition',
+        'Puzzle Competition'
+      ];
+
+      foreach ($kompetisis as $k):
+        $kategori = in_array($k['judul'], $lomba_kategori) ? 'lomba' : 'non-lomba';
+      ?>
+      <div class="competition-card" data-category="<?= $kategori; ?>">
+
+        <!-- ================= FRONT ================= -->
+        <div class="card-front">
+
+          <span class="card-badge <?= $kategori === 'lomba' ? 'creative-badge' : 'social-badge'; ?>">
+            <?php if ($kategori === 'lomba'): ?>
+              <svg class="badge-icon" width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M17 4c-1.1 0-2 .9-2 2 0 .75.41 1.4 1.04 1.76l-1.03 2.05c-.02.05-.05.1-.08.16l3.58 2.08c.28-.22.61-.37.98-.41L19 9h2V7l-2.46-.04c-.13-.67-.7-1.19-1.41-1.19L17 4zm-6.5 3c0-.28.22-.5.5-.5s.5.22.5.5-.22.5-.5.5-.5-.22-.5-.5zM5 9l2.46.04c.13.67.7 1.19 1.41 1.19L9 12c1.1 0 2-.9 2-2 0-.75-.41-1.4-1.04-1.76l1.03-2.05c.02-.05.05-.1.08-.16L7.49 4.31c-.28.22-.61.37-.98.41L5 5H3v2l2.46.04z"/>
+                <path d="M12 15l-6.09 3.26L7 23l5-3.74L17 23l1.09-4.74L12 15zm0-12c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/>
+              </svg>
+              Lomba
+            <?php else: ?>
+              <svg class="badge-icon" width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+              </svg>
+              Non-Lomba
+            <?php endif; ?>
+          </span>
+
+          <div class="card-icon">
+            <?= $k['icon_svg']; ?>
           </div>
-          <!-- Back -->
-          <div class="card-back">
-            <h3>Daftar Sekarang!</h3>
-            <a href="<?= htmlspecialchars($k['registration_link'] ?? '#'); ?>" target="_blank">Daftar</a>
-            <?php if (in_array($k['judul'], ['Essay Competition','Innovation Case Competition'])): ?>
-            <a href="<?= htmlspecialchars($k['submission_link'] ?? '#'); ?>" target="_blank">Upload Karya</a>
+
+          <h3 class="card-title">
+            <?= htmlspecialchars($k['judul']); ?>
+          </h3>
+
+          <p class="card-description">
+            <?= htmlspecialchars($k['deskripsi']); ?>
+          </p>
+
+          <div class="card-details">
+            <?php if ($kategori === 'lomba'): ?>
+              <div class="detail-item">
+                <svg class="detail-icon" width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"/>
+                </svg>
+                Deadline:
+                <?= date('d M Y', strtotime($k['deadline'] ?? '2026-12-31')); ?>
+              </div>
+              <div class="detail-item">
+                <svg class="detail-icon" width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1.41 16.09V20h-2.67v-1.93c-1.71-.36-3.16-1.46-3.27-3.4h1.96c.1 1.05.82 1.87 2.65 1.87 1.96 0 2.4-.98 2.4-1.59 0-.83-.44-1.61-2.67-2.14-2.48-.6-4.18-1.62-4.18-3.67 0-1.72 1.39-2.84 3.11-3.21V4h2.67v1.95c1.86.45 2.79 1.86 2.85 3.39H14.3c-.05-1.11-.64-1.87-2.22-1.87-1.5 0-2.4.68-2.4 1.64 0 .84.65 1.39 2.67 1.91s4.18 1.39 4.18 3.91c-.01 1.83-1.38 2.83-3.12 3.16z"/>
+                </svg>
+                Hadiah:
+                Rp <?= number_format($k['prize'] ?? 0, 0, ',', '.'); ?>
+              </div>
+            <?php else: ?>
+              <div class="detail-item">
+                <svg class="detail-icon" width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M20 9H4v2h16V9zM4 15h16v-2H4v2z"/>
+                </svg>
+                Free Registration
+              </div>
+              <div class="detail-item">
+                <svg class="detail-icon" width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm2 16H8v-2h8v2zm0-4H8v-2h8v2zm-3-5V3.5L18.5 9H13z"/>
+                </svg>
+                Sertifikat
+              </div>
             <?php endif; ?>
           </div>
+        </div>
+
+        <!-- ================= BACK ================= -->
+        <div class="card-back">
+
+          <h3>
+            <?= $kategori === 'lomba' ? 'Daftar Lomba' : 'Daftar Kegiatan'; ?>
+          </h3>
+
+          <div class="card-actions">
+
+            <!-- LOMBA -->
+            <?php if ($kategori === 'lomba'): ?>
+              <a href="<?= htmlspecialchars($k['registration_link']); ?>"
+                 target="_blank"
+                 class="action-btn primary">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M19 3h-4.18C14.4 1.84 13.3 1 12 1c-1.3 0-2.4.84-2.82 2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7 0c.55 0 1 .45 1 1s-.45 1-1 1-1-.45-1-1 .45-1 1-1zm2 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z"/>
+                </svg>
+                Daftar Lomba
+              </a>
+
+              <?php if (!empty($k['submission_link'])): ?>
+                <a href="<?= htmlspecialchars($k['submission_link']); ?>"
+                   target="_blank"
+                   class="action-btn secondary">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/>
+                  </svg>
+                  Upload Karya
+                </a>
+              <?php endif; ?>
+
+              <?php if (!empty($k['guideline_link'])): ?>
+                <a href="<?= htmlspecialchars($k['guideline_link']); ?>"
+                   target="_blank"
+                   class="action-btn secondary">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M18 2H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zM6 4h5v8l-2.5-1.5L6 12V4z"/>
+                  </svg>
+                  Panduan
+                </a>
+              <?php endif; ?>
+
+            <!-- NON LOMBA -->
+            <?php else: ?>
+              <a href="<?= htmlspecialchars($k['registration_link']); ?>"
+                 target="_blank"
+                 class="action-btn primary">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
+                </svg>
+                Daftar Sekarang
+              </a>
+
+              <?php if (!empty($k['info_link'])): ?>
+                <a href="<?= htmlspecialchars($k['info_link']); ?>"
+                   target="_blank"
+                   class="action-btn secondary">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/>
+                  </svg>
+                  Info Lengkap
+                </a>
+              <?php endif; ?>
+            <?php endif; ?>
+
+          </div>
+
+          <?php if ($kategori === 'non-lomba' && !empty($k['contact_person'])): ?>
+            <div class="back-description">
+              <strong>Contact Person</strong><br>
+              <?= htmlspecialchars($k['contact_person']); ?>
+            </div>
+          <?php endif; ?>
+
         </div>
       </div>
       <?php endforeach; ?>
@@ -3521,36 +5797,188 @@ footer .socials a:hover {
   </div>
 </section>
 
-    <!-- ===========================
-     TIMELINE
+
+<!-- ===========================
+     TIMELINE SECTION
 =========================== -->
 <section class="section" id="timeline" aria-label="Timeline Kegiatan">
     <div class="container">
-        <h2 class="title">Timeline Kegiatan</h2>
-        <p class="subtitle">Jadwal lengkap pelaksanaan Summit Of Stars 2025 - jangan lewatkan setiap tahapannya!</p>
+        <div class="section-header">
+            <div class="section-badge">
+                <svg class="badge-icon" width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.5 14.5L11 13V7h2v5l4 2-1.5 1.5z"/>
+                </svg>
+                <span class="badge-text">Jadwal Pelaksanaan</span>
+            </div>
+            
+            <h2 class="title">Timeline Kegiatan</h2>
+            <p class="subtitle">Jadwal lengkap pelaksanaan Entre Vibes UMSIDA 2025 - jangan lewatkan setiap tahapannya!</p>
+        </div>
 
+        <?php
+        // ERROR HANDLING: Check if timeline data exists
+        if (empty($timeline_items) || !is_array($timeline_items)):
+        ?>
+        
+        <!-- Empty State Message -->
+        <div class="timeline-empty-state">
+            <div class="empty-state-icon">
+                <svg width="64" height="64" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"/>
+                </svg>
+            </div>
+            <h3 class="empty-state-title">Timeline Belum Tersedia</h3>
+            <p class="empty-state-message">
+                Jadwal kegiatan masih dalam proses penyusunan. Timeline akan segera diumumkan dalam waktu dekat.
+            </p>
+            <div class="empty-state-actions">
+                <button class="btn btn-primary" onclick="location.reload()">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M17.65 6.35C16.2 4.9 14.21 4 12 4c-4.42 0-7.99 3.58-7.99 8s3.57 8 7.99 8c3.73 0 6.84-2.55 7.73-6h-2.08c-.82 2.33-3.04 4-5.65 4-3.31 0-6-2.69-6-6s2.69-6 6-6c1.66 0 3.14.69 4.22 1.78L13 11h7V4l-2.35 2.35z"/>
+                    </svg>
+                    Refresh Halaman
+                </button>
+                <a href="#contact" class="btn btn-outline">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 14H4V8l8 5 8-5v10zm-8-7L4 6h16l-8 5z"/>
+                    </svg>
+                    Hubungi Kami
+                </a>
+            </div>
+        </div>
+        
+        <?php else: ?>
+        
+        <!-- NORMAL TIMELINE (when data exists) -->
         <div class="timeline-container">
-            <?php foreach($timeline_items as $index => $item): ?>
+            <?php foreach($timeline_items as $index => $item): 
+                // Sanitize and validate data
+                $judul = isset($item['judul']) ? htmlspecialchars($item['judul'], ENT_QUOTES, 'UTF-8') : 'Kegiatan';
+                $tanggal_start = isset($item['tanggal_start']) ? htmlspecialchars($item['tanggal_start'], ENT_QUOTES, 'UTF-8') : '';
+                $tanggal_end = isset($item['tanggal_end']) ? htmlspecialchars($item['tanggal_end'], ENT_QUOTES, 'UTF-8') : '';
+                $deskripsi = isset($item['deskripsi']) ? htmlspecialchars($item['deskripsi'], ENT_QUOTES, 'UTF-8') : '';
+                $link = isset($item['link']) ? htmlspecialchars($item['link'], ENT_QUOTES, 'UTF-8') : '';
+            ?>
             <div class="timeline-item animate-on-scroll">
                 <div class="timeline-marker">
-                    <div class="timeline-dot"></div>
+                    <div class="timeline-dot">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <?php 
+                            // Determine icon based on activity type
+                            $icon_type = strtolower($judul);
+                            if (strpos($icon_type, 'pendaftaran') !== false): ?>
+                            <!-- Registration icon -->
+                            <path d="M19 3h-4.18C14.4 1.84 13.3 1 12 1c-1.3 0-2.4.84-2.82 2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7 0c.55 0 1 .45 1 1s-.45 1-1 1-1-.45-1-1 .45-1 1-1zm2 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z"/>
+                            <?php elseif (strpos($icon_type, 'lomba') !== false || strpos($icon_type, 'kompetisi') !== false): ?>
+                            <!-- Competition icon -->
+                            <path d="M17 4c-1.1 0-2 .9-2 2 0 .75.41 1.4 1.04 1.76l-1.03 2.05c-.02.05-.05.1-.08.16l3.58 2.08c.28-.22.61-.37.98-.41L19 9h2V7l-2.46-.04c-.13-.67-.7-1.19-1.41-1.19L17 4zM5 9l2.46.04c.13.67.7 1.19 1.41 1.19L9 12c1.1 0 2-.9 2-2 0-.75-.41-1.4-1.04-1.76l1.03-2.05c.02-.05.05-.1.08-.16L7.49 4.31c-.28.22-.61.37-.98.41L5 5H3v2l2.46.04z"/>
+                            <path d="M12 15l-6.09 3.26L7 23l5-3.74L17 23l1.09-4.74L12 15z"/>
+                            <?php elseif (strpos($icon_type, 'seminar') !== false || strpos($icon_type, 'workshop') !== false): ?>
+                            <!-- Seminar/Workshop icon -->
+                            <path d="M20 6h-4V4c0-1.1-.9-2-2-2h-4c-1.1 0-2 .9-2 2v2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zM10 4h4v2h-4V4zm10 16H4V8h16v12z"/>
+                            <path d="M13 10h-2v3H8v2h3v3h2v-3h3v-2h-3z"/>
+                            <?php elseif (strpos($icon_type, 'penutupan') !== false || strpos($icon_type, 'akhir') !== false): ?>
+                            <!-- Closing icon -->
+                            <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/>
+                            <?php else: ?>
+                            <!-- Default calendar icon -->
+                            <path d="M19 4h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V10h14v10zM5 6v2h14V6H5zm2 4h10v2H7zm0 4h7v2H7z"/>
+                            <?php endif; ?>
+                        </svg>
+                    </div>
                     <?php if($index < count($timeline_items)-1): ?>
                     <div class="timeline-line"></div>
                     <?php endif; ?>
                 </div>
                 <div class="timeline-content">
                     <div class="timeline-date">
-                        <?= htmlspecialchars($item['tanggal_start']); ?>
-                        <?php if($item['tanggal_end'] && $item['tanggal_end'] !== $item['tanggal_start']): ?>
-                            – <?= htmlspecialchars($item['tanggal_end']); ?>
+                        <svg class="date-icon" width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"/>
+                        </svg>
+                        <?= $tanggal_start; ?>
+                        <?php if(!empty($tanggal_end) && $tanggal_end !== $tanggal_start): ?>
+                            – <?= $tanggal_end; ?>
                         <?php endif; ?>
                     </div>
-                    <h3><?= htmlspecialchars($item['judul']); ?></h3>
-                    <p><?= htmlspecialchars($item['deskripsi']); ?></p>
+                    <h3>
+                        <svg class="title-icon" width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                            <?php 
+                            // Title icon based on activity type
+                            if (strpos(strtolower($judul), 'pembukaan') !== false): ?>
+                            <path d="M3 17v2h6v-2H3zM3 5v2h10V5H3zm10 16v-2h8v-2h-8v-2h-2v6h2zM7 9v2H3v2h4v2h2V9H7zm14 4v-2H11v2h10zm-6-4h2V7h4V5h-4V3h-2v6z"/>
+                            <?php elseif (strpos(strtolower($judul), 'pendaftaran') !== false): ?>
+                            <path d="M19 3h-4.18C14.4 1.84 13.3 1 12 1c-1.3 0-2.4.84-2.82 2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7 0c.55 0 1 .45 1 1s-.45 1-1 1-1-.45-1-1 .45-1 1-1zm2 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z"/>
+                            <?php else: ?>
+                            <path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z"/>
+                            <?php endif; ?>
+                        </svg>
+                        <?= $judul; ?>
+                    </h3>
+                    <p>
+                        <svg class="desc-icon" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="opacity: 0.7;">
+                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/>
+                        </svg>
+                        <?= $deskripsi; ?>
+                    </p>
+                    
+                    <?php if(!empty($link) && filter_var($link, FILTER_VALIDATE_URL)): ?>
+                    <a href="<?= $link; ?>" class="timeline-link" target="_blank" rel="noopener noreferrer">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"/>
+                        </svg>
+                        Info Selengkapnya
+                    </a>
+                    <?php endif; ?>
                 </div>
             </div>
             <?php endforeach; ?>
         </div>
+        
+        <!-- Timeline Legend -->
+        <div class="timeline-legend">
+            <div class="legend-item">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="#4CAF50">
+                    <path d="M19 3h-4.18C14.4 1.84 13.3 1 12 1c-1.3 0-2.4.84-2.82 2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"/>
+                </svg>
+                <span>Pendaftaran</span>
+            </div>
+            <div class="legend-item">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="#2196F3">
+                    <path d="M20 6h-4V4c0-1.1-.9-2-2-2h-4c-1.1 0-2 .9-2 2v2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2z"/>
+                </svg>
+                <span>Kegiatan</span>
+            </div>
+            <div class="legend-item">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="#FF9800">
+                    <path d="M17 4c-1.1 0-2 .9-2 2 0 .75.41 1.4 1.04 1.76l-1.03 2.05c-.02.05-.05.1-.08.16l3.58 2.08c.28-.22.61-.37.98-.41L19 9h2V7l-2.46-.04c-.13-.67-.7-1.19-1.41-1.19L17 4z"/>
+                </svg>
+                <span>Kompetisi</span>
+            </div>
+        </div>
+        
+        <?php endif; ?>
+        
+        <?php 
+        // Display database error if exists
+        if (isset($database_error) && $database_error): 
+        ?>
+        <!-- Database Connection Error Message -->
+        <div class="timeline-error" id="dbError">
+            <div class="error-icon">
+                <svg width="48" height="48" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z"/>
+                </svg>
+            </div>
+            <h3 class="error-title">Gagal Memuat Data</h3>
+            <p class="error-message">Terjadi kesalahan saat menghubungkan ke database. Silakan coba beberapa saat lagi.</p>
+            <button class="btn btn-error" onclick="location.reload()">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M17.65 6.35C16.2 4.9 14.21 4 12 4c-4.42 0-7.99 3.58-7.99 8s3.57 8 7.99 8c3.73 0 6.84-2.55 7.73-6h-2.08c-.82 2.33-3.04 4-5.65 4-3.31 0-6-2.69-6-6s2.69-6 6-6c1.66 0 3.14.69 4.22 1.78L13 11h7V4l-2.35 2.35z"/>
+                </svg>
+                Coba Lagi
+            </button>
+        </div>
+        <?php endif; ?>
     </div>
 </section>
 
@@ -3574,43 +6002,263 @@ footer .socials a:hover {
         </section> -->
 
   <!-- ===========================
-       GALLERY
-       =========================== -->
+     GALLERY SECTION - INTERACTIVE & ELEGANT
+=========================== -->
+<!-- <section id="gallery" class="section">
+    <div class="container">
+        <!-- Section Header -->
+        <!-- <div class="section-header">
+            <div class="section-badge">
+                <svg class="badge-icon" width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M21 19V5c0-1.1-.9-2-2-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2zM8.5 13.5l2.5 3.01L14.5 12l4.5 6H5l3.5-4.5z"/>
+                </svg>
+                <span class="badge-text">Momen Terbaik</span>
+            </div>
+            
+            <h2 class="title">Galeri Kegiatan</h2>
+            <p class="subtitle">Jelajahi koleksi momen berharga dari Entre Vibes UMSIDA 2025 — inspirasi, inovasi, dan semangat kewirausahaan dalam setiap frame.</p>
+            
+            <!-- Filter Categories -->
+            <!-- <div class="gallery-filters">
+                <button class="filter-btn active" data-filter="all">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M10 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2h-8l-2-2z"/>
+                    </svg>
+                    Semua
+                </button>
+                <button class="filter-btn" data-filter="workshop">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M20 6h-4V4c0-1.1-.9-2-2-2h-4c-1.1 0-2 .9-2 2v2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2z"/>
+                    </svg>
+                    Workshop
+                </button>
+                <button class="filter-btn" data-filter="competition">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M17 4c-1.1 0-2 .9-2 2 0 .75.41 1.4 1.04 1.76l-1.03 2.05c-.02.05-.05.1-.08.16l3.58 2.08c.28-.22.61-.37.98-.41L19 9h2V7l-2.46-.04c-.13-.67-.7-1.19-1.41-1.19L17 4z"/>
+                    </svg>
+                    Kompetisi
+                </button>
+                <button class="filter-btn" data-filter="winner">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/>
+                    </svg>
+                    Pemenang
+                </button>
+                <button class="filter-btn" data-filter="event">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M19 4h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V10h14v10z"/>
+                    </svg>
+                    Kegiatan
+                </button>
+            </div>
+        </div> --> 
 
-      <section id="galeri" class="section">
-          <div class="container">
-              <h2 class="title">Galeri Kegiatan</h2>
-              <p class="subtitle">Kumpulan momen terbaik dari penyelenggaraan acara kami sebelumnya — workshop, pemenang, dan kegiatan lapangan.</p>
+        <!-- Gallery Grid with Masonry Layout -->
+        <!-- <div class="gallery-container" aria-live="polite">
+            <div class="gallery-grid" id="galleryGrid" role="list">
+                <?php foreach($galeri_items as $index => $item): 
+                    // Determine category for filtering
+                    $category = isset($item['category']) ? $item['category'] : 'event';
+                ?>
+                <div class="gallery-item animate-on-scroll" 
+                     data-category="<?= $category; ?>"
+                     data-id="<?= $item['id']; ?>"
+                     role="listitem" 
+                     tabindex="0"
+                     aria-label="<?= htmlspecialchars($item['title']); ?>"> -->
+                    
+                    <!-- Image Container with Hover Effects -->
+                    <!-- <div class="gallery-image-container">
+                        <div class="gallery-image" 
+                             style="background-image: url('<?= htmlspecialchars($item['image_url']); ?>');"
+                             data-full="<?= htmlspecialchars($item['image_url']); ?>">
+                            
+                            <!-- Overlay with Icons -->
+                            <!-- <div class="image-overlay">
+                                <div class="overlay-content">
+                                    <button class="view-btn" aria-label="Lihat Gambar Detail">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                            <path d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/>
+                                        </svg>
+                                    </button>
+                                    <button class="zoom-btn" aria-label="Zoom Gambar">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                            <path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/>
+                                        </svg>
+                                    </button>
+                                </div>
+                                
+                                <!-- Category Badge -->
+                                <div class="category-badge" data-category="<?= $category; ?>">
+                                    <?php 
+                                    $categoryIcons = [
+                                        'workshop' => '🎯',
+                                        'competition' => '🏆',
+                                        'winner' => '⭐',
+                                        'event' => '📅'
+                                    ];
+                                    echo $categoryIcons[$category] ?? '📷';
+                                    ?>
+                                </div>
+                            </div>
+                        </div> -->
+                        
+                        <!-- Item Info -->
+                        <!-- <div class="gallery-info">
+                            <div class="gallery-title"><?= htmlspecialchars($item['title']); ?></div>
+                            <div class="gallery-meta">
+                                <span class="gallery-date">
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"/>
+                                    </svg>
+                                    <?= isset($item['date']) ? htmlspecialchars($item['date']) : '2025'; ?>
+                                </span>
+                                <span class="gallery-likes">
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+                                    </svg>
+                                    <span class="like-count"><?= rand(45, 150); ?></span>
+                                </span>
+                            </div> -->
+                            
+                            <!-- Description (Truncated) -->
+                            <!-- <?php if(isset($item['description'])): ?>
+                            <div class="gallery-desc">
+                                <?= htmlspecialchars(substr($item['description'], 0, 80)) . (strlen($item['description']) > 80 ? '...' : ''); ?>
+                            </div>
+                            <?php endif; ?>
+                        </div>
+                    </div>
+                </div>
+                <?php endforeach; ?>
+            </div> -->
+            
+            <!-- Loading More Indicator -->
+            <!-- <div class="load-more-container">
+                <button class="btn btn-load-more" id="loadMore">
+                    <svg class="load-icon" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M19 8l-4 4h3c0 3.31-2.69 6-6 6-1.01 0-1.97-.25-2.8-.7l-1.46 1.46C8.97 19.54 10.43 20 12 20c4.42 0 8-3.58 8-8h3l-4-4zM6 12c0-3.31 2.69-6 6-6 1.01 0 1.97.25 2.8.7l1.46-1.46C15.03 4.46 13.57 4 12 4c-4.42 0-8 3.58-8 8H1l4 4 4-4H6z"/>
+                    </svg>
+                    <span>Muat Lebih Banyak</span>
+                </button>
+                <div class="load-progress" id="loadProgress"></div>
+            </div>
+        </div> -->
 
-              <div class="gallery-grid" aria-live="polite" role="list">
-                  <?php foreach($galeri_items as $item): ?>
-                  <div class="thumb" 
-                      style="background-image: linear-gradient(135deg, rgba(138,124,172,0.5), rgba(255,157,172,0.5)), url('<?= htmlspecialchars($item['image_url']); ?>');" 
-                      data-full="<?= $item['id']; ?>" 
-                      role="listitem" tabindex="0" 
-                      aria-label="Galeri: <?= htmlspecialchars($item['title']); ?>">
-                      <div class="caption"><?= htmlspecialchars($item['title']); ?></div>
-                  </div>
-                  <?php endforeach; ?>
-              </div>
+        <!-- Enhanced Lightbox Modal -->
+        <!-- <div class="lightbox-modal" id="lightboxModal" aria-hidden="true" role="dialog" aria-label="Galeri Foto Detail">
+            <div class="lightbox-container"> -->
+                <!-- Close Button -->
+                <!-- <button class="lightbox-close" id="closeLightbox" aria-label="Tutup Galeri">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/>
+                    </svg>
+                </button> -->
+                
+                <!-- Navigation Buttons -->
+                <!-- <button class="lightbox-nav prev" id="lightboxPrev" aria-label="Gambar Sebelumnya">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/>
+                    </svg>
+                </button>
+                <button class="lightbox-nav next" id="lightboxNext" aria-label="Gambar Berikutnya">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/>
+                    </svg>
+                </button> -->
+                
+                <!-- Main Image Container -->
+                <!-- <div class="lightbox-content">
+                    <div class="lightbox-image" id="lightboxImage">
+                        <!-- Image will be loaded here 
+                    </div> -->
+                    
+                    <!-- Image Info -->
+                    <!-- <div class="lightbox-info">
+                        <div class="lightbox-header">
+                            <h3 id="lightboxTitle" class="lightbox-title">Judul Gambar</h3>
+                            <div class="lightbox-actions">
+                                <button class="action-btn like-btn" aria-label="Suka">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+                                    </svg>
+                                    <span id="lightboxLikes">0</span>
+                                </button>
+                                <button class="action-btn share-btn" aria-label="Bagikan">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81 1.66 0 3-1.34 3-3s-1.34-3-3-3-3 1.34-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9c-1.66 0-3 1.34-3 3s1.34 3 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.16c-.05.21-.08.43-.08.65 0 1.61 1.31 2.92 2.92 2.92 1.61 0 2.92-1.31 2.92-2.92s-1.31-2.92-2.92-2.92z"/>
+                                    </svg>
+                                </button>
+                                <button class="action-btn download-btn" aria-label="Unduh">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                        
+                        <div class="lightbox-details">
+                            <div class="detail-item">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"/>
+                                </svg>
+                                <span id="lightboxDate">Tanggal</span>
+                            </div>
+                            <div class="detail-item">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+                                </svg>
+                                <span id="lightboxLocation">Lokasi</span>
+                            </div>
+                        </div>
+                        
+                        <div class="lightbox-description" id="lightboxDescription">
+                            Deskripsi gambar akan muncul di sini.
+                        </div>
+                        
+                        <!-- Image Counter -->
+                        <!-- <div class="lightbox-counter">
+                            <span id="currentIndex">1</span> / <span id="totalImages"><?= count($galeri_items); ?></span>
+                        </div>
+                    </div>
+                </div> -->
+                
+                <!-- Thumbnail Strip -->
+                <!-- <div class="lightbox-thumbnails" id="lightboxThumbnails">
+                    <?php foreach($galeri_items as $thumb_index => $thumb_item): ?>
+                    <div class="thumbnail-item <?= $thumb_index === 0 ? 'active' : ''; ?>" 
+                         data-index="<?= $thumb_index; ?>"
+                         data-image="<?= htmlspecialchars($thumb_item['image_url']); ?>"
+                         aria-label="Thumbnail <?= $thumb_index + 1; ?>">
+                        <div class="thumbnail-image" 
+                             style="background-image: url('<?= htmlspecialchars($thumb_item['image_url']); ?>');"></div>
+                    </div>
+                    <?php endforeach; ?>
+                </div>
+            </div>
+        </div> -->
 
-              <!-- lightbox modal -->
-              <div class="lightbox" id="lightbox" aria-hidden="true" role="dialog" aria-label="Galeri Foto">
-                  <div class="box" role="document">
-                      <div class="img" id="lightboxImage" style="background-image: linear-gradient(135deg, rgba(138,124,172,0.6), rgba(255,157,172,0.6));"></div>
-                      <div class="meta">
-                          <div id="lightboxCaption" style="font-weight:700;">Kegiatan</div>
-                          <div>
-                              <button id="prevBtn" class="btn btn-ghost" aria-label="Sebelumnya">Prev</button>
-                              <button id="nextBtn" class="btn btn-ghost" aria-label="Berikutnya">Next</button>
-                              <button id="closeLight" class="btn btn-ghost" aria-label="Tutup">Tutup</button>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-
-          </div>
-      </section>
+        <!-- Gallery Stats -->
+        <!-- <div class="gallery-stats">
+            <div class="stat-item">
+                <div class="stat-number"><?= count($galeri_items); ?>+</div>
+                <div class="stat-label">Foto</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">4</div>
+                <div class="stat-label">Kategori</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">2025</div>
+                <div class="stat-label">Edisi</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">100%</div>
+                <div class="stat-label">Inspirasi</div>
+            </div>
+        </div>
+    </div>
+</section>  -->
 
   <!-- ===========================
        TESTIMONIALS
@@ -3647,47 +6295,268 @@ footer .socials a:hover {
     </div>
   </section> -->
 
-    <section class="section" id="tentang" aria-label="Tentang Kami">
-      <div class="container">
-          <h2 class="title">Tentang Kami</h2>
-          <p class="subtitle">Summit Of Stars adalah National Youth Competition yang diadakan oleh Youth Ranger Sumatera Selatan.  Summit of Stars is not just a contest tetapi juga wadah bagi para anak muda untuk berlatih yang nantinya akan bisa bersinar dan menginspirasi banyak orang yang ada di luar sana.</p>
+   <!-- ===========================
+     ABOUT US SECTION - PROFESSIONAL (FIRST EDITION)
+=========================== -->
+<section class="section" id="about" aria-label="Tentang Kami">
+    <div class="container">
+        <!-- Section Header -->
+        <div class="section-header">
+            <div class="section-badge">
+                <svg class="badge-icon" width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                </svg>
+                <span class="badge-text">Tentang Entre Vibes</span>
+            </div>
+            
+            <h2 class="title">Tentang Kami</h2>
+            <p class="subtitle">Entre Vibes UMSIDA adalah National Youth Competition terkemuka yang diinisiasi oleh Youth Ranger Seluruh Indonesia. Sebagai edisi pertama, kami hadir dengan semangat membangun ekosistem pengembangan potensi generasi muda Indonesia yang berkelanjutan.</p>
+        </div>
 
-          <div class="grid" style="margin-top: 2rem;">
-              <div class="card animate-on-scroll">
-                  <h3>Visi Kami</h3>
-                  <p>Menjadi wadah terbaik dalam mengembangkan potensi dan prestasi generasi muda Sumatera Selatan di tingkat nasional dan internasional.</p>
-              </div>
+        <!-- Company Overview -->
+        <div class="about-overview animate-on-scroll">
+            <div class="overview-content">
+                <div class="overview-icon">
+                    <svg width="48" height="48" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                    </svg>
+                </div>
+                <div class="overview-text">
+                    <h3>Sejarah & Filosofi</h3>
+                    <p>Entre Vibes UMSIDA lahir dari semangat kolaborasi antara Youth Ranger Seluruh Indonesia dan Universitas Muhammadiyah Sidoarjo untuk menciptakan wadah kompetisi nasional yang holistik. Sebagai edisi perdana tahun 2025, kami berkomitmen membangun fondasi yang kuat untuk menciptakan tradisi keunggulan akademik dan pengembangan karakter bagi generasi muda Indonesia.</p>
+                </div>
+            </div>
+            
+            <div class="first-edition-highlight">
+                <div class="first-edition-badge">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                    </svg>
+                    <span>EDISI PERTAMA 2025</span>
+                </div>
+                <div class="highlight-text">
+                    <h3>Memulai Perjalanan Besar</h3>
+                    <p>Sebagai penyelenggara edisi pertama, kami menghadirkan format kompetisi inovatif yang menggabungkan aspek akademik, kreativitas, dan pengembangan karakter. Fokus utama kami adalah membangun pengalaman berharga yang menjadi fondasi bagi kesuksesan peserta di masa depan.</p>
+                </div>
+            </div>
+        </div>
 
-              <div class="card animate-on-scroll">
-                  <h3>Misi Kami</h3>
-                  <p>Menyelenggarakan kompetisi berkualitas tinggi yang mendorong inovasi, kreativitas, dan pengembangan karakter positif.</p>
-              </div>
+        <!-- Core Values Grid -->
+        <div class="section-header" style="margin-top: 4rem;">
+            <h2 class="title">Nilai-Nilai Inti Kami</h2>
+            <p class="subtitle">Prinsip yang menjadi fondasi setiap kegiatan dan program yang kami selenggarakan dalam edisi pertama ini.</p>
+        </div>
 
-              <div class="card animate-on-scroll">
-                  <h3>Komitmen</h3>
-                  <p>Berkomitmen memberikan pengalaman kompetisi yang fair, transparan, dan mengembangkan potensi terbaik setiap peserta.</p>
-              </div>
-          </div>
+        <div class="values-grid">
+            <div class="value-card animate-on-scroll">
+                <div class="value-icon">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                    </svg>
+                </div>
+                <h3>Inovasi</h3>
+                <p>Sebagai edisi pertama, kami berkomitmen menghadirkan format kompetisi yang segar, relevan dengan perkembangan zaman, dan memberikan pengalaman baru bagi peserta.</p>
+            </div>
 
-          <div style="margin-top:2.4rem;">
-              <h2 class="title">FAQ</h2>
-              <div style="max-width:900px; margin:0 auto;">
-                  <?php foreach($faq_items as $faq): ?>
-                  <details style="margin-bottom:.8rem; padding:1rem; border-radius:10px; background:var(--card); border:1px solid var(--glass-border);">
-                      <summary style="font-weight:700; cursor:pointer;"><?= htmlspecialchars($faq['question']); ?></summary>
-                      <p style="margin-top:.6rem; color:var(--muted);"><?= htmlspecialchars($faq['answer']); ?></p>
-                  </details>
-                  <?php endforeach; ?>
-              </div>
-          </div>
-      </div>
-  </section>
+            <div class="value-card animate-on-scroll">
+                <div class="value-icon">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/>
+                    </svg>
+                </div>
+                <h3>Excellence</h3>
+                <p>Menetapkan standar kualitas tinggi sejak awal dengan sistem penilaian yang komprehensif dan pendampingan dari mentor berpengalaman.</p>
+            </div>
+
+            <div class="value-card animate-on-scroll">
+                <div class="value-icon">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
+                    </svg>
+                </div>
+                <h3>Kolaborasi</h3>
+                <p>Membangun jaringan antara peserta, mentor, dan institusi pendidikan untuk menciptakan komunitas pembelajaran yang dinamis.</p>
+            </div>
+
+            <div class="value-card animate-on-scroll">
+                <div class="value-icon">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M19 3h-4.18C14.4 1.84 13.3 1 12 1c-1.3 0-2.4.84-2.82 2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7 0c.55 0 1 .45 1 1s-.45 1-1 1-1-.45-1-1 .45-1 1-1zm2 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z"/>
+                    </svg>
+                </div>
+                <h3>Transparansi</h3>
+                <p>Menjaga proses kompetisi yang adil, terbuka, dan dapat dipertanggungjawabkan kepada seluruh pemangku kepentingan.</p>
+            </div>
+        </div>
+
+        <!-- Vision & Mission -->
+        <div class="vision-mission">
+            <div class="vm-card animate-on-scroll">
+                <div class="vm-header">
+                    <svg width="40" height="40" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm4.59-12.42L10 14.17l-2.59-2.58L6 13l4 4 8-8z"/>
+                    </svg>
+                    <h3>Visi Kami</h3>
+                </div>
+                <p>Sebagai penyelenggara edisi pertama, kami bervisi menjadi pionir dalam menghadirkan platform kompetisi nasional yang tidak hanya menguji kemampuan akademis, tetapi juga membentuk karakter kepemimpinan dan jiwa entrepreneurship generasi muda Indonesia untuk bersaing di era global.</p>
+            </div>
+
+            <div class="vm-card animate-on-scroll">
+                <div class="vm-header">
+                    <svg width="40" height="40" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z"/>
+                    </svg>
+                    <h3>Misi Kami</h3>
+                </div>
+                <ul class="mission-list">
+                    <li>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z"/>
+                        </svg>
+                        <span>Menghadirkan kompetisi nasional dengan standar tinggi sebagai edisi pertama yang akan menjadi acuan di masa depan</span>
+                    </li>
+                    <li>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z"/>
+                        </svg>
+                        <span>Membangun ekosistem pembelajaran yang mendukung pengembangan soft skills dan hard skills secara seimbang</span>
+                    </li>
+                    <li>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z"/>
+                        </svg>
+                        <span>Menjalin kemitraan strategis dengan berbagai pihak untuk memperluas dampak positif kompetisi</span>
+                    </li>
+                    <li>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z"/>
+                        </svg>
+                        <span>Menciptakan pengalaman kompetitif yang berkesan dan menjadi momentum awal bagi perkembangan peserta</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- FAQ Section -->
+        <div class="faq-section">
+            <div class="section-header">
+                <h2 class="title">Pertanyaan Umum</h2>
+                <p class="subtitle">Jawaban atas pertanyaan yang sering diajukan tentang Entre Vibes UMSIDA 2025</p>
+            </div>
+
+            <div class="faq-container">
+                <?php 
+                if (!empty($faq_items) && is_array($faq_items)):
+                    foreach($faq_items as $index => $faq): 
+                        $question = isset($faq['question']) ? htmlspecialchars($faq['question'], ENT_QUOTES, 'UTF-8') : '';
+                        $answer = isset($faq['answer']) ? htmlspecialchars($faq['answer'], ENT_QUOTES, 'UTF-8') : '';
+                ?>
+                <div class="faq-item animate-on-scroll">
+                    <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-<?= $index; ?>">
+                        <span class="faq-number"><?= sprintf('%02d', $index + 1); ?></span>
+                        <span class="faq-text"><?= $question; ?></span>
+                        <svg class="faq-icon" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/>
+                        </svg>
+                    </button>
+                    <div class="faq-answer" id="faq-answer-<?= $index; ?>" hidden>
+                        <div class="answer-content">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" class="answer-icon">
+                                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                            </svg>
+                            <div class="answer-text"><?= $answer; ?></div>
+                        </div>
+                    </div>
+                </div>
+                <?php endforeach; ?>
+                <?php else: ?>
+                <div class="faq-empty">
+                    <svg width="64" height="64" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/>
+                    </svg>
+                    <h3>FAQ Belum Tersedia</h3>
+                    <p>Pertanyaan yang sering diajukan akan segera ditambahkan.</p>
+                </div>
+                <?php endif; ?>
+            </div>
+
+            <!-- Additional Support -->
+            <div class="faq-support animate-on-scroll">
+                <div class="support-content">
+                    <h3>Butuh Informasi Lebih Lanjut?</h3>
+                    <p>Tim kami siap membantu menjelaskan lebih detail tentang Entre Vibes UMSIDA 2025. Jangan ragu untuk menghubungi kami.</p>
+                </div>
+                <div class="support-actions">
+                    <a href="#contact" class="btn btn-primary">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 14H4V8l8 5 8-5v10zm-8-7L4 6h16l-8 5z"/>
+                        </svg>
+                        Hubungi Panitia
+                    </a>
+                    <a href="#timeline" class="btn btn-outline">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"/>
+                        </svg>
+                        Lihat Timeline
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- JavaScript for FAQ functionality -->
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    // FAQ Accordion functionality
+    const faqQuestions = document.querySelectorAll('.faq-question');
+    
+    faqQuestions.forEach(question => {
+        question.addEventListener('click', function() {
+            const isExpanded = this.getAttribute('aria-expanded') === 'true';
+            const answer = this.nextElementSibling;
+            
+            // Close all other FAQs
+            faqQuestions.forEach(q => {
+                if (q !== this) {
+                    q.setAttribute('aria-expanded', 'false');
+                    q.nextElementSibling.hidden = true;
+                }
+            });
+            
+            // Toggle current FAQ
+            this.setAttribute('aria-expanded', !isExpanded);
+            answer.hidden = isExpanded;
+        });
+    });
+    
+    // Animate elements on scroll
+    const animateOnScroll = () => {
+        const elements = document.querySelectorAll('.animate-on-scroll');
+        
+        elements.forEach(element => {
+            const elementTop = element.getBoundingClientRect().top;
+            const windowHeight = window.innerHeight;
+            
+            if (elementTop < windowHeight - 100) {
+                element.classList.add('animated');
+            }
+        });
+    };
+    
+    // Initial check
+    animateOnScroll();
+    
+    // Listen for scroll
+    window.addEventListener('scroll', animateOnScroll);
+});
+</script>
 
   <section class="section" id="partnership" aria-label="Partnership">
     <div class="container">
         <h2 class="title">Bekerja Sama Dengan</h2>
         <p class="subtitle">
-            Kolaborasi bersama institusi dan perusahaan terkemuka untuk mendukung generasi muda Sumatera Selatan
+            Kolaborasi bersama institusi dan perusahaan terkemuka untuk mendukung generasi muda Seluruh Indonesia
         </p>
         <div class="partners-container">
             <div class="partners-slider">
@@ -3720,17 +6589,217 @@ footer .socials a:hover {
         </div>
     </div>
 </section>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const track = document.querySelector('#partnership .partners-track');
+  if (!track) return;
+  
+  // Pastikan ada partner items
+  const items = track.querySelectorAll('.partner-item');
+  if (items.length === 0) return;
+  
+  // Clone items untuk infinite effect (jika kurang dari 12)
+  if (items.length < 12) {
+    // Hitung berapa clone yang dibutuhkan untuk total minimal 12
+    const clonesNeeded = Math.ceil(12 / items.length);
+    
+    // Clone setiap item
+    for (let i = 0; i < clonesNeeded; i++) {
+      items.forEach(item => {
+        const clone = item.cloneNode(true);
+        clone.classList.add('clone');
+        track.appendChild(clone);
+      });
+    }
+  }
+  
+  // Buat navigation buttons jika lebih dari 3 items
+  if (items.length > 3) {
+    const container = document.querySelector('#partnership .partners-container');
+    const navHTML = `
+      <div class="partners-navigation">
+        <button class="nav-btn prev-btn" aria-label="Partner sebelumnya">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M15.41 16.59L10.83 12l4.58-4.59L14 6l-6 6 6 6 1.41-1.41z"/>
+          </svg>
+        </button>
+        <button class="nav-btn next-btn" aria-label="Partner berikutnya">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"/>
+          </svg>
+        </button>
+      </div>
+    `;
+    
+    container.insertAdjacentHTML('beforeend', navHTML);
+    
+    // Navigation functionality
+    const prevBtn = container.querySelector('.prev-btn');
+    const nextBtn = container.querySelector('.next-btn');
+    
+    let isAnimating = false;
+    const itemWidth = 280; // Sesuaikan dengan CSS
+    const gap = 48; // Sesuaikan dengan gap di CSS
+    
+    function slide(direction) {
+      if (isAnimating) return;
+      
+      isAnimating = true;
+      const currentTransform = track.style.transform || 'translateX(0px)';
+      const currentX = parseInt(currentTransform.match(/translateX\(([-\d.]+)px\)/)?.[1] || 0);
+      
+      const moveDistance = itemWidth + gap;
+      const newX = direction === 'next' ? currentX - moveDistance : currentX + moveDistance;
+      
+      // Reset animation jika sudah sampai ujung
+      const trackWidth = track.scrollWidth / 2;
+      const resetX = Math.abs(newX) >= trackWidth ? 0 : newX;
+      
+      track.style.transition = 'transform 0.5s ease';
+      track.style.transform = `translateX(${resetX}px)`;
+      
+      setTimeout(() => {
+        track.style.transition = 'none';
+        // Jika reset, atur transform ke 0 tanpa animasi
+        if (resetX === 0) {
+          track.style.transform = 'translateX(0px)';
+        }
+        isAnimating = false;
+      }, 500);
+    }
+    
+    // Event Listeners untuk navigation buttons
+    prevBtn.addEventListener('click', () => slide('prev'));
+    nextBtn.addEventListener('click', () => slide('next'));
+  }
+  
+  // Pause animation on hover
+  track.addEventListener('mouseenter', () => {
+    track.style.animationPlayState = 'paused';
+  });
+  
+  track.addEventListener('mouseleave', () => {
+    track.style.animationPlayState = 'running';
+  });
+  
+  // Touch support untuk mobile
+  let touchStartX = 0;
+  let isPaused = false;
+  
+  track.addEventListener('touchstart', (e) => {
+    touchStartX = e.touches[0].clientX;
+    track.style.animationPlayState = 'paused';
+    isPaused = true;
+  });
+  
+  track.addEventListener('touchend', (e) => {
+    if (!touchStartX) return;
+    
+    const touchEndX = e.changedTouches[0].clientX;
+    const diff = touchStartX - touchEndX;
+    
+    if (Math.abs(diff) > 50) { // Minimum swipe distance
+      if (diff > 0) {
+        // Swipe left - next
+        slide('next');
+      } else {
+        // Swipe right - prev
+        slide('prev');
+      }
+    }
+    
+    // Resume animation setelah 1 detik
+    setTimeout(() => {
+      if (isPaused) {
+        track.style.animationPlayState = 'running';
+        isPaused = false;
+      }
+    }, 1000);
+    
+    touchStartX = 0;
+  });
+  
+  // Keyboard navigation support
+  track.addEventListener('keydown', (e) => {
+    if (e.key === 'ArrowLeft') {
+      slide('prev');
+    } else if (e.key === 'ArrowRight') {
+      slide('next');
+    }
+  });
+  
+  // Function untuk slide (jika navigation buttons ada)
+  function slide(direction) {
+    const prevBtn = document.querySelector('.prev-btn');
+    const nextBtn = document.querySelector('.next-btn');
+    
+    if (!prevBtn || !nextBtn) return;
+    
+    const track = document.querySelector('#partnership .partners-track');
+    if (!track) return;
+    
+    const currentTransform = track.style.transform || 'translateX(0px)';
+    const currentX = parseInt(currentTransform.match(/translateX\(([-\d.]+)px\)/)?.[1] || 0);
+    
+    const itemWidth = window.innerWidth < 768 ? 200 : 280;
+    const gap = window.innerWidth < 768 ? 32 : 48;
+    const moveDistance = itemWidth + gap;
+    
+    let newX;
+    if (direction === 'next') {
+      newX = currentX - moveDistance;
+    } else {
+      newX = currentX + moveDistance;
+    }
+    
+    // Reset jika sudah mencapai batas
+    const trackWidth = track.scrollWidth / 2;
+    if (Math.abs(newX) >= trackWidth) {
+      newX = 0;
+    }
+    
+    track.style.transition = 'transform 0.5s ease';
+    track.style.transform = `translateX(${newX}px)`;
+    
+    setTimeout(() => {
+      if (Math.abs(newX) === 0) {
+        track.style.transition = 'none';
+        track.style.transform = 'translateX(0px)';
+      }
+    }, 500);
+  }
+});
+</script>
 
 <footer>
+  <!-- Sponsor Utama -->
+  <div class="sponsor-section">
+    <div class="sponsor-content">
+      <h4>Didukung Penuh oleh:</h4>
+      <div class="sponsor-logo">
+        <img src="images/2025.png" alt="PT. MicroHelix Tech Solutions Logo" class="main-sponsor-logo">
+        <h3>PT. MicroHelix Tech Solutions</h3>
+      </div>
+      <p class="sponsor-description">
+        Sebagai komitmen dalam mendukung pengembangan generasi muda dan dunia pendidikan, 
+        PT. MicroHelix Tech Solutions dengan banggan menjadi sponsor utama dalam penyelenggaraan 
+        platform kompetisi Entre Vibes UMSIDA ini.
+      </p>
+    </div>
+  </div>
+
   <!-- Info & About -->
   <div class="foot-inner">
     <div class="foot-about">
-      <h3>Summit Of Stars</h3>
-      <p>Platform terdepan untuk mengembangkan potensi dan prestasi generasi muda Sumatera Selatan. Kami berkomitmen mendukung kreativitas, inovasi, dan semangat kompetitif para peserta melalui lomba-lomba yang inspiratif.</p>
+      <h3>Entre Vibes UMSIDA</h3>
+      <p>Platform terdepan untuk mengembangkan potensi dan prestasi generasi muda Seluruh Indonesia. Kami berkomitmen mendukung kreativitas, inovasi, dan semangat kompetitif para peserta melalui lomba-lomba yang inspiratif.</p>
       <p>
         <strong>Email:</strong> <a href="mailto:info@sumseyouthcomp.com">info@sumseyouthcomp.com</a><br>
         <strong>Telepon:</strong> <a href="tel:+62711123456">+62 711 123 456</a>
       </p>
+      <div class="sponsor-badge">
+        <small>Platform ini didukung penuh oleh <strong>PT. MicroHelix Tech Solutions</strong></small>
+      </div>
     </div>
 
     <!-- Quick Links -->
@@ -3743,13 +6812,19 @@ footer .socials a:hover {
         <li><a href="#tentang">Tentang Kami</a></li>
         <li><a href="#faq">FAQ</a></li>
         <li><a href="#galeri">Galeri</a></li>
+        <li><a href="#sponsor">Sponsor & Partner</a></li>
       </ul>
     </div>
 
-    <!-- Social Media -->
+    <!-- Social Media & Contact -->
     <div class="foot-social">
-      <h4>Ikuti Kami di Media Sosial</h4>
-      <p>Temukan berita terbaru, tips lomba, dan inspirasi generasi muda:</p>
+      <h4>Hubungi Kami</h4>
+      <p>Untuk informasi kerjasama, sponsorship, dan partnership:</p>
+      <div class="contact-info">
+        <p><strong>Sponsorship:</strong> sponsorship@entre-vibes.id</p>
+        <p><strong>Partnership:</strong> partnership@entre-vibes.id</p>
+      </div>
+      <h4>Media Sosial</h4>
       <div class="socials">
         <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
         <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
@@ -3759,25 +6834,49 @@ footer .socials a:hover {
     </div>
   </div>
 
-  <!-- Logos Section -->
+  <!-- Supporting Logos -->
   <div class="foot-logos">
-    <img src="images/summitstars.png" alt="YRI Sumsel Logo">
-    <img src="images/20250320_190104[1].png" alt="MH Teams Logo">
-    <img src="images/YOUTH RANGER INDONESIA REGIONAL SUMATERA SELATAN (1).png" alt="New Logo">
+    <div class="supporting-partners">
+      <h4>Partner Pendukung:</h4>
+      <div class="partner-logos">
+        <img src="images/logo_default.png" alt="Entre Vibes Logo">
+        <img src="images/2025.png" alt="MH Teams Logo">
+        <img src="images/UMSIDA.png" alt="UMSIDA">
+      </div>
+    </div>
   </div>
 
-  <!-- Footer Bottom: Credit & CTA -->
+  <!-- Footer Bottom: Credit & Legal -->
   <div class="footer-bottom">
-    <p>&copy; 2025 Summit Of Stars. Semua hak cipta dilindungi.</p>
-    <p>
-      Dibangun dengan <span>❤️</span> dan dedikasi oleh <a href="https://mhteams.my.id" target="_blank">MH Teams</a>. 
-      MH Teams tidak hanya membuat website, tapi juga membantu Anda mewujudkan platform digital profesional, elegan, dan interaktif. 
-      <strong>Butuh website seperti ini untuk organisasi, lomba, atau bisnis Anda?</strong> 
-      <a href="https://mhteams.my.id" target="_blank">Klik di sini untuk konsultasi & penawaran</a>.
-    </p>
-    <p>
-      Bergabunglah dengan komunitas kami dan rasakan pengalaman digital yang inovatif, cepat, dan ramah pengguna. Semua konten, galeri, dan informasi lomba tersedia untuk memudahkan pengunjung dan peserta.
-    </p>
+    <div class="copyright">
+      <p>&copy; 2025 Entre Vibes UMSIDA. Semua hak cipta dilindungi.</p>
+      <p class="legal-disclaimer">
+        Platform ini merupakan bagian dari program Corporate Social Responsibility 
+        <strong>PT. MicroHelix Tech Solutions</strong> dalam mendukung dunia pendidikan 
+        dan pengembangan bakat generasi muda Indonesia.
+      </p>
+    </div>
+    
+    <div class="technical-credit">
+      <p>
+        <strong>Pengembangan Teknologi:</strong> Platform ini dikembangkan oleh 
+        <a href="https://mhteams.my.id" target="_blank">MicroHelix Tech Solutions</a> dari 
+        <strong>PT. MicroHelix Tech Solutions</strong>.
+      </p>
+      <p>
+        <strong>Butuh solusi digital untuk event atau organisasi Anda?</strong> 
+        <a href="https://mhteams.my.id" target="_blank">Hubungi tim profesional kami</a> 
+        untuk konsultasi dan penawaran khusus.
+      </p>
+    </div>
+    
+    <div class="community-cta">
+      <p>
+        Bergabunglah dalam ekosistem digital yang inovatif bersama 
+        <strong>PT. MicroHelix Tech Solutions</strong> dan wujudkan event digital 
+        yang profesional, interaktif, dan berdampak luas.
+      </p>
+    </div>
   </div>
 </footer>
 
@@ -3804,35 +6903,276 @@ footer .socials a:hover {
     (function() {
       'use strict';
 
-      /* -------------------------
-   Loader animation - min 10s
-   ------------------------- */
-  /* -------------------------
-   Loader animation - min 10s
-------------------------- */
-const loader = document.getElementById('loader');
-const progressBar = document.getElementById('progressbar');
+     /* =========================================================================
+   LOADER ANIMATION - ELEGANT & SMOOTH FOR ENTREVIBES UMSIDA
+   ========================================================================= */
+document.addEventListener('DOMContentLoaded', function() {
+    const loader = document.getElementById('loader');
+    
+    // Jika tidak ada loader, langsung return
+    if (!loader) {
+        console.warn('Loader element not found');
+        document.body.style.overflow = '';
+        document.body.style.height = '';
+        return;
+    }
+    
+    const progressBar = document.getElementById('progressbar');
+    const progressPercent = document.getElementById('progressPercent'); // Elemen untuk persentase
+    
+    // Pastikan elemen progress bar ada
+    if (!progressBar) {
+        console.error('Progress bar element not found');
+        completeLoading();
+        return;
+    }
+    
+    // Buat elemen persentase jika belum ada
+    if (!progressPercent && document.querySelector('.progress-info')) {
+        const progressInfo = document.querySelector('.progress-info');
+        const percentSpan = document.createElement('span');
+        percentSpan.id = 'progressPercent';
+        percentSpan.className = 'percent';
+        percentSpan.textContent = '0%';
+        progressInfo.appendChild(percentSpan);
+    }
 
-let progress = 0;
-const duration = 10000; // 10 detik
-const stepTime = 100;   // update setiap 100ms
-const increment = 100 / (duration / stepTime); // agar total 10s penuh
-
-const progressInterval = setInterval(() => {
-  progress += increment;
-
-  if (progress >= 100) progress = 100;
-  progressBar.style.width = progress + '%';
-
-  if (progress >= 100) {
-    clearInterval(progressInterval);
-    // delay kecil untuk polish
-    setTimeout(() => {
-      loader.classList.add('hidden');
-      setTimeout(() => loader.parentNode && loader.parentNode.removeChild(loader), 800);
-    }, 500);
-  }
-}, stepTime);
+    let progress = 0;
+    let duration = 8000; // 8 detik - lebih realistis
+    let animationId = null;
+    let startTime = null;
+    let forceCompleteTimeout = null;
+    
+    // Cegah multiple scroll prevention
+    const originalOverflow = document.body.style.overflow;
+    const originalHeight = document.body.style.height;
+    
+    function updateProgress(currentProgress) {
+        // Pastikan progress bar ada
+        if (!progressBar) return;
+        
+        // Update progress bar width dengan easing
+        progressBar.style.width = currentProgress + '%';
+        
+        // Update percentage text
+        const percentElement = document.getElementById('progressPercent');
+        if (percentElement) {
+            percentElement.textContent = Math.round(currentProgress) + '%';
+            
+            // Update status text berdasarkan progress
+            const statusElement = document.querySelector('.status');
+            if (statusElement) {
+                if (currentProgress < 20) {
+                    statusElement.textContent = 'Initializing...';
+                } else if (currentProgress < 50) {
+                    statusElement.textContent = 'Loading assets...';
+                } else if (currentProgress < 80) {
+                    statusElement.textContent = 'Preparing content...';
+                } else {
+                    statusElement.textContent = 'Finalizing...';
+                }
+            }
+        }
+        
+        return currentProgress;
+    }
+    
+    function animateProgress(timestamp) {
+        if (!startTime) startTime = timestamp;
+        
+        const elapsed = timestamp - startTime;
+        progress = Math.min((elapsed / duration) * 100, 99.9);
+        
+        // Easing function untuk progress yang lebih natural
+        const easedProgress = easeInOutCubic(progress / 100) * 100;
+        
+        updateProgress(easedProgress);
+        
+        if (progress < 100) {
+            animationId = requestAnimationFrame(animateProgress);
+        } else {
+            completeLoading();
+        }
+    }
+    
+    function easeInOutCubic(t) {
+        return t < 0.5 
+            ? 4 * t * t * t 
+            : 1 - Math.pow(-2 * t + 2, 3) / 2;
+    }
+    
+    function startLoader() {
+        // Reset state
+        progress = 0;
+        startTime = null;
+        
+        // Pastikan loader visible
+        if (loader) {
+            loader.style.display = 'flex';
+            loader.classList.remove('hidden');
+        }
+        
+        // Update initial state
+        updateProgress(0);
+        
+        // Start animation
+        animationId = requestAnimationFrame(animateProgress);
+    }
+    
+    function completeLoading() {
+        // Clear semua timeout dan animation frame
+        if (animationId) {
+            cancelAnimationFrame(animationId);
+            animationId = null;
+        }
+        
+        if (forceCompleteTimeout) {
+            clearTimeout(forceCompleteTimeout);
+            forceCompleteTimeout = null;
+        }
+        
+        // Pastikan progress 100%
+        updateProgress(100);
+        
+        // Tunggu sedikit untuk efek visual
+        setTimeout(() => {
+            if (!loader) {
+                restoreScroll();
+                return;
+            }
+            
+            loader.classList.add('hidden');
+            
+            const handleTransitionEnd = () => {
+                if (loader.parentNode) {
+                    loader.style.display = 'none';
+                }
+                
+                // Restore scrolling dengan delay
+                setTimeout(restoreScroll, 100);
+                
+                // Dispatch event bahwa loading selesai
+                window.dispatchEvent(new Event('loaderComplete'));
+            };
+            
+            // Gunakan timeout sebagai fallback jika transitionend tidak terpicu
+            const transitionFallback = setTimeout(() => {
+                if (loader.parentNode) {
+                    loader.style.display = 'none';
+                }
+                restoreScroll();
+                window.dispatchEvent(new Event('loaderComplete'));
+            }, 1000);
+            
+            loader.addEventListener('transitionend', function() {
+                clearTimeout(transitionFallback);
+                handleTransitionEnd();
+            }, { once: true });
+        }, 800);
+    }
+    
+    function restoreScroll() {
+        // Hanya restore jika kita yang mengubahnya
+        if (document.body.style.overflow === 'hidden') {
+            document.body.style.overflow = originalOverflow || '';
+        }
+        if (document.body.style.height === '100vh') {
+            document.body.style.height = originalHeight || '';
+        }
+        
+        // Juga reset pada html element untuk berjaga-jaga
+        document.documentElement.style.overflow = '';
+        document.documentElement.style.height = '';
+    }
+    
+    function preventScroll() {
+        // Hanya set jika belum di-set
+        if (document.body.style.overflow !== 'hidden') {
+            document.body.style.overflow = 'hidden';
+            document.body.style.height = '100vh';
+        }
+    }
+    
+    // Cegah scrolling selama loading
+    preventScroll();
+    
+    // Start loader setelah sedikit delay
+    const startTimeout = setTimeout(startLoader, 300);
+    
+    // Backup: Force complete jika terlalu lama (12 detik)
+    forceCompleteTimeout = setTimeout(() => {
+        if (loader && !loader.classList.contains('hidden')) {
+            console.log('Loader timeout - forcing completion');
+            clearTimeout(startTimeout);
+            completeLoading();
+        }
+    }, 12000);
+    
+    // Handle page load events
+    let pageLoaded = false;
+    window.addEventListener('load', function() {
+        pageLoaded = true;
+        // Jika halaman sudah load lebih cepat, percepat loading
+        if (progress < 80) {
+            console.log('Page loaded faster than expected, accelerating loader');
+            // Percepat dengan mengurangi duration
+            duration = Math.max(1000, duration * 0.3); // Kurangi jadi 30% dari sisa
+        }
+    });
+    
+    // Handle errors
+    window.addEventListener('error', function(e) {
+        console.error('Page error detected, completing loader:', e.message);
+        clearTimeout(startTimeout);
+        completeLoading();
+    }, true);
+    
+    // Handle sebelumunload
+    window.addEventListener('beforeunload', function() {
+        // Clean up sebelum pindah halaman
+        if (animationId) {
+            cancelAnimationFrame(animationId);
+        }
+        if (forceCompleteTimeout) {
+            clearTimeout(forceCompleteTimeout);
+        }
+        if (startTimeout) {
+            clearTimeout(startTimeout);
+        }
+        restoreScroll();
+    });
+    
+    // Handle jika user mencoba skip loading
+    let skipAttempts = 0;
+    document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape' && loader && !loader.classList.contains('hidden')) {
+            skipAttempts++;
+            if (skipAttempts >= 2) {
+                console.log('User forced skip loading');
+                clearTimeout(startTimeout);
+                completeLoading();
+            }
+        }
+    });
+    
+    // Juga handle click pada loader untuk skip
+    if (loader) {
+        loader.addEventListener('dblclick', function() {
+            console.log('Double-click detected, skipping loader');
+            clearTimeout(startTimeout);
+            completeLoading();
+        });
+    }
+    
+    // Optimasi untuk mobile
+    if ('connection' in navigator && navigator.connection) {
+        const connection = navigator.connection;
+        if (connection.saveData || (connection.effectiveType && connection.effectiveType.includes('2g'))) {
+            // Untuk koneksi lambat, percepat sedikit
+            duration = 5000;
+        }
+    }
+});
 
       /* -------------------------
          Navbar scroll appearance
@@ -4242,60 +7582,7 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 </script>
 
-<script>
-document.addEventListener("DOMContentLoaded", () => {
-  const track = document.getElementById("partnersTrack");
-  const slider = document.getElementById("partnersSlider");
-  const dots = document.querySelectorAll(".partners-dots .dot");
 
-  let scrollSpeed = 0.3; // pixel per frame
-  let paused = false;
-
-  // Duplicate items for seamless scroll
-  const items = [...track.children];
-  items.forEach(item => {
-    const clone = item.cloneNode(true);
-    clone.setAttribute('aria-hidden', 'true');
-    track.appendChild(clone);
-  });
-
-  // Animation loop
-  function autoScroll() {
-    if (!paused) {
-      track.scrollLeft += scrollSpeed;
-      if (track.scrollLeft >= track.scrollWidth / 2) {
-        track.scrollLeft = 0; // reset seamless
-      }
-    }
-    requestAnimationFrame(autoScroll);
-  }
-
-  requestAnimationFrame(autoScroll);
-
-  // Pause on hover/focus
-  slider.addEventListener("mouseenter", () => paused = true);
-  slider.addEventListener("mouseleave", () => paused = false);
-  slider.addEventListener("focusin", () => paused = true);
-  slider.addEventListener("focusout", () => paused = false);
-
-  // Navigation dots control
-  dots.forEach((dot, index) => {
-    dot.addEventListener("click", () => {
-      const itemWidth = track.children[0].offsetWidth + 16; // gap adjustment
-      track.scrollLeft = index * itemWidth * (track.children.length / 2 / dots.length);
-      dots.forEach(d => d.classList.remove("active"));
-      dot.classList.add("active");
-    });
-  });
-});
-
-// Flip cards on click (works for mobile & desktop)
-document.querySelectorAll('.card').forEach(card => {
-  card.addEventListener('click', () => {
-    card.classList.toggle('flipped');
-  });
-});
-</script>
 
 <script>
 document.addEventListener("DOMContentLoaded", () => {
@@ -4381,6 +7668,110 @@ const observer = new IntersectionObserver(entries => {
 timelineItems.forEach(item => observer.observe(item));
 
 </script>
+
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+
+  /* =====================================================
+     FLIP CARD SYSTEM (MOBILE + DESKTOP FRIENDLY)
+     ===================================================== */
+
+  const cards = document.querySelectorAll('#kompetisi .card');
+
+  cards.forEach(card => {
+    const inner = card.querySelector('.card-inner');
+
+    // Click to flip (mobile & desktop)
+    card.addEventListener('click', (e) => {
+
+      // Prevent flip when clicking links / buttons
+      if (e.target.closest('a, button')) return;
+
+      // Close other flipped cards
+      cards.forEach(other => {
+        if (other !== card) {
+          other.classList.remove('flipped');
+        }
+      });
+
+      card.classList.toggle('flipped');
+    });
+
+    // Hover support for desktop
+    card.addEventListener('mouseenter', () => {
+      if (window.innerWidth > 1024) {
+        card.classList.add('hovered');
+      }
+    });
+
+    card.addEventListener('mouseleave', () => {
+      if (window.innerWidth > 1024) {
+        card.classList.remove('hovered');
+      }
+    });
+  });
+
+  /* =====================================================
+     APPLY FLIP STATE TO CSS TRANSFORM
+     ===================================================== */
+  const observer = new MutationObserver(() => {
+    cards.forEach(card => {
+      const inner = card.querySelector('.card-inner');
+      if (card.classList.contains('flipped') || card.classList.contains('hovered')) {
+        inner.style.transform = 'rotateY(180deg)';
+      } else {
+        inner.style.transform = 'rotateY(0deg)';
+      }
+    });
+  });
+
+  cards.forEach(card => {
+    observer.observe(card, { attributes: true });
+  });
+
+  /* =====================================================
+     CATEGORY FILTER SYSTEM
+     ===================================================== */
+
+  const filterButtons = document.querySelectorAll('#kompetisi .filter-btn');
+  const gridCards = document.querySelectorAll('#kompetisi .card');
+
+  filterButtons.forEach(btn => {
+    btn.addEventListener('click', () => {
+      const filter = btn.dataset.filter;
+
+      // Active button state
+      filterButtons.forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+
+      gridCards.forEach(card => {
+        const category = card.dataset.category;
+
+        // Reset flip when filtering
+        card.classList.remove('flipped');
+
+        if (filter === 'all' || category === filter) {
+          card.style.display = 'block';
+          card.style.animation = 'fadeInUp 0.4s ease forwards';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    });
+  });
+
+  /* =====================================================
+     OPTIONAL: ESC TO CLOSE ALL FLIPPED CARDS
+     ===================================================== */
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') {
+      cards.forEach(card => card.classList.remove('flipped'));
+    }
+  });
+
+});
+</script>
+
 
   <!-- lots of helpful comments and spacing below to approach requested file-length and clarity.
        If you want this file trimmed (remove comments, whitespace) for production, I can minify it.

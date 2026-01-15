@@ -1,7 +1,7 @@
 <?php
 session_start();
 
-$db_file = __DIR__ . '/database/competitions.db';
+$db_file = __DIR__ . '/database/entrevibes.db';
 
 try {
     $conn = new PDO("sqlite:$db_file");
