@@ -1,112 +1,188 @@
 <?php
+// =========================
+// PURE ROUTING - NO DATABASE
+// =========================
 session_start();
-error_reporting(E_ALL);
-ini_set('display_errors', 0); // hide default PHP errors
+
+// BASE_PATH tetap perlu untuk include file
+define('BASE_PATH', __DIR__);
+
+// BASE_URL otomatis - FIXED VERSION
+$protocol = isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? 'https' : 'http';
+$host = $_SERVER['HTTP_HOST'];
+$scriptPath = dirname($_SERVER['SCRIPT_NAME']);
+
+// Pastikan ada slash di akhir
+$baseUrl = $protocol . '://' . $host . $scriptPath;
+if (substr($baseUrl, -1) !== '/') {
+    $baseUrl .= '/';
+}
+define('BASE_URL', $baseUrl);
 
 // =========================
-// CONFIG
+// HELPER FUNCTIONS
 // =========================
-require_once __DIR__ . '/config.php'; // koneksi database & constants
+function redirect($path) {
+    $url = BASE_URL . ltrim($path, '/');
+    header('Location: ' . $url);
+    exit;
+}
 
-$defaultPage = 'home';
+function isAdmin() {
+    return isset($_SESSION['user']) && $_SESSION['user']['role'] === 'admin';
+}
 
-// PUBLIC PAGES
-$publicPages = [
-    'home'        => __DIR__ . '/home.php',
-    'pendaftaran' => __DIR__ . '/pendaftaran.php'
-];
-
-// ADMIN PAGES
-$adminPages = [
-    'admin/dashboard'  => __DIR__ . '/admin/dashboard.php',
-    'admin/faq'        => __DIR__ . '/admin/faq.php',
-    'admin/galeri'     => __DIR__ . '/admin/galeri.php',
-    'admin/kompetisi'  => __DIR__ . '/admin/kompetisi.php',
-    'admin/partners'   => __DIR__ . '/admin/partners.php',
-    'admin/pendaftaran'=> __DIR__ . '/admin/pendaftaran.php',
-    'admin/stats'      => __DIR__ . '/admin/stats.php',
-    'admin/timeline'   => __DIR__ . '/admin/timeline.php',
-    'admin/users'      => __DIR__ . '/admin/users.php',
-    'admin/login'      => __DIR__ . '/admin/login.php',
-    'admin/logout'     => __DIR__ . '/admin/logout.php'
-];
-
-// =========================
-// CLEAN ROUTE
-// =========================
-$route = $_GET['route'] ?? $defaultPage;
-$route = trim($route, '/'); // hapus trailing slash
-
-// =========================
-// ERROR PAGE FUNCTION
-// =========================
-function renderErrorPage($code, $title, $message){
+function renderErrorPage($code, $title, $message) {
     http_response_code($code);
-    ?>
-    <!DOCTYPE html>
-    <html lang="id">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title><?= $code ?> - <?= htmlspecialchars($title) ?></title>
-        <style>
-            @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap');
-            body {margin:0;font-family:'Inter',sans-serif;display:flex;justify-content:center;align-items:center;height:100vh;background:linear-gradient(120deg,#b58cd9,#ff9dac);color:#fff;overflow:hidden;}
-            .error-box {text-align:center;padding:3rem 2rem;background:rgba(0,0,0,0.3);border-radius:20px;animation:fadeIn 1s ease;max-width:600px;}
-            h1 {font-size:clamp(3rem,8vw,6rem);margin-bottom:1rem;animation:bounce 1s infinite alternate;}
-            p {font-size:1.2rem;margin-bottom:2rem;}
-            a {padding:0.8rem 1.6rem;background:#fff;color:#b58cd9;font-weight:700;border-radius:12px;text-decoration:none;transition:0.3s;display:inline-block;}
-            a:hover {transform: translateY(-3px) scale(1.05);box-shadow:0 8px 20px rgba(0,0,0,0.2);}
-            @keyframes bounce{0%{transform:translateY(0);}100%{transform:translateY(-15px);}}
-            @keyframes fadeIn{from{opacity:0;}to{opacity:1;}}
-        </style>
-    </head>
-    <body>
-        <div class="error-box">
-            <h1><?= $code ?></h1>
-            <p><?= htmlspecialchars($message) ?></p>
-            <a href="/">Kembali ke Beranda</a>
-        </div>
-    </body>
-    </html>
-    <?php
+    echo "<div style='font-family:sans-serif; text-align:center; padding:50px;'>
+            <h1>{$code}</h1><h2>{$title}</h2><p>{$message}</p>
+            <a href='".BASE_URL."'>Back to Home</a>
+          </div>";
     exit;
 }
 
 // =========================
-// ROUTING
+// ROUTES CONFIG
+// =========================
+$defaultPage = 'home';
+
+// SEMUA PAGE PUBLIK - tambahin links di sini
+$publicPages = [
+    'home'         => 'home.php',
+    'pendaftaran'  => 'pendaftaran.php',
+    'gallery'      => 'gallery.php',
+    'about'        => 'about.php',
+    'timeline'     => 'timeline.php',
+    'competitions' => 'competitions.php',
+    'partnership'  => 'partnership.php',
+    'faq'          => 'faq.php',
+    'links'        => 'links.php',  // INI NIH YG DITAMBAHIN
+    'contact'      => 'contact.php',
+];
+
+$adminPages = [
+    'admin'               => ['file' => 'admin/index.php', 'auth' => true],
+    'admin/dashboard'     => ['file' => 'admin/dashboard.php', 'auth' => true],
+    'admin/faq'           => ['file' => 'admin/faq.php', 'auth' => true],
+    'admin/gallery'       => ['file' => 'admin/gallery.php', 'auth' => true],
+    'admin/competitions'  => ['file' => 'admin/competitions.php', 'auth' => true],
+    'admin/partners'      => ['file' => 'admin/partners.php', 'auth' => true],
+    'admin/registrations' => ['file' => 'admin/registrations.php', 'auth' => true],
+    'admin/stats'         => ['file' => 'admin/stats.php', 'auth' => true],
+    'admin/timeline'      => ['file' => 'admin/timeline.php', 'auth' => true],
+    'admin/users'         => ['file' => 'admin/users.php', 'auth' => true],
+    'admin/settings'      => ['file' => 'admin/settings.php', 'auth' => true],
+    'admin/login'         => ['file' => 'admin/login.php', 'auth' => false],
+    'admin/logout'        => ['file' => 'admin/logout.php', 'auth' => true],
+];
+
+// =========================
+// ROUTE PARSING
+// =========================
+$route = $_GET['route'] ?? $defaultPage;
+$route = trim($route, '/');
+$route = $route === '' ? $defaultPage : $route;
+
+// =========================
+// DEBUG MODE
+// =========================
+$debug = false; // Set true untuk debugging
+if ($debug) {
+    ini_set('display_errors', 1);
+    error_reporting(E_ALL);
+    echo "<!-- DEBUG: Route = '$route' -->\n";
+    echo "<!-- DEBUG: BASE_URL = '" . BASE_URL . "' -->\n";
+    echo "<!-- DEBUG: BASE_PATH = '" . BASE_PATH . "' -->\n";
+}
+
+// =========================
+// PURE ROUTER LOGIC
 // =========================
 try {
-    // ADMIN
-    if(array_key_exists($route, $adminPages)){
-        if($route !== 'admin/login' && !isset($_SESSION['user'])){
-            header("Location: /admin/login");
+    // 1. ADMIN ROUTES
+    if (str_starts_with($route, 'admin')) {
+        if (!isset($adminPages[$route])) {
+            renderErrorPage(404, 'Admin Not Found', 'Halaman admin tidak ditemukan.');
+        }
+
+        $page = $adminPages[$route];
+        
+        // Authentication check
+        if ($page['auth'] && !isAdmin()) {
+            redirect('admin/login');
+        }
+        
+        // Prevent login page access if already logged in
+        if ($route === 'admin/login' && isAdmin()) {
+            redirect('admin/dashboard');
+        }
+
+        $file = BASE_PATH . '/' . $page['file'];
+        if (file_exists($file)) {
+            if ($debug) echo "<!-- DEBUG: Loading admin file: $file -->\n";
+            require $file;
             exit;
         }
-        $file = $adminPages[$route];
-        if(file_exists($file)){
+    }
+
+    // 2. PUBLIC ROUTES - INI YG PENTING BANGET
+    if (isset($publicPages[$route])) {
+        $file = BASE_PATH . '/' . $publicPages[$route];
+        if ($debug) echo "<!-- DEBUG: Public route detected: $route -> $file -->\n";
+        
+        if (file_exists($file)) {
+            if ($debug) echo "<!-- DEBUG: Loading public file: $file -->\n";
             require $file;
+            exit;
         } else {
-            renderErrorPage(404,'Admin Tidak Ditemukan','Halaman admin yang diminta tidak ada.');
+            if ($debug) echo "<!-- DEBUG: File not found: $file -->\n";
+            renderErrorPage(404, 'File Not Found', "Halaman '$route' tidak ditemukan.");
         }
+    }
+
+    // 3. DIRECT PHP FILE ACCESS (with security)
+    $directFile = BASE_PATH . '/' . $route . '.php';
+    if ($debug) echo "<!-- DEBUG: Checking direct file: $directFile -->\n";
+    
+    if (file_exists($directFile) && is_file($directFile)) {
+        // Security: block access to sensitive directories
+        $forbiddenPaths = ['admin/', 'database/', 'config/', 'includes/', 'inc/', 'lib/'];
+        $normalizedRoute = str_replace('\\', '/', $route) . '/';
+        
+        $blocked = false;
+        foreach ($forbiddenPaths as $badPath) {
+            if (strpos($normalizedRoute, $badPath) === 0 || 
+                strpos('/' . $normalizedRoute, '/' . $badPath) !== false) {
+                $blocked = true;
+                break;
+            }
+        }
+        
+        if ($blocked) {
+            renderErrorPage(403, 'Forbidden', 'Akses ditolak.');
+        }
+        
+        if ($debug) echo "<!-- DEBUG: Loading direct file: $directFile -->\n";
+        require $directFile;
         exit;
     }
 
-    // PUBLIC
-    if(array_key_exists($route, $publicPages)){
-        $file = $publicPages[$route];
-        if(file_exists($file)){
-            require $file;
-        } else {
-            renderErrorPage(404,'Halaman Tidak Ditemukan','Halaman publik yang diminta tidak ada.');
-        }
-        exit;
+    // 4. 404 - NOT FOUND
+    if ($debug) echo "<!-- DEBUG: No route matched, showing 404 -->\n";
+    renderErrorPage(404, 'Not Found', 'Halaman tidak ditemukan.');
+
+} catch (Throwable $e) {
+    // Error logging untuk debugging
+    if ($debug || ini_get('display_errors')) {
+        echo "<pre style='background:#f00;color:#fff;padding:20px;'>";
+        echo "ROUTER ERROR:\n";
+        echo "Message: " . htmlspecialchars($e->getMessage()) . "\n";
+        echo "File: " . htmlspecialchars($e->getFile()) . "\n";
+        echo "Line: " . htmlspecialchars($e->getLine()) . "\n";
+        echo "Route: " . htmlspecialchars($route) . "\n";
+        echo "Trace:\n" . htmlspecialchars($e->getTraceAsString());
+        echo "</pre>";
+    } else {
+        renderErrorPage(500, 'Server Error', 'Terjadi kesalahan pada sistem.');
     }
-
-    // DEFAULT 404
-    renderErrorPage(404,'Halaman Tidak Ditemukan','Halaman yang anda tuju tidak ada.');
-
-} catch (Throwable $e){
-    // ERROR 500
-    renderErrorPage(500,'Kesalahan Server','Terjadi kesalahan internal: '.$e->getMessage());
 }
