@@ -137,7 +137,11 @@ try {
             ["PT. MicroHelix Tech Solutions", "/images/PT. MicroHelix.png"],
             ["UMSIDA Sinergi Utama", "/images/UMSIDA Sinergi Utama.png"],
             ["BIZNET", "/images/BIZNET.png"],
-            ["OneSeven", "/images/OneSeven.png"]
+            ["OneSeven", "/images/OneSeven.png"],
+            ["PT Kalbe Farma", "/images/PT Kalbe Farma.png"],
+            ["SuryaMart", "/images/SuryaMart.png"],
+            ["Posee Studio", "/images/PoseeStudio.png"],
+            ["Bank JATIM", "/images/PT Bank JATIM.png"]
         ];
         $stmt = $db->prepare("INSERT INTO partners (name, image_url) VALUES (?, ?)");
         foreach ($partnersData as $p) $stmt->execute($p);

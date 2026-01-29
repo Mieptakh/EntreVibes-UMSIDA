@@ -5469,9 +5469,6 @@ body, html, #about.section, #about .container {
   text-align: center;
   color: white;
   margin-bottom: 2rem;
-  background: linear-gradient(135deg, #ffffff 0%, #d4b2e6 50%, #ffffff 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
   background-clip: text;
   padding: 0 1rem;
   text-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
