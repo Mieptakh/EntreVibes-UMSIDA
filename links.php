@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MicroHelix LinkHub | UMSIDA EntreVibes Vol. 1</title>
-    <link rel="shortcut icon" href="images/logo_default.png" type="image/x-icon">
+    <link rel="shortcut icon" href="images/logo_default.webp" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <style>
@@ -614,7 +614,7 @@
                     <div class="logo-text">MicroHelix</div>
                 </div>
                 <div class="logo-container">
-                    <img src="images/UMSIDA.png" alt="UMSIDA Logo" class="logo-image" onerror="this.src='https://via.placeholder.com/50/efa609/ffffff?text=UMS'">
+                    <img src="images/UMSIDA.webp" alt="UMSIDA Logo" class="logo-image" onerror="this.src='https://via.placeholder.com/50/efa609/ffffff?text=UMS'">
                     <div class="logo-text">UMSIDA</div>
                 </div>
             </div>
@@ -626,7 +626,7 @@
         <!-- Profile Header -->
         <div class="profile-header loading" style="animation-delay: 0.2s">
             <div class="profile-avatar">
-                <img src="images/logo_default.png" alt="UMSIDA EntreVibes Logo" onerror="this.src='https://via.placeholder.com/120/62237e/ffffff?text=EV'">
+                <img src="images/logo_default.webp" alt="UMSIDA EntreVibes Logo" onerror="this.src='https://via.placeholder.com/120/62237e/ffffff?text=EV'">
             </div>
             <h1 class="profile-name">UMSIDA EntreVibes</h1>
             <p class="profile-subtitle">Volume 1 • Digital Edge 'n Culture, Shaping the Future</p>
@@ -909,8 +909,8 @@
                     Kolaborasi Strategis
                 </div>
                 <div class="collaboration-logos">
-                    <img src="images/logo_microhelix.png" alt="MicroHelix Logo" class="company-logo" onerror="this.src='https://via.placeholder.com/120/62237e/ffffff?text=MicroHelix+Tech'">
-                    <img src="images/logo_umsida.png" alt="UMSIDA Logo" class="company-logo" onerror="this.src='https://via.placeholder.com/120/efa609/2a1a35?text=UMSIDA'">
+                    <img src="images/logo_microhelix.webp" alt="MicroHelix Logo" class="company-logo" onerror="this.src='https://via.placeholder.com/120/62237e/ffffff?text=MicroHelix+Tech'">
+                    <img src="images/logo_umsida.webp" alt="UMSIDA Logo" class="company-logo" onerror="this.src='https://via.placeholder.com/120/efa609/2a1a35?text=UMSIDA'">
                 </div>
                 <p class="company-tagline">
                     "Mengembangkan solusi teknologi inovatif untuk menghubungkan ide, komunitas, dan peluang dalam ekosistem digital yang dinamis dan berkelanjutan."
@@ -927,7 +927,7 @@
                 <a href="https://entrevibesumsida.my.id" target="_blank" class="social-link">
                     <i class="fas fa-globe"></i>
                 </a>
-                <a href="https://microhelix.id" target="_blank" class="social-link">
+                <a href="https://microhelixtechsolutions.co.id target="_blank" class="social-link">
                     <i class="fas fa-building"></i>
                 </a>
             </div>

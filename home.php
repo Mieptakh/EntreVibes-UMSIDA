@@ -6312,7 +6312,7 @@ body, html, #about.section, #about .container {
     <div class="brand-area">
       <div class="brand-logo">
         <div class="logo-circle">
-          <img src="images/logo_default.png" alt="EntreVibes">
+          <img src="images/logo_default.webp" alt="EntreVibes">
         </div>
         <h1 class="brand-name">UMSIDA EntreVibes</h1>
         <p class="brand-subtitle">UMSIDA Entrepreneurship Festival</p>
@@ -6344,7 +6344,7 @@ body, html, #about.section, #about .container {
   <header class="navbar" id="navbar" role="navigation" aria-label="Main Navigation">
     <div class="container nav-inner">
       <a href="#home" class="logo" aria-label=" Seluruh Indonesia">
-        <img src="images/logo_default.png" 
+        <img src="images/logo_default.webp" 
             alt="Logo  Seluruh Indonesia" 
             style="height: 50px; width: auto; margin-right: 0.6rem; vertical-align: middle;">
         UMSIDA EntreVibes Vol. 1 
@@ -9609,9 +9609,9 @@ document.addEventListener('DOMContentLoaded', function() {
     <div class="supporting-partners">
       <h4>Partner Pendukung:</h4>
       <div class="partner-logos">
-        <img src="images/logo_default.png" alt="Entre Vibes Logo">
+        <img src="images/logo_default.webp" alt="Entre Vibes Logo">
         <img src="images/2025 CIRCLE.png" alt="MH Teams Logo">
-        <img src="images/UMSIDA.png" alt="UMSIDA">
+        <img src="images/UMSIDA.webp" alt="UMSIDA">
       </div>
     </div>
   </div>
@@ -9630,12 +9630,12 @@ document.addEventListener('DOMContentLoaded', function() {
     <div class="technical-credit">
       <p>
         <strong>Pengembangan Teknologi:</strong> Platform ini dikembangkan oleh 
-        <a href="https://mhteams.my.id" target="_blank">MicroHelix Tech Solutions</a> dari 
+        <a href="https://microhelixtechsolutions.co.id" target="_blank">MicroHelix Tech Solutions</a> dari 
         <strong>PT. MicroHelix Tech Solutions</strong>.
       </p>
       <p>
         <strong>Butuh solusi digital untuk event atau organisasi Anda?</strong> 
-        <a href="https://mhteams.my.id" target="_blank">Hubungi tim profesional kami</a> 
+        <a href="https://microhelixtechsolutions.co.id" target="_blank">Hubungi tim profesional kami</a> 
         untuk konsultasi dan penawaran khusus.
       </p>
     </div>
