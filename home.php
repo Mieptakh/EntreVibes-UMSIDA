@@ -217,7 +217,7 @@ body {
     justify-content: center;
     align-items: center;
     background: 
-        url('images/Background.png') center/cover no-repeat,
+        url('images/Background.webp') center/cover no-repeat,
         linear-gradient(135deg, rgba(98, 35, 126, 0.92), rgba(92, 31, 127, 0.95));
     z-index: 99999;
     opacity: 1;
@@ -1163,7 +1163,7 @@ body {
   position: fixed;
   inset: 0;
 
-  background-image: url("images/Background.png");
+  background-image: url("images/Background.webp");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -1393,7 +1393,7 @@ body {
   isolation: isolate;
 
   background:
-    url("images/Background.png") center / cover no-repeat;
+    url("images/Background.webp") center / cover no-repeat;
 
   color: var(--light);
   font-family: 'Montserrat', system-ui, sans-serif;
@@ -3524,7 +3524,7 @@ footer {
   position: relative;
   padding: 6rem 1.5rem 3rem;
 
-  background-image: url("images/Background.png");
+  background-image: url("images/Background.webp");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
