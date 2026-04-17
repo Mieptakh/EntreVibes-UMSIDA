@@ -68,27 +68,27 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
 
   <!-- Favicon -->
-  <link rel="icon" href="images/logo_default.png" type="image/x-icon">
-  <link rel="shortcut icon" href="images/logo_default.png" type="image/x-icon">
-  <link rel="apple-touch-icon" sizes="180x180" href="images/logo_default.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="images/logo_default.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="images/logo_default.png">
+  <link rel="icon" href="images/logo_default.webp" type="image/x-icon">
+  <link rel="shortcut icon" href="images/logo_default.webp" type="image/x-icon">
+  <link rel="apple-touch-icon" sizes="180x180" href="images/logo_default.webp">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/logo_default.webp">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/logo_default.webp">
 
   <!-- Canonical URL -->
-  <link rel="canonical" href="https://www.sumselyouthcomp.mhteams.my.id" />
+  <link rel="canonical" href="https://entrevibesumsida.my.id" />
 
   <!-- Open Graph / Social Sharing -->
   <meta property="og:title" content="UMSIDA EntreVibes Vol. 1 — Kompetisi Pelajar & Mahasiswa Seluruh Indonesia">
   <meta property="og:description" content="Daftar sekarang di UMSIDA EntreVibes Vol. 1! Kompetisi bergengsi untuk generasi muda Seluruh Indonesia, tingkatkan kreativitas, inovasi, dan prestasi.">
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://www.sumselyouthcomp.mhteams.my.id>
-  <meta property="og:image" content="images/ Seluruh Indonesia (1).png">
+  <meta property="og:url" content="https://entrevibesumsida.my.id>
+  <meta property="og:image" content="images/logo_default (1).webp">
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="UMSIDA EntreVibes Vol. 1">
   <meta name="twitter:description" content="Kompetisi bergengsi untuk generasi muda Seluruh Indonesia. Daftar sekarang!">
-  <meta name="twitter:image" content="images/ Seluruh Indonesia (1).png">
+  <meta name="twitter:image" content="images/logo_default (1).webp">
 
   <style>
 /* =========================================================================

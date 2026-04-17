@@ -137,7 +137,7 @@ try {
             ["PT. MicroHelix Tech Solutions", "/images/PT. MicroHelix.png"],
             ["UMSIDA Sinergi Utama", "/images/UMSIDA Sinergi Utama.png"],
             ["BIZNET", "/images/BIZNET.png"],
-            ["OneSeven", "/images/OneSeven.png"],
+            ["OneSeven", "/images/OneSeven.webp"],
             ["PT Kalbe Farma", "/images/PT Kalbe Farma.png"],
             ["SuryaMart", "/images/SuryaMart.png"],
             ["Posee Studio", "/images/PoseeStudio.png"],
